@@ -1,0 +1,57 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    font-family: 'Poppins', serif; 
+    color: #141111;
+    background-color: #f2f2f2; /* Adjust the color as needed */
+}
+
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 10vh; /* Make the container take up the full viewport height */
+  background-color: #f2f2f2; /* Add a background color as needed */
+}
+
+/* Define a CSS class for input fields */
+.input-field {
+  width: 50%;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.3s;
+  margin: 0 auto;
+}
+
+/* Add a focus style */
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Gap between items */
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  /* Add any other styles you want for your project cards */
+}
+
+.no-projects-message.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
