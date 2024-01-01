@@ -14,7 +14,7 @@ export function createAndAnimateLogo() {
      const userIp = data.ip;
      console.log(userIp)
 
-  // Apply styling to the tree
+  // Apply styling to the logo
   treeElement.innerHTML = `
   <svg
    width="75mm"

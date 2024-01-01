@@ -25,39 +25,7 @@ const Layout = ({ children }) => {
         rel="stylesheet"
       />
 
-      {/* Sidebar */}
-      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <div className="sidebar-content" style={{ marginTop: '50px' }}>
-          <ul>
-          <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/home/home">Home</Link>
-            </li>
-            <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/about/about">About</Link>
-            </li>
-            <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/projects/projects">Projects</Link>
-            </li>
-            <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/library/library">Library</Link>
-            </li>
-            <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/register/registerForm">Register</Link>
-            </li>
-            <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/login/login">Login</Link>
-            </li>
-            {state.clearanceLevel <= 2 && state.clearanceLevel > 0 && (
-              <li onClick={() => setIsSidebarOpen(false)}>
-                <Link href="/master/master">Master</Link>
-              </li>
-            )}
-            <li onClick={() => setIsSidebarOpen(false)}>
-              <Link href="/hub/hub">Hub</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      
 {/* Main Content */}
 <div className={`main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="toggle-sidebar" onClick={toggleSidebar}>
@@ -133,31 +101,7 @@ const Layout = ({ children }) => {
           width: 100%; /* Make sure it takes the full width */
         }
       
-        .toggle-sidebar {
-          position: fixed;
-          top: 10px;
-          left: 10px;
-          cursor: pointer;
-          z-index: 3; /* Set a higher z-index than main-content */
-        }
       
-        .rice-figure {
-          width: 20px;
-          height: 20px;
-          background-color: ${isSidebarOpen ? '#fff' : '#000'};
-          border-radius: 50%;
-          position: fixed;
-          top: 15px;
-          left: ${isSidebarOpen ? '265px' : '15px'}; /* Adjust the left position based on sidebar state */
-          cursor: pointer;
-          z-index: 4; /* Set a higher z-index than the toggle-sidebar */
-          transition: left 0.5s, background-color 0.5s; /* Add this line for smooth transition */
-        }
-      
-        .sidebar-open .rice-figure {
-          left: 265px; /* Adjust the left position when the sidebar is open */
-          background-color: ${isSidebarOpen ? '#999' : '#000'}; /* Change the color when the sidebar is open */
-        }
       
         /* Custom styling for the footer */
         footer {
