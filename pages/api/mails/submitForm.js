@@ -1,4 +1,3 @@
-// /api/submitForm.js
 import nodemailer from 'nodemailer';
 
 async function sendEmail(formData) {
@@ -6,26 +5,27 @@ async function sendEmail(formData) {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        /*
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD,
-      */
-      user: 'a01024815@tec.mx',
-      pass: 'trafalgarA.9',
+      user: 'comproterreno4@gmail.com',
+      pass: 'denl ehnd uxvy nghl',
     },
   });
 
   // Setup email data
   const mailOptions = {
-    //from: process.env.EMAIL_USER,
-    from: 'a01024815@tec.mx',
-    to: 'comproterreno4@gmail.com', // Replace with the actual destination email
+    from: 'comproterreno4@gmail.com',
+    to: 'a01024815@tec.mx', // Replace with the actual destination email
     subject: 'Form Submission',
     text: JSON.stringify(formData, null, 2),
   };
 
-  // Send the email
-  await transporter.sendMail(mailOptions);
+  try {
+    // Send the email
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully:', info);
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw error; // Propagate the error for further handling
+  }
 }
 
 export default async function handler(req, res) {
@@ -40,9 +40,6 @@ export default async function handler(req, res) {
 
       // Send the processed data to the email function
       await sendEmail(formData);
-
-      // Log that the email was sent successfully
-      console.log('Email sent successfully:', formData);
 
       res.status(200).json({ message: 'Form submitted successfully' });
     } else {
