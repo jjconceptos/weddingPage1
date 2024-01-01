@@ -1,3 +1,5 @@
+
+/*
 export async function fetchBooksData() {
   try {
     // Define the base API URL
@@ -67,3 +69,4 @@ function combineTextAndImage(textData, imageData, bookNamesData) {
 
   return combinedBooks;
 }
+*/

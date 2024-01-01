@@ -1,3 +1,5 @@
+/*
+
 // Create a file called localStorage.js in your project directory
 
 // Function to get the projects from localStorage
@@ -34,4 +36,4 @@ export const deleteProject = (projectId) => {
   const updatedProjects = projects.filter((project) => project.id !== projectId);
   localStorage.setItem('projects', JSON.stringify(updatedProjects));
 };
-
+*/

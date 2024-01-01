@@ -1,3 +1,6 @@
+
+
+/*
 export async function fetchProjectsData() {
   try {
     // Define the base API URL
@@ -67,3 +70,4 @@ function combineTextAndImage(textData, imageData, projectNamesData) {
 
   return combinedProjects;
 }
+*/
