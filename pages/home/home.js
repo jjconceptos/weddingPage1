@@ -16,6 +16,7 @@ const Home = () => {
   const [formData, setFormData] = useState({
     location: { address: '', street: '', zipCode: '' },
     size: '',
+    landUse: '',
     contact: { name: '', lastName: '', email: '', cellphone: '' },
   });
 
@@ -33,7 +34,13 @@ const Home = () => {
         // Process size data
         console.log('Size:', formData.size);
         break;
-      case 2:
+
+        case 2:
+          // Process land use data
+          console.log('Uso de suelo:', formData.landUse);
+          break;
+
+      case 3:
         // Process contact information
         const { name, lastName, email, cellphone } = formData.contact;
         console.log('Contact - Name:', name);
@@ -152,6 +159,7 @@ const Home = () => {
         label {
           margin: 10px 0;
           font-weight: bold;
+          width: 300px;
         }
 
         input {
@@ -159,8 +167,12 @@ const Home = () => {
           margin: 5px;
           border: 1px solid #ccc;
           border-radius: 5px;
-          width: 200px;
+          width: 100%; /* Set a fixed width for input elements */
+          box-sizing: border-box;
         }
+
+        
+        
       `}</style>
 
       <div>
@@ -234,44 +246,64 @@ const Home = () => {
               )}
               {currentQuestion === 2 && (
                 <form className="form">
-                  <label>
-                    Name:
-                    <input
-                      type="text"
-                      name="contact.name"
-                      value={formData.contact.name}
-                      onChange={handleChange}
-                    />
-                  </label>
-                  <label>
-                    Last Name:
-                    <input
-                      type="text"
-                      name="contact.lastName"
-                      value={formData.contact.lastName}
-                      onChange={handleChange}
-                    />
-                  </label>
-                  <label>
-                    Email:
-                    <input
-                      type="email"
-                      name="contact.email"
-                      value={formData.contact.email}
-                      onChange={handleChange}
-                    />
-                  </label>
-                  <label>
-                    Cellphone:
-                    <input
-                      type="tel"
-                      name="contact.cellphone"
-                      value={formData.contact.cellphone}
-                      onChange={handleChange}
-                    />
-                  </label>
-                </form>
+                <label>
+                  Uso de suelo:
+                  <input
+                    type="text"
+                    name="landUse"
+                    value={formData.landUse}
+                    onChange={handleChange}
+                  />
+                </label>
+              </form>
               )}
+
+
+
+              {currentQuestion === 3 && (
+                              <form className="form">
+                                <label>
+                                  Name:
+                                  <input
+                                    type="text"
+                                    name="contact.name"
+                                    value={formData.contact.name}
+                                    onChange={handleChange}
+                                  />
+                                </label>
+                                <label>
+                                  Last Name:
+                                  <input
+                                    type="text"
+                                    name="contact.lastName"
+                                    value={formData.contact.lastName}
+                                    onChange={handleChange}
+                                  />
+                                </label>
+                                <label>
+                                  Email:
+                                  <input
+                                    type="email"
+                                    name="contact.email"
+                                    value={formData.contact.email}
+                                    onChange={handleChange}
+                                  />
+                                </label>
+                                <label>
+                                  Cellphone:
+                                  <input
+                                    type="tel"
+                                    name="contact.cellphone"
+                                    value={formData.contact.cellphone}
+                                    onChange={handleChange}
+                                  />
+                                </label>
+                              </form>
+                            )}
+
+
+
+
 
               <button onClick={handleAnswer}>Next</button>
             </div>

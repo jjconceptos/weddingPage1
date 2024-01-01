@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', serif; 
     color: #141111;
-    background-color: #f2f2f2; /* Adjust the color as needed */
+    background-color: #138EC3; /* Adjust the color as needed */
 }
 
 
@@ -16,7 +16,7 @@ body {
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
   height: 10vh; /* Make the container take up the full viewport height */
-  background-color: #f2f2f2; /* Add a background color as needed */
+  background-color: #138EC3; /* Add a background color as needed */
 }
 
 /* Define a CSS class for input fields */
