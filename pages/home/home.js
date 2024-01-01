@@ -1,8 +1,7 @@
-// pages/home.js
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Layout from '/layouts/layout';
-import { useAuth } from '/auth/authContext'; // Adjust the path accordingly
+import { useAuth } from '/auth/authContext';
 
 const Home = () => {
   const { state } = useAuth();
@@ -10,17 +9,17 @@ const Home = () => {
   const [questions, setQuestions] = useState([
     'Where is the land located?',
     'What is the size of the land?',
-    'Do you have any hobbies?',
+    'Can you provide your contact information?',
   ]);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [formData, setFormData] = useState({
     location: { address: '', street: '', zipCode: '' },
     size: '',
-    hobbies: '',
+    contact: { name: '', lastName: '', email: '', cellphone: '' },
   });
 
-  const handleAnswer = () => {
+  const handleAnswer = async () => {
     // Process the data from the form based on the current question
     switch (currentQuestion) {
       case 0:
@@ -35,10 +34,32 @@ const Home = () => {
         console.log('Size:', formData.size);
         break;
       case 2:
-        // Process hobbies data
-        console.log('Hobbies:', formData.hobbies);
+        // Process contact information
+        const { name, lastName, email, cellphone } = formData.contact;
+        console.log('Contact - Name:', name);
+        console.log('Contact - Last Name:', lastName);
+        console.log('Contact - Email:', email);
+        console.log('Contact - Cellphone:', cellphone);
+
+        // Send the form data to the serverless function
+        try {
+          const response = await fetch('/api/mails/submitForm', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+
+          if (response.ok) {
+            console.log('Form data sent successfully:', formData);
+          } else {
+            console.error('Failed to send form data:', response.statusText);
+          }
+        } catch (error) {
+          console.error('Error sending form data:', error);
+        }
         break;
-      // Add more cases for other questions if needed
       default:
         break;
     }
@@ -63,22 +84,27 @@ const Home = () => {
         ...prevData,
         location: { ...prevData.location, [locationField]: value },
       }));
+    } else if (name.includes('contact.')) {
+      // Update contact subfields
+      const contactField = name.split('.')[1];
+      setFormData((prevData) => ({
+        ...prevData,
+        contact: { ...prevData.contact, [contactField]: value },
+      }));
     } else {
       // Update other fields
       setFormData((prevData) => ({ ...prevData, [name]: value }));
     }
   };
 
-  console.log('Clearance Level:', state.clearanceLevel); // Add this log to check the clearance level
+  console.log('Clearance Level:', state.clearanceLevel);
 
-  // Call the function to create and animate the logo
   useEffect(() => {
-    // createAndAnimateLogo(); // Uncomment this line if needed
-  }, []); // Ensure it runs only once on mount
+    // createAndAnimateLogo();
+  }, []);
 
   return (
     <Layout>
-      {/* Remove the background image styling */}
       <style jsx global>{`
         body {
           margin: 0;
@@ -89,7 +115,6 @@ const Home = () => {
           height: 100vh;
         }
 
-        /* Custom styling for the footer */
         footer {
           position: fixed;
           bottom: 0;
@@ -103,7 +128,6 @@ const Home = () => {
           opacity: 0.8;
         }
 
-        /* Additional styling for the navigation links */
         ul {
           list-style: none;
           display: flex;
@@ -119,7 +143,6 @@ const Home = () => {
           margin: 0 10px;
         }
 
-        /* Styling for the form */
         .form {
           display: flex;
           flex-direction: column;
@@ -138,13 +161,9 @@ const Home = () => {
           border-radius: 5px;
           width: 200px;
         }
-
-        /* Add other custom styles as needed */
       `}</style>
 
-      {/* Content above the image */}
       <div>
-        {/* Navigation links */}
         <ul>
           <li>
             <Link href="/home/home">Home</Link>
@@ -166,11 +185,9 @@ const Home = () => {
           )}
         </ul>
 
-        {/* Question section */}
         <div>
           {questions.length > 0 && (
             <div>
-              {/* Display different forms based on the current question */}
               {currentQuestion === 0 && (
                 <form className="form">
                   <label>
@@ -218,11 +235,38 @@ const Home = () => {
               {currentQuestion === 2 && (
                 <form className="form">
                   <label>
-                    Hobbies:
+                    Name:
                     <input
                       type="text"
-                      name="hobbies"
-                      value={formData.hobbies}
+                      name="contact.name"
+                      value={formData.contact.name}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Last Name:
+                    <input
+                      type="text"
+                      name="contact.lastName"
+                      value={formData.contact.lastName}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Email:
+                    <input
+                      type="email"
+                      name="contact.email"
+                      value={formData.contact.email}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Cellphone:
+                    <input
+                      type="tel"
+                      name="contact.cellphone"
+                      value={formData.contact.cellphone}
                       onChange={handleChange}
                     />
                   </label>
@@ -232,7 +276,6 @@ const Home = () => {
               <button onClick={handleAnswer}>Next</button>
             </div>
           )}
-          {/* Add other content as needed */}
         </div>
       </div>
     </Layout>
@@ -240,4 +283,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
