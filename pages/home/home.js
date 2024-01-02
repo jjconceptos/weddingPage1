@@ -5,11 +5,19 @@ import { useAuth } from '/auth/authContext';
 
 const Home = () => {
   const { state } = useAuth();
-
+/*
   const [questions, setQuestions] = useState([
     'Where is the land located?',
     'What is the size of the land?',
     'Can you provide your contact information?',
+  ]);
+*/
+  const [questions, setQuestions] = useState([
+    'Por favor háblanos de tu terreno para poder hacerte una oferta',
+    'En donde esta?',
+    'Cual es el área de tu terreno?',
+    'Conoces el uso de suelo?',
+    'Por favor danos tus datos, te contactaremos pronto',
   ]);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -24,23 +32,27 @@ const Home = () => {
     // Process the data from the form based on the current question
     switch (currentQuestion) {
       case 0:
+        
+        
+        break;
+      case 1:
         // Process location data
         const { address, street, zipCode } = formData.location;
         console.log('Location - Address:', address);
         console.log('Location - Street:', street);
         console.log('Location - Zip Code:', zipCode);
         break;
-      case 1:
+      case 2:
         // Process size data
         console.log('Size:', formData.size);
         break;
 
-        case 2:
+        case 3:
           // Process land use data
           console.log('Uso de suelo:', formData.landUse);
           break;
 
-      case 3:
+      case 4:
         // Process contact information
         const { name, lastName, email, cellphone } = formData.contact;
         console.log('Contact - Name:', name);
@@ -171,6 +183,9 @@ const Home = () => {
           box-sizing: border-box;
         }
 
+        button {
+          margin-top: 10px;
+        }
         
         
       `}</style>
@@ -196,11 +211,13 @@ const Home = () => {
             </li>
           )}
         </ul>
-
+        <p>{questions[currentQuestion]}</p>
         <div>
           {questions.length > 0 && (
+            
             <div>
               {currentQuestion === 0 && (
+
                 <form className="form">
                   <label>
                     Address:
@@ -305,7 +322,7 @@ const Home = () => {
 
 
 
-              <button onClick={handleAnswer}>Next</button>
+              <button onClick={handleAnswer}>Siguiente</button>
             </div>
           )}
         </div>
