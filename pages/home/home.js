@@ -20,6 +20,7 @@ const Home = () => {
     contact: { name: '', lastName: '', email: '', cellphone: '' },
   });
   const [showQuestions, setShowQuestions] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const isLastQuestion = currentQuestion === questions.length - 1;
 
   const handleAnswer = async () => {
@@ -39,6 +40,7 @@ const Home = () => {
 
         if (response.ok) {
           console.log('Form data sent successfully:', formData);
+          setFormSubmitted(true);
         } else {
           console.error('Failed to send form data:', response.statusText);
         }
@@ -155,7 +157,7 @@ const Home = () => {
 
       <div>
         {/* Navigation links go here */}
-        {!showQuestions && (
+        {!showQuestions && !formSubmitted && (
           <>
             <p style={{ textAlign: 'center' }}>
               Por favor háblanos de tu terreno para poder hacerte una oferta
@@ -164,7 +166,7 @@ const Home = () => {
           </>
         )}
 
-        {showQuestions && currentQuestion < questions.length && (
+{!formSubmitted && showQuestions && currentQuestion < questions.length && (
           <>
             <p>{questions[currentQuestion]}</p>
             <form className="form">
@@ -267,6 +269,12 @@ const Home = () => {
             </button>
           </>
         )}
+
+{formSubmitted && (
+  <p style={{ textAlign: 'center' }}>
+    ¡Gracias por enviar la información! Nos pondremos en contacto contigo pronto.
+  </p>
+)}
       </div>
 
 
