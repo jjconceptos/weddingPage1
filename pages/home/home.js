@@ -19,7 +19,7 @@ const Home = () => {
     landUse: '',
     contact: { name: '', lastName: '', email: '', cellphone: '' },
   });
-
+  const [showQuestions, setShowQuestions] = useState(false);
   const isLastQuestion = currentQuestion === questions.length - 1;
 
   const handleAnswer = async () => {
@@ -73,11 +73,15 @@ const Home = () => {
   };
 
   console.log('Clearance Level:', state.clearanceLevel);
-
+/*
   useEffect(() => {
     // createAndAnimateLogo();
   }, []);
-
+*/
+  const startQuestions = () => {
+    setShowQuestions(true);
+  };
+  
   return (
     <Layout>
       <style jsx global>{`
@@ -145,27 +149,22 @@ const Home = () => {
       `}</style>
 
       <div>
-        <ul>
-          <li>
-            <Link href="/home/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about/about">About</Link>
-          </li>
+        
 
-          <li>
-            <Link href="/register/registerForm">Register</Link>
-          </li>
-          <li>
-            <Link href="/login/login">Login</Link>
-          </li>
-          {state.clearanceLevel <= 2 && state.clearanceLevel > 0 && (
-            <li>
-              <Link href="/master/master">Master</Link>
-            </li>
-          )}
-        </ul>
-        {currentQuestion < questions.length && (
+
+
+      <div>
+        {/* Navigation links go here */}
+        {!showQuestions && (
+          <>
+            <p style={{ textAlign: 'center' }}>
+              Por favor háblanos de tu terreno para poder hacerte una oferta
+            </p>
+            <button onClick={startQuestions}>Comenzar</button>
+          </>
+        )}
+
+        {showQuestions && currentQuestion < questions.length && (
           <>
             <p>{questions[currentQuestion]}</p>
             <form className="form">
@@ -269,8 +268,46 @@ const Home = () => {
           </>
         )}
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ul>
+          <li>
+            <Link href="/home/home">Home</Link>
+          </li>
+          <li>
+            <Link href="/about/about">About</Link>
+          </li>
+
+          <li>
+            <Link href="/register/registerForm">Register</Link>
+          </li>
+          <li>
+            <Link href="/login/login">Login</Link>
+          </li>
+          {state.clearanceLevel <= 2 && state.clearanceLevel > 0 && (
+            <li>
+              <Link href="/master/master">Master</Link>
+            </li>
+          )}
+        </ul>
+
+       
+      </div>
     </Layout>
   );
 };
 
 export default Home;
+
+
