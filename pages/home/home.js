@@ -5,15 +5,7 @@ import { useAuth } from '/auth/authContext';
 
 const Home = () => {
   const { state } = useAuth();
-/*
   const [questions, setQuestions] = useState([
-    'Where is the land located?',
-    'What is the size of the land?',
-    'Can you provide your contact information?',
-  ]);
-*/
-  const [questions, setQuestions] = useState([
-    'Por favor háblanos de tu terreno para poder hacerte una oferta',
     'En donde esta?',
     'Cual es el área de tu terreno?',
     'Conoces el uso de suelo?',
@@ -28,68 +20,32 @@ const Home = () => {
     contact: { name: '', lastName: '', email: '', cellphone: '' },
   });
 
+  const isLastQuestion = currentQuestion === questions.length - 1;
+
   const handleAnswer = async () => {
-    // Process the data from the form based on the current question
-    switch (currentQuestion) {
-      case 0:
-        
-        
-        break;
-      case 1:
-        // Process location data
-        const { address, street, zipCode } = formData.location;
-        console.log('Location - Address:', address);
-        console.log('Location - Street:', street);
-        console.log('Location - Zip Code:', zipCode);
-        break;
-      case 2:
-        // Process size data
-        console.log('Size:', formData.size);
-        break;
+    // Move to the next question if it exists
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+    } else {
+      // Send the form data to the serverless function when "Submit" is clicked
+      try {
+        const response = await fetch('/api/mails/submitForm', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
 
-        case 3:
-          // Process land use data
-          console.log('Uso de suelo:', formData.landUse);
-          break;
-
-      case 4:
-        // Process contact information
-        const { name, lastName, email, cellphone } = formData.contact;
-        console.log('Contact - Name:', name);
-        console.log('Contact - Last Name:', lastName);
-        console.log('Contact - Email:', email);
-        console.log('Contact - Cellphone:', cellphone);
-
-        // Send the form data to the serverless function
-        try {
-          const response = await fetch('/api/mails/submitForm', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          });
-
-          if (response.ok) {
-            console.log('Form data sent successfully:', formData);
-          } else {
-            console.error('Failed to send form data:', response.statusText);
-          }
-        } catch (error) {
-          console.error('Error sending form data:', error);
+        if (response.ok) {
+          console.log('Form data sent successfully:', formData);
+        } else {
+          console.error('Failed to send form data:', response.statusText);
         }
-        break;
-      default:
-        break;
+      } catch (error) {
+        console.error('Error sending form data:', error);
+      }
     }
-
-    // Remove the answered question
-    const updatedQuestions = [...questions];
-    updatedQuestions.splice(currentQuestion, 1);
-    setQuestions(updatedQuestions);
-
-    // Move to the next question
-    setCurrentQuestion((prevQuestion) => prevQuestion + 1);
   };
 
   const handleChange = (e) => {
@@ -186,8 +142,6 @@ const Home = () => {
         button {
           margin-top: 10px;
         }
-        
-        
       `}</style>
 
       <div>
@@ -211,14 +165,12 @@ const Home = () => {
             </li>
           )}
         </ul>
-        <p>{questions[currentQuestion]}</p>
-        <div>
-          {questions.length > 0 && (
-            
-            <div>
+        {currentQuestion < questions.length && (
+          <>
+            <p>{questions[currentQuestion]}</p>
+            <form className="form">
               {currentQuestion === 0 && (
-
-                <form className="form">
+                <>
                   <label>
                     Address:
                     <input
@@ -246,23 +198,20 @@ const Home = () => {
                       onChange={handleChange}
                     />
                   </label>
-                </form>
+                </>
               )}
               {currentQuestion === 1 && (
-                <form className="form">
-                  <label>
-                    Size:
-                    <input
-                      type="text"
-                      name="size"
-                      value={formData.size}
-                      onChange={handleChange}
-                    />
-                  </label>
-                </form>
+                <label>
+                  Size:
+                  <input
+                    type="text"
+                    name="size"
+                    value={formData.size}
+                    onChange={handleChange}
+                  />
+                </label>
               )}
               {currentQuestion === 2 && (
-                <form className="form">
                 <label>
                   Uso de suelo:
                   <input
@@ -272,65 +221,56 @@ const Home = () => {
                     onChange={handleChange}
                   />
                 </label>
-              </form>
               )}
-
-
-
               {currentQuestion === 3 && (
-                              <form className="form">
-                                <label>
-                                  Name:
-                                  <input
-                                    type="text"
-                                    name="contact.name"
-                                    value={formData.contact.name}
-                                    onChange={handleChange}
-                                  />
-                                </label>
-                                <label>
-                                  Last Name:
-                                  <input
-                                    type="text"
-                                    name="contact.lastName"
-                                    value={formData.contact.lastName}
-                                    onChange={handleChange}
-                                  />
-                                </label>
-                                <label>
-                                  Email:
-                                  <input
-                                    type="email"
-                                    name="contact.email"
-                                    value={formData.contact.email}
-                                    onChange={handleChange}
-                                  />
-                                </label>
-                                <label>
-                                  Cellphone:
-                                  <input
-                                    type="tel"
-                                    name="contact.cellphone"
-                                    value={formData.contact.cellphone}
-                                    onChange={handleChange}
-                                  />
-                                </label>
-                              </form>
-                            )}
-
-
-
-
-
-              <button onClick={handleAnswer}>Siguiente</button>
-            </div>
-          )}
-        </div>
+                <>
+                  <label>
+                    Name:
+                    <input
+                      type="text"
+                      name="contact.name"
+                      value={formData.contact.name}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Last Name:
+                    <input
+                      type="text"
+                      name="contact.lastName"
+                      value={formData.contact.lastName}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Email:
+                    <input
+                      type="email"
+                      name="contact.email"
+                      value={formData.contact.email}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Cellphone:
+                    <input
+                      type="tel"
+                      name="contact.cellphone"
+                      value={formData.contact.cellphone}
+                      onChange={handleChange}
+                    />
+                  </label>
+                </>
+              )}
+            </form>
+            <button onClick={handleAnswer}>
+              {isLastQuestion ? 'Submit' : 'Siguiente'}
+            </button>
+          </>
+        )}
       </div>
     </Layout>
   );
 };
 
 export default Home;
-
-
