@@ -265,7 +265,7 @@ const Home = () => {
               )}
             </form>
             <button onClick={handleAnswer}>
-              {isLastQuestion ? 'Submit' : 'Siguiente'}
+              {isLastQuestion ? 'Enviar' : 'Siguiente'}
             </button>
           </>
         )}
