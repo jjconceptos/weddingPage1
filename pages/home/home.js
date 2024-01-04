@@ -9,7 +9,7 @@ const Home = () => {
     'En donde esta?',
     'Cual es el área de tu terreno?',
     'Conoces el uso de suelo?',
-    'Por favor danos tus datos, te contactaremos pronto',
+    'Por favor danos tu contacto',
   ]);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -173,7 +173,7 @@ const Home = () => {
               {currentQuestion === 0 && (
                 <>
                   <label>
-                    Address:
+                    Dirección:
                     <input
                       type="text"
                       name="location.address"
@@ -182,7 +182,7 @@ const Home = () => {
                     />
                   </label>
                   <label>
-                    Street:
+                    Delegación:
                     <input
                       type="text"
                       name="location.street"
@@ -191,7 +191,7 @@ const Home = () => {
                     />
                   </label>
                   <label>
-                    Zip Code:
+                    Código postal:
                     <input
                       type="text"
                       name="location.zipCode"
@@ -203,7 +203,7 @@ const Home = () => {
               )}
               {currentQuestion === 1 && (
                 <label>
-                  Size:
+                  Tamaño m2:
                   <input
                     type="text"
                     name="size"
@@ -226,7 +226,7 @@ const Home = () => {
               {currentQuestion === 3 && (
                 <>
                   <label>
-                    Name:
+                    Nombre:
                     <input
                       type="text"
                       name="contact.name"
@@ -235,7 +235,7 @@ const Home = () => {
                     />
                   </label>
                   <label>
-                    Last Name:
+                    Apellidos:
                     <input
                       type="text"
                       name="contact.lastName"
@@ -253,7 +253,7 @@ const Home = () => {
                     />
                   </label>
                   <label>
-                    Cellphone:
+                    Celular:
                     <input
                       type="tel"
                       name="contact.cellphone"
