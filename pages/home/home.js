@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Layout from '/layouts/layout';
 import { useAuth } from '/auth/authContext';
 
 const Home = () => {
   const { state } = useAuth();
+  const formRef = useRef(null);
   const [questions, setQuestions] = useState([
     'En donde esta?',
     'Cual es el área de tu terreno?',
@@ -75,11 +76,35 @@ const Home = () => {
   };
 
   console.log('Clearance Level:', state.clearanceLevel);
-/*
+
   useEffect(() => {
-    // createAndAnimateLogo();
-  }, []);
-*/
+    // Adjust the form section position when showQuestions becomes true
+    const scrollToForm = () => {
+      if (showQuestions && formRef.current) {
+        const formSection = formRef.current;
+        console.log('Scroll position before:', window.scrollY);
+  
+        // Scroll the form section into view using the native scrollIntoView method
+        formSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+  
+        console.log('Scroll position after:', window.scrollY);
+      }
+    };
+  
+    // Attach the scroll event listener
+    window.addEventListener('scroll', scrollToForm);
+  
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', scrollToForm);
+    };
+  }, [showQuestions]);
+
+
   const startQuestions = () => {
     setShowQuestions(true);
   };
@@ -87,6 +112,8 @@ const Home = () => {
   return (
     <Layout>
       <style jsx global>{`
+
+
         body {
           margin: 0;
           padding: 0;
@@ -94,6 +121,21 @@ const Home = () => {
           align-items: center;
           justify-content: center;
           height: 100vh;
+        }
+
+        .background-container {
+          position: fixed;
+          top: 25px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          height: 100%;
+          margin: 0cm; 
+          background-image: url('schematic.jpeg'); 
+          background-size: cover;
+          background-position: center;
+          z-index: 0;
+          
         }
 
         footer {
@@ -147,15 +189,34 @@ const Home = () => {
 
         button {
           margin-top: 10px;
+          z-index: 1;
         }
+
+        .non-question-section {
+          position: absolute;
+          bottom: 175px; /* Adjust the distance from the bottom as needed */
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+        }
+
+        .form-section {
+          margin-top: 100vh; /* Set the distance from the top of the viewport */
+        }
+
+        .form-section {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+
       `}</style>
 
-      <div>
+<div className="background-container">
         
-
-
-
-      <div>
+<div className="non-question-section">
         {/* Navigation links go here */}
         {!showQuestions && !formSubmitted && (
           <>
@@ -168,6 +229,7 @@ const Home = () => {
 
 {!formSubmitted && showQuestions && currentQuestion < questions.length && (
           <>
+          <div ref={formRef} className="form-section"></div>
             <p>{questions[currentQuestion]}</p>
             <form className="form">
               {currentQuestion === 0 && (
@@ -276,15 +338,6 @@ const Home = () => {
   </p>
 )}
       </div>
-
-
-
-
-
-
-
-
-
 
 
 
