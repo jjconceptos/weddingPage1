@@ -86,7 +86,16 @@ const Home = () => {
   useEffect(() => {
     // Scroll to the form section when showQuestions becomes true
     if (formRef.current && showQuestions) {
-      formRef.current.scrollIntoView({ behavior: 'smooth' });
+      const formPosition = formRef.current.offsetTop;
+      const formHeight = formRef.current.offsetHeight;
+      const windowHeight = window.innerHeight;
+  
+      const scrollDistance = formPosition - windowHeight + formHeight + 100; // Adjust 20 for extra space
+      
+      window.scrollTo({
+        top: scrollDistance,
+        behavior: 'smooth',
+      });
     }
   }, [showQuestions]);
 
@@ -96,10 +105,18 @@ const Home = () => {
   
     // Scroll down to the form section when starting questions
     setTimeout(() => {
-      window.scrollBy({
-        top: window.innerHeight * 2, // Adjust the distance as needed
-        behavior: 'smooth',
-      });
+      if (formRef.current) {
+        const formPosition = formRef.current.offsetTop;
+        const formHeight = formRef.current.offsetHeight;
+        const windowHeight = window.innerHeight;
+        
+        const scrollDistance = formPosition - windowHeight + formHeight + 10; // Adjust 20 for extra space
+        
+        window.scrollBy({
+          top: scrollDistance,
+          behavior: 'smooth',
+        });
+      }
     }, 1);
   };
   
@@ -113,23 +130,24 @@ const Home = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          min-height: 300vh; /* Adjust the min-height as needed */
+          min-height: 200vh; /* Adjust the min-height as needed */
         }
         
 
         .background-container {
-          position: absolute;
-          top: 25px;
-          left: 0px;
-          right: 0px;
-          width: 100%;
-          height: 100%;
-          margin: 0cm;
-          background-image: url('schematic.jpeg');
-          background-size: cover;
-          background-position: center;
-          z-index: 0;
-        }
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%; 
+  margin: 0cm;
+  background-image: url('schematic.jpeg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  padding-bottom: 150px; /* Add padding-bottom to create space for the form */
+}
 
         .footer {
           position: relative;
@@ -163,8 +181,11 @@ const Home = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin-top: 150vh; /* Adjust the margin as needed */
+          margin-top: 150vh; /* Change to auto */
+          padding: 50vh;
+          
         }
+        
 
         label {
           margin: 10px 0;
