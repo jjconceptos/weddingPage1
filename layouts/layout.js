@@ -45,6 +45,9 @@ const Layout = ({ children }) => {
         &copy; {new Date().getFullYear()} JRF. All rights reserved.
       </footer>
 
+      
+
+
       {/* Styles */}
       <style jsx global>{`
         body {
@@ -54,35 +57,6 @@ const Layout = ({ children }) => {
           min-height: 100vh; /* Ensure the body takes at least the full viewport height */
         }
       
-        .sidebar {
-          width: 0;
-          height: 100vh;
-          background-color: #761a1a;
-          overflow-x: hidden;
-          transition: 0.5s;
-          position: fixed;
-          z-index: 2; /* Set z-index higher than the body */
-        }
-      
-        .sidebar.open {
-          width: 250px;
-        }
-      
-        .sidebar-content {
-          padding-top: 20px;
-          display: flex;
-          flex-direction: column;
-        }
-      
-        .sidebar ul {
-          list-style-type: none;
-          padding: 20px;
-        }
-      
-        .sidebar li {
-          margin-bottom: 10px;
-          color: #f2f2f2;
-        }
       
         .main-content {
           display: flex;
@@ -101,7 +75,40 @@ const Layout = ({ children }) => {
           width: 100%; /* Make sure it takes the full width */
         }
       
-      
+        ul {
+          list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2; // Ensure it appears above other elements
+        }
+
+        li {
+          margin: 10px;
+        }
+
+        ul.nav-links-right {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 20px;
+          z-index: 2; // Ensure it appears above other elements
+        }
+
+        li.nav-links-right {
+          justify-content: flex-end;
+          right: 20px;
+        }
+
+
       
         /* Custom styling for the footer */
         footer {
@@ -123,7 +130,42 @@ const Layout = ({ children }) => {
           align-items: center;
         }
       `}</style>
+
+
+<ul>
+          <li>
+            <Link href="/home/home">Home</Link>
+          </li>
+          <li>
+            <Link href="/about/about">About</Link>
+          </li>
+
+          <li>
+            <Link href="/register/registerForm">Register</Link>
+          </li>
+          <li>
+            <Link href="/login/login">Login</Link>
+          </li>
+          {state.clearanceLevel <= 2 && state.clearanceLevel > 0 && (
+            <li>
+              <Link href="/master/master">Master</Link>
+            </li>
+          )}
+        </ul>
+
+        <ul className="nav-links-right">
+    
+      <li>
+            <Link href="/home/home">Home</Link>
+          </li>
+          <li>
+            <Link href="/about/about">About</Link>
+          </li>
+    </ul>
+
     </div>
+
+    
   );
 };
 

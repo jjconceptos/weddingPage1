@@ -162,21 +162,7 @@ const Home = () => {
           opacity: 0.8;
         }
 
-        ul {
-          list-style: none;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 0;
-          padding: 0;
-          position: absolute;
-          top: 20px;
-        }
-
-        li {
-          margin: 0 10px;
-        }
-
+        
         .form {
           display: flex;
           flex-direction: column;
@@ -231,7 +217,7 @@ const Home = () => {
           textotextotexto.
         </p>
         <p>
-          textotextomastextodepresentacion.
+          textotextomastexto.
         </p>
       </div>
               <p style={{ textAlign: 'center' }}>
@@ -353,26 +339,7 @@ const Home = () => {
           )}
         </div>
 
-        <ul>
-          <li>
-            <Link href="/home/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about/about">About</Link>
-          </li>
-
-          <li>
-            <Link href="/register/registerForm">Register</Link>
-          </li>
-          <li>
-            <Link href="/login/login">Login</Link>
-          </li>
-          {state.clearanceLevel <= 2 && state.clearanceLevel > 0 && (
-            <li>
-              <Link href="/master/master">Master</Link>
-            </li>
-          )}
-        </ul>
+       
       </div>
     </Layout>
   );
