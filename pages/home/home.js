@@ -181,7 +181,7 @@ const Home = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin-top: 150vh; /* Change to auto */
+          margin-top: 75vh; /* Change to auto */
           padding: 50vh;
           
         }
@@ -211,12 +211,29 @@ const Home = () => {
           text-align: center;
           margin-top: 650px;
         }
+
+        .explanatory-text {
+          position: absolute;
+          top: 25vh;  // Adjust the value as needed to position it at the desired height
+          width: 100%;
+          text-align: center;
+          z-index: 2; // Ensure it appears above other elements
+        }
+
       `}</style>
 
       <div className="background-container">
         <div className="non-question-section">
           {!showQuestions && !formSubmitted && (
             <>
+            <div className="explanatory-text">
+        <p>
+          textotextotexto.
+        </p>
+        <p>
+          textotextomastextodepresentacion.
+        </p>
+      </div>
               <p style={{ textAlign: 'center' }}>
                 Por favor háblanos de tu terreno para poder hacerte una oferta
               </p>
