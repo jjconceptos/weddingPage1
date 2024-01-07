@@ -204,7 +204,7 @@ const Home = () => {
 
   .image-text-section {
     position: absolute;
-    top: 195vh; /* Adjust the top value as needed */
+    top: 190vh; /* Adjust the top value as needed */
     width: 100%;
     display: flex;
     justify-content: space-between;
