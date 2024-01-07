@@ -124,89 +124,105 @@ const Home = () => {
   return (
     <Layout>
       <style jsx global>{`
-        body {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 200vh; /* Adjust the min-height as needed */
-        }
-        
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 55vh; /* Adjust the min-height as needed */
+  }
 
-        .background-container {
-  position: absolute;
-  top: 25px;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  height: 100%; 
-  margin: 0cm;
-  background-image: url('schematic.jpeg');
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  padding-bottom: 150px; /* Add padding-bottom to create space for the form */
-}
+  .background-container {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0cm;
+    background-image: url('schematic.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    padding-bottom: 120px; /* Add padding-bottom to create space for the form */
+  }
 
-        .footer {
-          position: relative;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background-color: transparent;
-          padding: 10px;
-          text-align: right;
-          color: black;
-          font-size: 14px;
-          opacity: 0.8;
-        }
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    opacity: 0.8;
+  }
 
-        
-        .form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 75vh; /* Change to auto */
-          padding: 50vh;
-          
-        }
-        
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75vh; /* Change to auto */
+    padding: 50vh;
+  }
 
-        label {
-          margin: 10px 0;
-          font-weight: bold;
-          width: 300px;
-        }
+  label {
+    margin: 10px 0;
+    font-weight: bold;
+    width: 300px;
+  }
 
-        input {
-          padding: 8px;
-          margin: 5px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          width: 100%;
-          box-sizing: border-box;
-        }
+  input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-        button {
-          margin-top: 10px;
-          z-index: 1;
-        }
+  button {
+    margin-top: 10px;
+    z-index: 1;
+  }
 
-        .non-question-section {
-          text-align: center;
-          margin-top: 650px;
-        }
+  .non-question-section {
+    text-align: center;
+    margin-top: 650px;
+  }
 
-        .explanatory-text {
-          position: absolute;
-          top: 25vh;  // Adjust the value as needed to position it at the desired height
-          width: 100%;
-          text-align: center;
-          z-index: 2; // Ensure it appears above other elements
-        }
+  .explanatory-text {
+    position: absolute;
+    top: 25vh;  // Adjust the value as needed to position it at the desired height
+    width: 100%;
+    text-align: center;
+    z-index: 2; // Ensure it appears above other elements
+  }
 
-      `}</style>
+  .image-text-section {
+    position: absolute;
+    top: 195vh; /* Adjust the top value as needed */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .image-text-item {
+    text-align: center;
+  }
+
+  .image-text-item img {
+    width: 100px; /* Adjust image width as needed */
+    height: 100px; /* Adjust image height as needed */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+`}</style>
 
 
 <div className="explanatory-text">
@@ -341,6 +357,31 @@ const Home = () => {
               ¡Gracias por enviar la información! Nos pondremos en contacto contigo pronto.
             </p>
           )}
+
+
+          {/* Image-text representations section */}
+
+  {/* Image-text representations section */}
+{showQuestions && (
+  <div className="image-text-section">
+    <div className="image-text-item">
+      <img src="image1.jpg" alt="Text 1" />
+      <p>Text 1</p>
+    </div>
+    <div className="image-text-item">
+      <img src="image2.jpg" alt="Text 2" />
+      <p>Text 2</p>
+    </div>
+    <div className="image-text-item">
+      <img src="image3.jpg" alt="Text 3" />
+      <p>Text 3</p>
+    </div>
+  </div>
+)}
+
+
+
+
         </div>
 
        
