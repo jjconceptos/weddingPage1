@@ -208,11 +208,8 @@ const Home = () => {
 
       `}</style>
 
-      <div className="background-container">
-        <div className="non-question-section">
-          {!showQuestions && !formSubmitted && (
-            <>
-            <div className="explanatory-text">
+
+<div className="explanatory-text">
         <p>
           textotextotexto.
         </p>
@@ -220,6 +217,13 @@ const Home = () => {
           textotextomastexto.
         </p>
       </div>
+
+
+      <div className="background-container">
+        <div className="non-question-section">
+          {!showQuestions && !formSubmitted && (
+            <>
+            
               <p style={{ textAlign: 'center' }}>
                 Por favor háblanos de tu terreno para poder hacerte una oferta
               </p>
@@ -333,7 +337,7 @@ const Home = () => {
           )}
 
           {formSubmitted && (
-            <p style={{ textAlign: 'center' }}>
+            <p style={{ textAlign: 'center', marginTop: '900px', padding: '50vh'}}>
               ¡Gracias por enviar la información! Nos pondremos en contacto contigo pronto.
             </p>
           )}
