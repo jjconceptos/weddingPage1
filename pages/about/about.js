@@ -8,7 +8,11 @@ const AboutPage = () => {
   return (
     <Layout>
     <div>
-      <h1>Sobre Nosotros</h1>
+    quienes somos
+    que hacemos
+    alianzas estrategicas 
+    etc...
+
       
       
     </div>

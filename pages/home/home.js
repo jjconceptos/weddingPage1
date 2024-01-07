@@ -148,17 +148,15 @@ const Home = () => {
     padding-bottom: 120px; /* Add padding-bottom to create space for the form */
   }
 
-  .footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    padding: 10px;
-    text-align: right;
-    color: black;
-    font-size: 14px;
-    opacity: 0.8;
+  .header {
+    position: absolute;
+    top: 5px; /* Adjust the top value as needed */
+    right: 10px; /* Adjust the right value as needed */
+    font-family: 'Your Custom Font', sans-serif;
+    font-size: 12px; 
+    justify-content: space-between;
+    color: #fff; 
+    
   }
 
   .form {
@@ -233,7 +231,13 @@ const Home = () => {
           textotextomastexto.
         </p>
       </div>
-
+      <div className="header">
+    <a href="#contacto">Contacto</a>
+    <span> | </span>
+    <a href="#sitio-de-compradores">Sitio de compradores</a>
+    <span> | </span>
+    <a href="#solicitar-informacion">Solicitar información</a>
+  </div>
 
       <div className="background-container">
         <div className="non-question-section">
@@ -365,16 +369,16 @@ const Home = () => {
 {showQuestions && (
   <div className="image-text-section">
     <div className="image-text-item">
-      <img src="image1.jpg" alt="Text 1" />
-      <p>Text 1</p>
+      <img src="terreno1.jpeg" alt="Text 1" />
+      <p>Luis Flaminguez vendio su terreno en 49,000,000</p>
     </div>
     <div className="image-text-item">
-      <img src="image2.jpg" alt="Text 2" />
-      <p>Text 2</p>
+      <img src="terreno2.jpeg" alt="Text 2" />
+      <p>Señor Gaultier vendio su terreno y ahora se construyen bodegas en el</p>
     </div>
     <div className="image-text-item">
       <img src="image3.jpg" alt="Text 3" />
-      <p>Text 3</p>
+      <p>Margarov aporto su terreno y ahora es dueño de la ciudad de Sicilia</p>
     </div>
   </div>
 )}
