@@ -16,7 +16,7 @@ const Home = () => {
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [formData, setFormData] = useState({
-    location: { address: '', street: '', zipCode: '' },
+    location: { street: '', number: '', neighbourhood: '', county: '', city: '', zipCode: '' },
     size: '',
     landUse: '',
     landPhoto: '',
@@ -98,21 +98,6 @@ const Home = () => {
 
   console.log('Clearance Level:', state.clearanceLevel);
 
-  useEffect(() => {
-    // Scroll to the form section when showQuestions becomes true
-    if (formRef.current && showQuestions) {
-      const formPosition = formRef.current.offsetTop;
-      const formHeight = formRef.current.offsetHeight;
-      const windowHeight = window.innerHeight;
-  
-      const scrollDistance = formPosition - windowHeight + formHeight + 100; // Adjust 20 for extra space
-      
-      window.scrollTo({
-        top: scrollDistance,
-        behavior: 'smooth',
-      });
-    }
-  }, [showQuestions]);
 
   const startQuestions = () => {
     console.log('Starting questions...');
@@ -121,11 +106,9 @@ const Home = () => {
     // Scroll down to the form section when starting questions
     setTimeout(() => {
       if (formRef.current) {
-        const formPosition = formRef.current.offsetTop;
-        const formHeight = formRef.current.offsetHeight;
-        const windowHeight = window.innerHeight;
         
-        const scrollDistance = formPosition - windowHeight + formHeight + 10; // Adjust 20 for extra space
+        
+        const scrollDistance =  1000; // Adjust 20 for extra space
         
         window.scrollBy({
           top: scrollDistance,
@@ -274,11 +257,29 @@ const Home = () => {
                 {currentQuestion === 0 && (
                   <>
                     <label>
-                      Dirección:
+                      Calle:
                       <input
                         type="text"
-                        name="location.address"
-                        value={formData.location.address}
+                        name="location.street"
+                        value={formData.location.street}
+                        onChange={handleChange}
+                      />
+                    </label>
+                    <label>
+                      Numero:
+                      <input
+                        type="text"
+                        name="location.number"
+                        value={formData.location.number}
+                        onChange={handleChange}
+                      />
+                    </label>
+                    <label>
+                      Colonia:
+                      <input
+                        type="text"
+                        name="location.neighbourhood"
+                        value={formData.location.neighbourhood}
                         onChange={handleChange}
                       />
                     </label>
@@ -286,8 +287,17 @@ const Home = () => {
                       Delegación:
                       <input
                         type="text"
-                        name="location.street"
-                        value={formData.location.street}
+                        name="location.county"
+                        value={formData.location.county}
+                        onChange={handleChange}
+                      />
+                    </label>
+                    <label>
+                      City:
+                      <input
+                        type="text"
+                        name="location.city"
+                        value={formData.location.city}
                         onChange={handleChange}
                       />
                     </label>
@@ -389,9 +399,8 @@ const Home = () => {
           )}
 
 
-          {/* Image-text representations section */}
 
-  {/* Image-text representations section */}
+  {/*  
 {showQuestions && (
   <div className="image-text-section">
     <div className="image-text-item">
@@ -408,7 +417,7 @@ const Home = () => {
     </div>
   </div>
 )}
-
+*/}
 
 
 
