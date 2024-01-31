@@ -293,7 +293,7 @@ const Home = () => {
                       />
                     </label>
                     <label>
-                      City:
+                      Ciudad:
                       <input
                         type="text"
                         name="location.city"

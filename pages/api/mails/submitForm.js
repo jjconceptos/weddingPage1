@@ -48,6 +48,7 @@ const sendEmailWithImage = async (formData, imageBuffer) => {
   }
 };
 
+
 // Define your API route handler for file uploads
 export default async function handler(req, res) {
   try {
@@ -62,30 +63,32 @@ export default async function handler(req, res) {
 
     // Use the "upload" Multer middleware to handle file uploads
     upload.single('landPhoto')(req, res, async function (err) {
-      if (err) {
-        // Handle any Multer errors here
-        console.error('Multer error:', err);
-        return res.status(500).json('File upload error: ' + err.message);
+      try {
+        if (err) {
+          // Handle any Multer errors here
+          console.error('Multer error:', err);
+          throw new Error('File upload error: ' + err.message);
+        }
+
+        // Log the received request and file details
+        console.log('Received a file upload request:');
+        console.log('Uploaded file:', req.file); // Log the uploaded file details
+
+        // Additional processing logic if needed
+
+        // Send an email with the attached image or without it
+        await sendEmailWithImage(req.body, req.file ? req.file.buffer : null);
+
+        // Respond with a success message
+        res.status(200).json('File upload complete');
+      } catch (error) {
+        console.error('Error:', error);
+        res.status(500).json('File upload error: ' + error.message);
       }
-
-      // Log the received request and file details
-      console.log('Received a file upload request:');
-      console.log('Uploaded file:', req.file); // Log the uploaded file details
-
-      // Validate that a file was uploaded
-      if (!req.file) {
-        console.log('Validation failed: Missing photo');
-        return res.status(400).json({ error: 'Photo is required' });
-      }
-
-      // Send an email with the attached image
-      await sendEmailWithImage(req.body, req.file.buffer);
-
-      // Respond with a success message
-      res.status(200).json('File upload complete');
     });
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json('File upload error: ' + error.message);
   }
 }
+
