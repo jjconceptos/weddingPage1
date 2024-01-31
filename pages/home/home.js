@@ -10,6 +10,7 @@ const Home = () => {
     'En donde esta?',
     'Cual es el área de tu terreno?',
     'Conoces el uso de suelo?',
+    'Nos puedes enseñar una foto del terreno?',
     'Por favor danos tu contacto',
   ]);
 
@@ -18,6 +19,7 @@ const Home = () => {
     location: { address: '', street: '', zipCode: '' },
     size: '',
     landUse: '',
+    landPhoto: '',
     contact: { name: '', lastName: '', email: '', cellphone: '' },
   });
   const [showQuestions, setShowQuestions] = useState(false);
@@ -25,7 +27,7 @@ const Home = () => {
   const isLastQuestion = currentQuestion === questions.length - 1;
 
   const handleAnswer = async (event) => {
-    event.preventDefault();  // Prevent the default form behavior
+    event.preventDefault();
   
     // Move to the next question if it exists
     if (currentQuestion < questions.length - 1) {
@@ -33,12 +35,20 @@ const Home = () => {
     } else {
       // Send the form data to the serverless function when "Submit" is clicked
       try {
+        const formDataToSend = new FormData();
+        for (const key in formData) {
+          if (formData.hasOwnProperty(key)) {
+            if (key === 'landPhoto') {
+              formDataToSend.append(key, formData[key]);
+            } else {
+              formDataToSend.append(key, JSON.stringify(formData[key]));
+            }
+          }
+        }
+  
         const response = await fetch('/api/mails/submitForm', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+          body: formDataToSend,
         });
   
         if (response.ok) {
@@ -56,30 +66,35 @@ const Home = () => {
     }
   };
   
+  
 
   const handleChange = (e) => {
-    // Update form data on input change
-    const { name, value } = e.target;
-
-    if (name.includes('location.')) {
-      // Update location subfields
-      const locationField = name.split('.')[1];
-      setFormData((prevData) => ({
-        ...prevData,
-        location: { ...prevData.location, [locationField]: value },
-      }));
-    } else if (name.includes('contact.')) {
-      // Update contact subfields
-      const contactField = name.split('.')[1];
-      setFormData((prevData) => ({
-        ...prevData,
-        contact: { ...prevData.contact, [contactField]: value },
-      }));
+    const { name, value, type, files } = e.target;
+  
+    if (type === 'file') {
+      // Handle file input separately
+      const photoFile = files[0];
+      setFormData((prevData) => ({ ...prevData, [name]: photoFile }));
+  
+      // Optionally, you can display the file name for user reference
+      console.log('Selected photo:', photoFile.name);
     } else {
-      // Update other fields
-      setFormData((prevData) => ({ ...prevData, [name]: value }));
+      // Handle other input types
+      // Update form data on input change
+      if (name.includes('location.') || name.includes('contact.')) {
+        const field = name.split('.')[1];
+        setFormData((prevData) => ({
+          ...prevData,
+          [name.split('.')[0]]: { ...prevData[name.split('.')[0]], [field]: value },
+        }));
+      } else {
+        // Update other fields
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
+      }
     }
   };
+  
+  
 
   console.log('Clearance Level:', state.clearanceLevel);
 
@@ -310,6 +325,17 @@ const Home = () => {
                   </label>
                 )}
                 {currentQuestion === 3 && (
+                  <label>
+                    Uso de suelo:
+                    <input
+                      type="file"
+                      accept="image/*"
+                      name="landPhoto"
+                      onChange={handleChange}
+                    />
+                  </label>
+                )}
+                {currentQuestion === 4 && (
                   <>
                     <label>
                       Nombre:
@@ -374,7 +400,7 @@ const Home = () => {
     </div>
     <div className="image-text-item">
       <img src="terreno2.jpeg" alt="Text 2" />
-      <p>Señor Gaultier vendio su terreno y ahora se construyen bodegas en el</p>
+      <p>Señor Gaultier vendió su terreno y ahora se construyen bodegas en el</p>
     </div>
     <div className="image-text-item">
       <img src="image3.jpg" alt="Text 3" />
