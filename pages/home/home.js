@@ -8,6 +8,8 @@ const Home = () => {
   const formRef = useRef(null);
   const [showExplanatoryText, setShowExplanatoryText] = useState(true);
   const [showPrivacyNotice, setShowPrivacyNotice] = useState(true);
+  const [privacyAgreed, setPrivacyAgreed] = useState(false);
+
   const [questions, setQuestions] = useState([
     'Aviso de privacidad',
     'En donde esta?',
@@ -122,11 +124,17 @@ const Home = () => {
     }, 1);
   };
 
+  const handleBack = () => {
+    // Move to the previous question if it's not the first question
+    if (currentQuestion > 0) {
+      setCurrentQuestion((prevQuestion) => prevQuestion - 1);
+    }
+  };
+
   const handlePrivacyAgreement = () => {
     // Hide the privacy notice when the user agrees
     setShowPrivacyNotice(false);
-
-    // You may want to perform additional actions here if needed
+    setPrivacyAgreed(true);
   };
   
 
@@ -190,9 +198,30 @@ const Home = () => {
     box-sizing: border-box;
   }
 
-  button {
-    margin-top: 1vw; /* Adjust margin-top using vw */
-    z-index: 1;
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+    gap: 1vw; 
+  }
+
+  .back-button,
+  .next-button {
+    padding: 1vw 2vw; /* Adjust padding using vw */
+    border: none;
+    border-radius: 4vw; /* Adjust border-radius using vw */
+    cursor: pointer;
+    font-size: 1.5vw; /* Adjust font-size using vw */
+  }
+
+  .back-button {
+    background-color: #0070f3;
+    color: #fff;
+  }
+
+  .next-button {
+    background-color: #0070f3;
+    color: #fff;
   }
 
   .question-trigger-section {
@@ -216,7 +245,7 @@ const Home = () => {
   .privacy-checkbox {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 220px;
+    margin-left: 200px;
     
   }
 
@@ -414,9 +443,20 @@ const Home = () => {
                     </label>
                   </>
                 )}
-                <button onClick={handleAnswer}>
-                  {isLastQuestion ? 'Enviar' : 'Siguiente'}
+                <div className="button-container">
+                {currentQuestion > 1 && (
+                <button type="button" onClick={handleBack} className="back-button">
+                  Atrás
                 </button>
+)}
+              <button
+                onClick={handleAnswer}
+                disabled={currentQuestion === 0 && !privacyAgreed}
+                className="next-button"
+              >
+                {isLastQuestion ? 'Enviar' : 'Siguiente'}
+              </button>
+            </div>
               </form>
             </>
           )}
