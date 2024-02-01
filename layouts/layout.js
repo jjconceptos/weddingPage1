@@ -49,44 +49,41 @@ const Layout = ({ children }) => {
           margin: 0;
           padding: 0;
           display: flex;
-          min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+          min-height: 100vh;
         }
-      
-      
+        
         .main-content {
           display: flex;
           flex-direction: column;
-          transition: margin-left 0.5s; /* Add this line for smooth transition */
-          
-          z-index: 1; 
-          width: 100%; /* Make sure it takes the full width */
+          z-index: 1;
+          width: 100%;
         }
-      
+        
         .content-container {
           flex: 1;
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 100%; /* Make sure it takes the full width */
+          width: 100%;
         }
-      
+        
         ul {
           list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2; // Ensure it appears above other elements
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 2;
         }
-
+        
         li {
           margin: 10px;
         }
-
+        
         ul.nav-links-right {
           list-style: none;
           display: flex;
@@ -95,17 +92,14 @@ const Layout = ({ children }) => {
           padding: 0;
           position: absolute;
           top: 20px;
-          z-index: 2; // Ensure it appears above other elements
+          z-index: 2;
         }
-
+        
         li.nav-links-right {
           justify-content: flex-end;
           right: 20px;
         }
-
-
-      
-        /* Custom styling for the footer */
+        
         footer {
           position: fixed;
           bottom: 0;
@@ -117,9 +111,9 @@ const Layout = ({ children }) => {
           color: black;
           font-size: 14px;
           opacity: 0.8;
-          z-index: 2; /* Set z-index higher than the body */
+          z-index: 2;
         }
-
+        
         .content-container.centered {
           justify-content: center;
           align-items: center;

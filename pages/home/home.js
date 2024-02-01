@@ -6,6 +6,7 @@ import { useAuth } from '/auth/authContext';
 const Home = () => {
   const { state } = useAuth();
   const formRef = useRef(null);
+  const [showExplanatoryText, setShowExplanatoryText] = useState(true);
   const [questions, setQuestions] = useState([
     'En donde esta?',
     'Cual es el área de tu terreno?',
@@ -102,6 +103,7 @@ const Home = () => {
   const startQuestions = () => {
     console.log('Starting questions...');
     setShowQuestions(true);
+    setShowExplanatoryText(false); // Hide explanatory text
   
     // Scroll down to the form section when starting questions
     setTimeout(() => {
@@ -128,17 +130,17 @@ const Home = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 55vh; /* Adjust the min-height as needed */
+    min-height: 55vh;
   }
 
   .background-container {
     position: absolute;
-    top: 25px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    margin: 0cm;
+    margin: 0;
     background-image: url('schematic.jpeg');
     background-size: cover;
     background-position: center;
@@ -154,25 +156,24 @@ const Home = () => {
     font-size: 12px; 
     justify-content: space-between;
     color: #fff; 
-    
   }
 
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 75vh; /* Change to auto */
-    padding: 50vh;
+    margin-top: 1vh; /* Adjust the margin-top as needed for spacing */
+    padding: 20px;
   }
 
   label {
     margin: 10px 0;
     font-weight: bold;
-    width: 300px;
+    width: 100%;
   }
 
   input {
-    padding: 8px;
+    padding: 4px;
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -187,47 +188,27 @@ const Home = () => {
 
   .non-question-section {
     text-align: center;
-    margin-top: 650px;
+    margin-top: 50vh; /* Adjust the margin-top as needed */
   }
 
   .explanatory-text {
     position: absolute;
-    top: 25vh;  // Adjust the value as needed to position it at the desired height
+    top: 25vh; /* Adjust the top value as needed to position it at the desired height */
     width: 100%;
     text-align: center;
     z-index: 2; // Ensure it appears above other elements
   }
-
-  .image-text-section {
-    position: absolute;
-    top: 190vh; /* Adjust the top value as needed */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-  }
-
-  .image-text-item {
-    text-align: center;
-  }
-
-  .image-text-item img {
-    width: 100px; /* Adjust image width as needed */
-    height: 100px; /* Adjust image height as needed */
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
 `}</style>
 
 
+
 <div className="explanatory-text">
-        <p>
-          textotextotexto.
-        </p>
-        <p>
-          textotextomastexto.
-        </p>
+{showExplanatoryText && (
+          <>
+            <p>textotextotexto.</p>
+            <p>textotextomastexto.</p>
+          </>
+        )}
       </div>
       <div className="header">
     <a href="#contacto">Contacto</a>
