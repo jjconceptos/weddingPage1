@@ -179,7 +179,7 @@ const Home = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8vh; /* Adjust the margin-top using vw for spacing */
+    margin-top: 7vh; /* Adjust the margin-top using vw for spacing */
     padding: 10vw; /* Adjust padding using vw */
   }
 
@@ -245,7 +245,7 @@ const Home = () => {
   .privacy-checkbox {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 200px;
+  
     
   }
 
