@@ -5,17 +5,12 @@ import 'layouts/styles.css';
 
 const Layout = ({ children }) => {
   const { state } = useAuth();
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+ 
   const [centeredContent, setCenteredContent] = useState(false);
 
-  useEffect(() => {
-    console.log('isSidebarOpen:', isSidebarOpen);
-    setCenteredContent(!isSidebarOpen);
-  }, [isSidebarOpen]);
+ 
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+ 
 
   return (
     <div>
@@ -27,8 +22,8 @@ const Layout = ({ children }) => {
 
       
 {/* Main Content */}
-<div className={`main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
-        <div className="toggle-sidebar" onClick={toggleSidebar}>
+<div >
+        <div >
           {/* Rice-like figure or small circle */}
           <div className="rice-figure"></div>
         </div>
@@ -62,8 +57,8 @@ const Layout = ({ children }) => {
           display: flex;
           flex-direction: column;
           transition: margin-left 0.5s; /* Add this line for smooth transition */
-          margin-left: ${isSidebarOpen ? '250px' : '0'}; /* Adjust the margin based on sidebar state */
-          z-index: 1; /* Set z-index lower than the sidebar */
+          
+          z-index: 1; 
           width: 100%; /* Make sure it takes the full width */
         }
       
