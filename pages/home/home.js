@@ -133,8 +133,14 @@ const Home = () => {
 
   const handlePrivacyAgreement = () => {
     // Hide the privacy notice when the user agrees
+    if (!privacyAgreed) {
+      // Set privacyAgreed to true only if the checkbox is checked
+      setPrivacyAgreed(true);
+    } else {
+      // Uncheck has been triggered, set privacyAgreed to false
+      setPrivacyAgreed(false);
+    }
     setShowPrivacyNotice(false);
-    setPrivacyAgreed(true);
   };
   
 
