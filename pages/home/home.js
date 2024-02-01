@@ -188,7 +188,7 @@ const Home = () => {
 
   .question-trigger-section {
     text-align: center;
-    margin-top: 60vh; /* Adjust margin-top using vw */
+    margin-top: 50vh; /* Adjust margin-top using vw */
   }
 
   .centered-text {
