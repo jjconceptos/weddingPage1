@@ -7,7 +7,9 @@ const Home = () => {
   const { state } = useAuth();
   const formRef = useRef(null);
   const [showExplanatoryText, setShowExplanatoryText] = useState(true);
+  const [showPrivacyNotice, setShowPrivacyNotice] = useState(true);
   const [questions, setQuestions] = useState([
+    'Aviso de privacidad',
     'En donde esta?',
     'Cual es el área de tu terreno?',
     'Conoces el uso de suelo?',
@@ -119,6 +121,13 @@ const Home = () => {
       }
     }, 1);
   };
+
+  const handlePrivacyAgreement = () => {
+    // Hide the privacy notice when the user agrees
+    setShowPrivacyNotice(false);
+
+    // You may want to perform additional actions here if needed
+  };
   
 
   return (
@@ -198,12 +207,32 @@ const Home = () => {
     text-align: center;
     z-index: 2; // Ensure it appears above other elements
   }
+  .privacy-section {
+    text-align: center;
+    margin-top: 1vw; /* Adjust margin-top using vw */
+  }
+
+  
+  .privacy-checkbox {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 220px;
+    
+  }
+
 `}</style>
 
 
 
 
 <div className="centered-text">
+  
+
+
+
+
+
+
 {showExplanatoryText && (
           <>
             <p>textotextotexto.</p>
@@ -231,12 +260,30 @@ const Home = () => {
             </>
           )}
         </div>
+        
           {!formSubmitted && showQuestions && currentQuestion < questions.length && (
             <>
               <form className="form" ref={formRef}>
                 <p>{questions[currentQuestion]}</p>
 
                 {currentQuestion === 0 && (
+  <div className="privacy-section">
+    <label>
+      <p>
+        Para poder procesar tu solicitud, necesitamos recopilar y procesar tu información personal. Al enviar este formulario, aceptas que tus datos serán utilizados de acuerdo con nuestra política de privacidad.
+      </p>
+    </label>
+    
+      <input className="privacy-checkbox"
+        type="checkbox"
+        onChange={handlePrivacyAgreement}
+      />
+      
+    
+  </div>
+)}
+
+                {currentQuestion === 1 && (
                   <>
                     <label>
                       Calle:
@@ -294,7 +341,7 @@ const Home = () => {
                     </label>
                   </>
                 )}
-                {currentQuestion === 1 && (
+                {currentQuestion === 2 && (
                   <label>
                     Tamaño m2:
                     <input
@@ -305,7 +352,7 @@ const Home = () => {
                     />
                   </label>
                 )}
-                {currentQuestion === 2 && (
+                {currentQuestion === 3 && (
                   <label>
                     Uso de suelo:
                     <input
@@ -316,7 +363,7 @@ const Home = () => {
                     />
                   </label>
                 )}
-                {currentQuestion === 3 && (
+                {currentQuestion === 4 && (
                   <label>
                     Uso de suelo:
                     <input
@@ -327,7 +374,7 @@ const Home = () => {
                     />
                   </label>
                 )}
-                {currentQuestion === 4 && (
+                {currentQuestion === 5 && (
                   <>
                     <label>
                       Nombre:
