@@ -162,7 +162,7 @@ const Home = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh; /* Adjust the margin-top using vw for spacing */
+    margin-top: 8vh; /* Adjust the margin-top using vw for spacing */
     padding: 10vw; /* Adjust padding using vw */
   }
 
@@ -189,7 +189,6 @@ const Home = () => {
   .question-trigger-section {
     text-align: center;
     margin-top: 60vh; /* Adjust margin-top using vw */
-    width: 70%;
   }
 
   .centered-text {
