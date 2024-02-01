@@ -145,15 +145,15 @@ const Home = () => {
     background-size: cover;
     background-position: center;
     z-index: 0;
-    padding-bottom: 120px; /* Add padding-bottom to create space for the form */
+    padding-bottom: 10vw; /* Adjust padding-bottom for better responsiveness */
   }
 
   .header {
     position: absolute;
-    top: 5px; /* Adjust the top value as needed */
-    right: 10px; /* Adjust the right value as needed */
+    top: 2vw; /* Adjust the top value using vw */
+    right: 2vw; /* Adjust the right value using vw */
     font-family: 'Your Custom Font', sans-serif;
-    font-size: 12px; 
+    font-size: 2vw; /* Adjust the font-size using vw */
     justify-content: space-between;
     color: #fff; 
   }
@@ -162,43 +162,44 @@ const Home = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1vh; /* Adjust the margin-top as needed for spacing */
-    padding: 20px;
+    margin-top: 10vh; /* Adjust the margin-top using vw for spacing */
+    padding: 10vw; /* Adjust padding using vw */
   }
 
   label {
-    margin: 10px 0;
+    margin: 1vw 0; /* Adjust margin using vw */
     font-weight: bold;
     width: 100%;
   }
 
   input {
-    padding: 4px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.5vw; /* Adjust padding using vw */
+    margin: 0.5vw; /* Adjust margin using vw */
+    border: 0.1vw solid #ccc; /* Adjust border thickness using vw */
+    border-radius: 4vw; /* Adjust border-radius using vw */
     width: 100%;
     box-sizing: border-box;
   }
 
   button {
-    margin-top: 10px;
+    margin-top: 1vw; /* Adjust margin-top using vw */
     z-index: 1;
   }
 
   .non-question-section {
     text-align: center;
-    margin-top: 50vh; /* Adjust the margin-top as needed */
+    margin-top: 5vw; /* Adjust margin-top using vw */
   }
 
   .explanatory-text {
     position: absolute;
-    top: 25vh; /* Adjust the top value as needed to position it at the desired height */
+    top: 10vw; /* Adjust the top value using vw */
     width: 100%;
     text-align: center;
     z-index: 2; // Ensure it appears above other elements
   }
 `}</style>
+
 
 
 
