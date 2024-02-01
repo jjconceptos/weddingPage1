@@ -186,9 +186,10 @@ const Home = () => {
     z-index: 1;
   }
 
-  .non-question-section {
+  .question-trigger-section {
     text-align: center;
     margin-top: 60vh; /* Adjust margin-top using vw */
+    width: 70%;
   }
 
   .centered-text {
@@ -220,7 +221,7 @@ const Home = () => {
   </div>
 
       
-        <div className="non-question-section">
+        <div className="question-trigger-section">
           {!showQuestions && !formSubmitted && (
             <>
             
