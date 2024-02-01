@@ -135,13 +135,13 @@ const Home = () => {
 
   .background-container {
     position: absolute;
-    top: 0;
+    top: -50vh;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
     margin: 0;
-    background-image: url('schematic.jpeg');
+    
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -191,10 +191,10 @@ const Home = () => {
     margin-top: 60vh; /* Adjust margin-top using vw */
   }
 
-  .explanatory-text {
+  .centered-text {
     position: absolute;
-    top: 25vh; /* Adjust the top value using vw */
-    width: 100%;
+    top: 35vh; /* Adjust the top value using vw */
+    width: 70%;
     text-align: center;
     z-index: 2; // Ensure it appears above other elements
   }
@@ -203,7 +203,7 @@ const Home = () => {
 
 
 
-<div className="explanatory-text">
+<div className="centered-text">
 {showExplanatoryText && (
           <>
             <p>textotextotexto.</p>
@@ -219,7 +219,7 @@ const Home = () => {
     <a href="#solicitar-informacion">Solicitar información</a>
   </div>
 
-      <div className="background-container">
+      
         <div className="non-question-section">
           {!showQuestions && !formSubmitted && (
             <>
@@ -230,7 +230,7 @@ const Home = () => {
               <button onClick={startQuestions}>Comenzar</button>
             </>
           )}
-
+        </div>
           {!formSubmitted && showQuestions && currentQuestion < questions.length && (
             <>
               <form className="form" ref={formRef}>
@@ -375,38 +375,18 @@ const Home = () => {
           )}
 
           {formSubmitted && (
-            <p style={{ textAlign: 'center', marginTop: '900px', padding: '50vh'}}>
+            <p className="centered-text">
               ¡Gracias por enviar la información! Nos pondremos en contacto contigo pronto.
             </p>
           )}
 
 
 
-  {/*  
-{showQuestions && (
-  <div className="image-text-section">
-    <div className="image-text-item">
-      <img src="terreno1.jpeg" alt="Text 1" />
-      <p>Luis Flaminguez vendio su terreno en 49,000,000</p>
-    </div>
-    <div className="image-text-item">
-      <img src="terreno2.jpeg" alt="Text 2" />
-      <p>Señor Gaultier vendió su terreno y ahora se construyen bodegas en el</p>
-    </div>
-    <div className="image-text-item">
-      <img src="image3.jpg" alt="Text 3" />
-      <p>Margarov aporto su terreno y ahora es dueño de la ciudad de Sicilia</p>
-    </div>
-  </div>
-)}
-*/}
 
-
-
-        </div>
+        
 
        
-      </div>
+      
     </Layout>
   );
 };
