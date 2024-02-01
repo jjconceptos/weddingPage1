@@ -188,12 +188,12 @@ const Home = () => {
 
   .non-question-section {
     text-align: center;
-    margin-top: 5vw; /* Adjust margin-top using vw */
+    margin-top: 60vh; /* Adjust margin-top using vw */
   }
 
   .explanatory-text {
     position: absolute;
-    top: 10vw; /* Adjust the top value using vw */
+    top: 25vh; /* Adjust the top value using vw */
     width: 100%;
     text-align: center;
     z-index: 2; // Ensure it appears above other elements
