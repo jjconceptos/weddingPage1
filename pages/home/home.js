@@ -232,7 +232,7 @@ const LandingPage = () => {
           margin-top: 100vw;
           width: 100%; /* Set the width to 70% of the viewport width */
           height: auto; /* Maintain the aspect ratio */
-          transform: scale(2.1); /* Scale the image by 1.3 times its original size */
+          transform: scale(.5); /* Scale the image by 1.3 times its original size */
         }
 
         .hosting-image {
@@ -246,7 +246,7 @@ const LandingPage = () => {
 
         .main-title-section-container {
         position: absolute;
-        margin-top: 40vh;
+        margin-top: 10vh;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -271,7 +271,7 @@ const LandingPage = () => {
 
         .container {
           position: absolute;
-          margin-top: 620vh;
+          margin-top: 200vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -280,7 +280,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 1250vh;
+          margin-top: 400vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -293,7 +293,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 1460vh;
+          margin-top: 600vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -306,7 +306,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 2670vh;
+          margin-top: 1820vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -319,7 +319,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 4080vh;
+          margin-top: 2980vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -328,7 +328,7 @@ const LandingPage = () => {
 
           .container-five {
             position: absolute;
-          margin-top: 4200vh;
+          margin-top: 3110vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -337,7 +337,7 @@ const LandingPage = () => {
 
           .container-six {
             position: absolute;
-          margin-top: 4320vh;
+          margin-top: 3250vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -434,7 +434,7 @@ const LandingPage = () => {
           margin-top: 100vw;
           width: 100%; /* Set the width to 70% of the viewport width */
           height: auto; /* Maintain the aspect ratio */
-          transform: scale(2.1); /* Scale the image by 1.3 times its original size */
+          transform: scale(.5); /* Scale the image by 1.3 times its original size */
         }
 
         .hosting-image {
@@ -448,7 +448,7 @@ const LandingPage = () => {
 
         .main-title-section-container {
         position: absolute;
-        margin-top: 40vh;
+        margin-top: -50vh;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -591,6 +591,7 @@ const LandingPage = () => {
 
 <div className="presentation-card-container">
       <div className="main-title-section-container">
+      <img src="/dycLogo.png" alt="Your Image" className="image"  />
       <div className="title">
         Daniela y Cesar
       </div>
