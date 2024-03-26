@@ -1,487 +1,871 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 import Layout from '/layouts/layout';
-import { useAuth } from '/auth/authContext';
+import 'layouts/carousel.css';
 
-const Home = () => {
-  const { state } = useAuth();
-  const formRef = useRef(null);
-  const [showExplanatoryText, setShowExplanatoryText] = useState(true);
-  const [showPrivacyNotice, setShowPrivacyNotice] = useState(true);
-  const [privacyAgreed, setPrivacyAgreed] = useState(false);
 
-  const [questions, setQuestions] = useState([
-    'Aviso de privacidad',
-    'En donde esta?',
-    'Cual es el área de tu terreno?',
-    'Conoces el uso de suelo?',
-    'Nos puedes enseñar una foto del terreno?',
-    'Por favor danos tu contacto',
-  ]);
+const LandingPage = () => {
 
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({
-    location: { street: '', number: '', neighbourhood: '', county: '', city: '', zipCode: '' },
-    size: '',
-    landUse: '',
-    landPhoto: '',
-    contact: { name: '', lastName: '', email: '', cellphone: '' },
-  });
-  const [showQuestions, setShowQuestions] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const isLastQuestion = currentQuestion === questions.length - 1;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [sections, setSections] = useState([]);
 
-  const handleAnswer = async (event) => {
-    event.preventDefault();
-  
-    // Move to the next question if it exists
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+  // Define sections and their scroll positions
+  const sectionsData = [
+    { name: 'Inicio', scrollPosition: 0 },
+    { name: 'Fotos', scrollPosition: 680 },
+    { name: 'Vestimenta', scrollPosition: 10500 },
+    { name: 'Hospedaje', scrollPosition: 12000 },
+    { name: 'Maquillaje y peinado', scrollPosition: 27000 },
+    { name: 'Transporte', scrollPosition: 27800 },
+    { name: 'Mesa de regalos', scrollPosition: 28600 },
+    // Add more sections as needed
+  ];
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    // Set sections only when the menu is opened
+    if (!isMenuOpen) {
+      setSections(sectionsData);
     } else {
-      // Send the form data to the serverless function when "Submit" is clicked
-      try {
-        const formDataToSend = new FormData();
-        for (const key in formData) {
-          if (formData.hasOwnProperty(key)) {
-            if (key === 'landPhoto') {
-              formDataToSend.append(key, formData[key]);
-            } else {
-              formDataToSend.append(key, JSON.stringify(formData[key]));
-            }
-          }
-        }
-  
-        const response = await fetch('/api/mails/submitForm', {
-          method: 'POST',
-          body: formDataToSend,
-        });
-  
-        if (response.ok) {
-          console.log('Form data sent successfully:', formData);
-          setFormSubmitted(true);
-  
-          // Set showQuestions to true after submitting the form
-          setShowQuestions(true);
-        } else {
-          console.error('Failed to send form data:', response.statusText);
-        }
-      } catch (error) {
-        console.error('Error sending form data:', error);
-      }
-    }
-  };
-  
-  
-
-  const handleChange = (e) => {
-    const { name, value, type, files } = e.target;
-  
-    if (type === 'file') {
-      // Handle file input separately
-      const photoFile = files[0];
-      setFormData((prevData) => ({ ...prevData, [name]: photoFile }));
-  
-      // Optionally, you can display the file name for user reference
-      console.log('Selected photo:', photoFile.name);
-    } else {
-      // Handle other input types
-      // Update form data on input change
-      if (name.includes('location.') || name.includes('contact.')) {
-        const field = name.split('.')[1];
-        setFormData((prevData) => ({
-          ...prevData,
-          [name.split('.')[0]]: { ...prevData[name.split('.')[0]], [field]: value },
-        }));
-      } else {
-        // Update other fields
-        setFormData((prevData) => ({ ...prevData, [name]: value }));
-      }
-    }
-  };
-  
-  
-
-  console.log('Clearance Level:', state.clearanceLevel);
-
-
-  const startQuestions = () => {
-    console.log('Starting questions...');
-    setShowQuestions(true);
-    setShowExplanatoryText(false); // Hide explanatory text
-  
-    // Scroll down to the form section when starting questions
-    setTimeout(() => {
-      if (formRef.current) {
-        
-        
-        const scrollDistance =  1000; // Adjust 20 for extra space
-        
-        window.scrollBy({
-          top: scrollDistance,
-          behavior: 'smooth',
-        });
-      }
-    }, 1);
-  };
-
-  const handleBack = () => {
-    // Move to the previous question if it's not the first question
-    if (currentQuestion > 0) {
-      setCurrentQuestion((prevQuestion) => prevQuestion - 1);
+      setSections([]); // Clear sections when the menu is closed
     }
   };
 
-  const handlePrivacyAgreement = () => {
-    // Hide the privacy notice when the user agrees
-    if (!privacyAgreed) {
-      // Set privacyAgreed to true only if the checkbox is checked
-      setPrivacyAgreed(true);
-    } else {
-      // Uncheck has been triggered, set privacyAgreed to false
-      setPrivacyAgreed(false);
-    }
-    setShowPrivacyNotice(false);
+  
+
+  const handleMenuItemClick = (scrollPosition) => {
+    setIsMenuOpen(false); // Close menu when a menu item is clicked
+    window.scrollTo({ top: scrollPosition, behavior: 'smooth' }); // Scroll to the selected section
+  };
+
+  const handleConocenosClick = () => {
+    // Specify the position you want to scroll to (adjust the value as needed)
+    const scrollPosition = 680; // Replace with your desired position
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth', // Use smooth scrolling
+    });
+  };
+
+  const yourCarouselItems1 = [
+    
+    {
+      imagePath: '/dyc1.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc2.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc3.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc4.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc5.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc6.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc7.jpg',
+     
+      
+    },
+    {
+      imagePath: '/dyc8.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc9.jpg',
+    
+      
+    },
+    {
+      imagePath: '/dyc10.jpg',
+      
+      
+    },
+    {
+      imagePath: '/dyc11.jpeg',
+      
+      
+    },
+    
+  ];
+
+  const Carousel = ({ items }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+  
+    const handlePrev = () => {
+      setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : items.length - 1));
+    };
+  
+    const handleNext = () => {
+      setCurrentIndex((prevIndex) => (prevIndex < items.length - 1 ? prevIndex + 1 : 0));
+    };
+  
+    return (
+      <div className="carousel">
+        <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {items.map((item, index) => (
+            <div key={index} className="carousel-item">
+              <img src={item.imagePath} alt={`Image ${index + 1}`} />
+              <div className="carousel-footer">
+                <p>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button type="button" onClick={handlePrev} className="carousel-button prev">
+        {"<"} 
+        </button>
+        <button type="button" onClick={handleNext} className="carousel-button next">
+        {">"} 
+        </button>
+      </div>
+    );
   };
   
+
 
   return (
     <Layout>
-      <style jsx global>{`
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 55vh;
-  }
-
-  .background-container {
-    position: absolute;
-    top: -50vh;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-    padding-bottom: 10vw; /* Adjust padding-bottom for better responsiveness */
-  }
-
-  .header {
-    position: absolute;
-    top: 2vw; /* Adjust the top value using vw */
-    right: 2vw; /* Adjust the right value using vw */
-    font-family: 'Your Custom Font', sans-serif;
-    font-size: 2vw; /* Adjust the font-size using vw */
-    justify-content: space-between;
-    color: #fff; 
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 7vh; /* Adjust the margin-top using vw for spacing */
-    padding: 10vw; /* Adjust padding using vw */
-  }
-
-  label {
-    margin: 1vw 0; /* Adjust margin using vw */
-    font-weight: bold;
-    width: 100%;
-  }
-
-  input {
-    padding: 0.5vw; /* Adjust padding using vw */
-    margin: 0.5vw; /* Adjust margin using vw */
-    border: 0.1vw solid #ccc; /* Adjust border thickness using vw */
-    border-radius: 4vw; /* Adjust border-radius using vw */
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1vh;
-    gap: 1vw; 
-  }
-
-  .back-button,
-  .next-button {
-    padding: 1vw 2vw; /* Adjust padding using vw */
-    border: none;
-    border-radius: 4vw; /* Adjust border-radius using vw */
-    cursor: pointer;
-    font-size: 1.5vw; /* Adjust font-size using vw */
-  }
-
-  .back-button {
-    background-color: #0070f3;
-    color: #fff;
-  }
-
-  .next-button {
-    background-color: #0070f3;
-    color: #fff;
-  }
-
-  .question-trigger-section {
-    text-align: center;
-    margin-top: 30vh; /* Adjust margin-top using vw */
-  }
-
-  .centered-text {
-    position: absolute;
-    top: 35vh; /* Adjust the top value using vw */
-    width: 70%;
-    text-align: center;
-    z-index: 2; // Ensure it appears above other elements
-  }
-  .privacy-section {
-    text-align: center;
-    margin-top: 1vw; /* Adjust margin-top using vw */
-  }
-
-  
-  .privacy-checkbox {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  
-    
-  }
-
-`}</style>
-
-
-
-
-<div className="centered-text">
-  
-
-
-
-
-
-
-{showExplanatoryText && (
-          <>
-            <p>textotextotexto.</p>
-            <p>textotextomastexto.</p>
-          </>
-        )}
-      </div>
-      <div className="header">
-    <a href="#contacto">Contacto</a>
-    <span> | </span>
-    <a href="#sitio-de-compradores">Sitio de compradores</a>
-    <span> | </span>
-    <a href="#solicitar-informacion">Solicitar información</a>
-  </div>
-
-      
-        <div className="question-trigger-section">
-          {!showQuestions && !formSubmitted && (
-            <>
-            
-              <p style={{ textAlign: 'center' }}>
-                Por favor háblanos de tu terreno para poder hacerte una oferta
-              </p>
-              <button onClick={startQuestions}>Comenzar</button>
-            </>
-          )}
-        </div>
-        
-          {!formSubmitted && showQuestions && currentQuestion < questions.length && (
-            <>
-              <form className="form" ref={formRef}>
-                <p>{questions[currentQuestion]}</p>
-
-                {currentQuestion === 0 && (
-  <div className="privacy-section">
-    <label>
-      <p>
-        Para poder procesar tu solicitud, necesitamos recopilar y procesar tu información personal. Al enviar este formulario, aceptas que tus datos serán utilizados de acuerdo con nuestra política de privacidad.
-      </p>
-    </label>
-    
-      <input className="privacy-checkbox"
-        type="checkbox"
-        onChange={handlePrivacyAgreement}
-      />
-      
-    
-  </div>
-)}
-
-                {currentQuestion === 1 && (
-                  <>
-                    <label>
-                      Calle:
-                      <input
-                        type="text"
-                        name="location.street"
-                        value={formData.location.street}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Numero:
-                      <input
-                        type="text"
-                        name="location.number"
-                        value={formData.location.number}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Colonia:
-                      <input
-                        type="text"
-                        name="location.neighbourhood"
-                        value={formData.location.neighbourhood}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Delegación:
-                      <input
-                        type="text"
-                        name="location.county"
-                        value={formData.location.county}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Ciudad:
-                      <input
-                        type="text"
-                        name="location.city"
-                        value={formData.location.city}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Código postal:
-                      <input
-                        type="text"
-                        name="location.zipCode"
-                        value={formData.location.zipCode}
-                        onChange={handleChange}
-                      />
-                    </label>
-                  </>
-                )}
-                {currentQuestion === 2 && (
-                  <label>
-                    Tamaño m2:
-                    <input
-                      type="text"
-                      name="size"
-                      value={formData.size}
-                      onChange={handleChange}
-                    />
-                  </label>
-                )}
-                {currentQuestion === 3 && (
-                  <label>
-                    Uso de suelo:
-                    <input
-                      type="text"
-                      name="landUse"
-                      value={formData.landUse}
-                      onChange={handleChange}
-                    />
-                  </label>
-                )}
-                {currentQuestion === 4 && (
-                  <label>
-                    Uso de suelo:
-                    <input
-                      type="file"
-                      accept="image/*"
-                      name="landPhoto"
-                      onChange={handleChange}
-                    />
-                  </label>
-                )}
-                {currentQuestion === 5 && (
-                  <>
-                    <label>
-                      Nombre:
-                      <input
-                        type="text"
-                        name="contact.name"
-                        value={formData.contact.name}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Apellidos:
-                      <input
-                        type="text"
-                        name="contact.lastName"
-                        value={formData.contact.lastName}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Email:
-                      <input
-                        type="email"
-                        name="contact.email"
-                        value={formData.contact.email}
-                        onChange={handleChange}
-                      />
-                    </label>
-                    <label>
-                      Celular:
-                      <input
-                        type="tel"
-                        name="contact.cellphone"
-                        value={formData.contact.cellphone}
-                        onChange={handleChange}
-                      />
-                    </label>
-                  </>
-                )}
-                <div className="button-container">
-                {currentQuestion > 1 && (
-                <button type="button" onClick={handleBack} className="back-button">
-                  Atrás
-                </button>
-)}
-              <button
-                onClick={handleAnswer}
-                disabled={currentQuestion === 0 && !privacyAgreed}
-                className="next-button"
-              >
-                {isLastQuestion ? 'Enviar' : 'Siguiente'}
-              </button>
-            </div>
-              </form>
-            </>
-          )}
-
-          {formSubmitted && (
-            <p className="centered-text">
-              ¡Gracias por enviar la información! Nos pondremos en contacto contigo pronto.
-            </p>
-          )}
-
-
-
-
-        
-
+      <style jsx>{`
        
+       
+
+        .burger-menu {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          z-index: 999;
+          cursor: pointer;
+        }
+
+        .bar {
+          width: 35px;
+          height: 5px;
+          background-color: #000;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+
+        // Rotate the first and third bar to create the burger menu icon effect
+        .change .bar-1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar-2 {
+          opacity: 0;
+        }
+
+        .change .bar-3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .menu-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #3d3d3d;
+          z-index: 998;
+          display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
+        }
+
+        
+        .menu-items {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 999;
+          text-align: center;
+        }
+
+        .menu-item {
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: #ffff;
+          cursor: pointer;
+        }
+
+        .section {
+          display: ${isMenuOpen ? 'block' : 'none'};
+        }
+
+        .presentation-card-container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10vh;      
+        }
+
+        .horizontal-line {
+          position: absolute;
+          left: 0;
+          width: 100% !important; /* Set the width to span the entire viewport */
+          height: 1px; /* Set the height of the line */
+          background-color: #000; /* Set the color of the line */
+          margin-top: 50vh; /* Adjust margin as needed */
+        }
+
+        .image {
+          position: relative;
+          margin-top: 100vw;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(2.1); /* Scale the image by 1.3 times its original size */
+        }
+
+        .hosting-image {
+          position: relative;
+          margin-top: 100vw;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(1.75); /* Scale the image by 1.3 times its original size */
+        }
+        
+
+        .main-title-section-container {
+        position: absolute;
+        margin-top: 40vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        border-bottom: 1px solid #000;
+        }
+
+        .title {
+          font-size: 34px;
+          width: 60vw;
+        }
+
+        .section-title {
+        font-size: 34px;
+        }
+
+        .section-subtitle {
+        font-size: 28px;
+        font-family: "Red Hat Display", serif; 
+        font-weight: 300;
+        }
+
+        .container {
+          position: absolute;
+          margin-top: 620vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-one {
+            position: absolute;
+          margin-top: 1250vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .itinerary-info {
+            margin-top: 10vh; /* Adjust margin-top as needed */
+          }
+
+          .container-two {
+          position: absolute;
+          margin-top: 1460vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .attire-info {
+            margin-top: 20vh; /* Adjust margin-top as needed */
+          }
+
+          .container-three {
+            position: absolute;
+          margin-top: 2670vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .hosting {
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-four {
+            position: absolute;
+          margin-top: 4080vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-five {
+            position: absolute;
+          margin-top: 4200vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-six {
+            position: absolute;
+          margin-top: 4320vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+
+
+              @media screen and (min-width: 800px) and (min-height: 600px) {
+
+                
+        .burger-menu {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          z-index: 999;
+          cursor: pointer;
+        }
+
+        .bar {
+          width: 35px;
+          height: 5px;
+          background-color: #000;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+
+        // Rotate the first and third bar to create the burger menu icon effect
+        .change .bar-1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar-2 {
+          opacity: 0;
+        }
+
+        .change .bar-3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .menu-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #3d3d3d;
+          z-index: 998;
+          display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
+        }
+
+        
+        .menu-items {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 999;
+          text-align: center;
+        }
+
+        .menu-item {
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: #ffff;
+          cursor: pointer;
+        }
+
+        .section {
+          display: ${isMenuOpen ? 'block' : 'none'};
+        }
+
+        .presentation-card-container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10vh;      
+        }
+
+        .horizontal-line {
+          position: absolute;
+          left: 0;
+          width: 100% !important; /* Set the width to span the entire viewport */
+          height: 1px; /* Set the height of the line */
+          background-color: #000; /* Set the color of the line */
+          margin-top: 50vh; /* Adjust margin as needed */
+        }
+
+        .image {
+          position: relative;
+          margin-top: 100vw;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(2.1); /* Scale the image by 1.3 times its original size */
+        }
+
+        .hosting-image {
+          position: relative;
+          margin-top: 100vw;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(1.75); /* Scale the image by 1.3 times its original size */
+        }
+        
+
+        .main-title-section-container {
+        position: absolute;
+        margin-top: 40vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        border-bottom: 1px solid #000;
+        }
+
+        .title {
+          font-size: 34px;
+          width: 60vw;
+        }
+
+        .section-title {
+        font-size: 34px;
+        }
+
+        .section-subtitle {
+        font-size: 28px;
+        font-family: "Red Hat Display", sans-serif; 
+        font-weight: 300;
+        }
+
+        .container {
+          position: absolute;
+          margin-top: 200vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-one {
+            position: absolute;
+          margin-top: 350vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .itinerary-info {
+            margin-top: 10vh; /* Adjust margin-top as needed */
+          }
+
+          .container-two {
+          position: absolute;
+          margin-top: 550vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .attire-info {
+            margin-top: 20vh; /* Adjust margin-top as needed */
+          }
+
+          .container-three {
+            position: absolute;
+          margin-top: 2980vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .hosting {
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-four {
+            position: absolute;
+          margin-top: 4080vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-five {
+            position: absolute;
+          margin-top: 4200vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-six {
+            position: absolute;
+          margin-top: 4320vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+              }
+
+           
+    
+
+          
+
+        
+       
+      `}</style>
+
+{/* Burger menu icon */}
+<div className={`burger-menu ${isMenuOpen ? 'change' : ''}`} onClick={handleToggleMenu}>
+        <div className="bar bar-1"></div>
+        <div className="bar bar-2"></div>
+        <div className="bar bar-3"></div>
+      </div>
+
       
+
+      
+     {/* Menu items */}
+{isMenuOpen && (
+  <>
+    <div className="menu-overlay" onClick={handleToggleMenu}></div>
+    <div className="menu-items">
+      {sectionsData.map((section, index) => (
+        <div className="menu-item" key={index} onClick={() => handleMenuItemClick(section.scrollPosition)}>
+          {section.name}
+        </div>
+      ))}
+    </div>
+  </>
+)}
+
+
+      {/* Sections */}
+      {isMenuOpen && sections.length > 0 && sections.map((section, index) => (
+  <div className="section" key={index} onClick={() => handleMenuItemClick(section.scrollPosition)}>
+    {section.name}
+  </div>
+))}
+
+<div className="presentation-card-container">
+      <div className="main-title-section-container">
+      <div className="title">
+        Daniela y Cesar
+      </div>
+
+      <div className="sub-title" onClick={handleConocenosClick}>
+       2024
+      </div>
+     {/*  <div className="horizontal-line" style={{ width: '100%', height: '1px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
+
+      </div>
+      <div className="container">
+      <div className="section-title">Fotos</div>
+      <Carousel items={yourCarouselItems1}/>
+      {/* 
+      <img src="/dyc1.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc2.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc3.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc4.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc5.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc6.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc7.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc8.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc9.jpg" alt="Your Image" className="image"  />
+      <img src="/dyc10.jpg" alt="Your Image" className="image"  />
+      */}
+       {/* <div className="horizontal-line"></div>*/}
+      </div>
+       
+      <div className="container-one">
+          <div className="section-title">Itinerario</div>
+          <div className="itinerary-info">
+          <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
+          <p><strong style={{ fontSize: '24px' }}>Cuando?</strong></p>
+          <p><strong>Viernes 16 de agosto</strong></p>
+          <p><strong style={{ fontSize: '24px' }}>Donde?</strong></p>
+          <p><strong>Hacienda San José Lavista</strong></p>
+          
+          <p style={{ fontSize: '24px' }}>Dress Code:</p>
+          <p >Cocktail Boho</p>
+          <li style={{ fontSize: '12px' }}>Cocktail: 4:00 pm – 5:00 pm</li>
+          <li style={{ fontSize: '12px' }}>Ceremonia Civil: 5:00 pm</li>
+          <li style={{ fontSize: '12px' }}>Callejoneada: 6:00 pm</li>
+          <li style={{ fontSize: '12px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
+         
+
+          <p><strong>Boda religiosa</strong></p>
+          <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
+          <p>Dress Code: Rigurosa Etiqueta</p>
+          <li>Ceremonia Religiosa: 5:00 pm</li>
+          <li>Cata: 6:00 pm</li>
+          <li>Recepción: 7:00 pm</li>
+
+          <p><strong>Domingo 18 de agosto Hacienda San José Lavista:</strong></p>
+          <li>Tornaboda: 12:00 pm</li>
+          </div>
+          <div className="horizontal-line"></div>
+      </div>
+      
+      <div className="container-two">
+      <div className="section-title">Vestimenta</div>
+      <div className="attire-info">
+
+          <p><strong style={{ fontSize: '30px' }}>Mujeres</strong></p>
+
+          <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
+          <p >Cocktail Boho</p>
+          <a href="https://www.pinterest.com.mx/danypesant/civil-dresscode/?invite_code=1b8145c874c94e44a6a05511c69c9786&sender=347410696163627453">Ideas</a>
+          {/*<img src="/womensBoho.avif" alt="Your Image" className="image"  />*/}
+  
+          <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
+          <p >Etiqueta Rigurosa </p>
+          {/* <img src="/longDress.avif" alt="Your Image" className="image"  />*/}
+          </div>
+          <div className="attire-info">
+          <p><strong style={{ fontSize: '30px' }}>Hombres</strong></p>
+
+          <p><strong style={{ fontSize: '30px'}}>Boda civil</strong></p>
+          <p >Cocktail Boho</p>
+          <a href="https://www.pinterest.com.mx/danypesant/civil-dresscode/?invite_code=1b8145c874c94e44a6a05511c69c9786&sender=347410696163627453">Ideas</a>
+          {/* Sections <img src="/casualAttire.jpeg" alt="Your Image" className="image"/>*/}
+          <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
+          <p >Etiqueta Rigurosa </p>
+          {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
+          </div>   
+      <div className="horizontal-line"></div>
+      </div>
+      
+      <div className="container-three">
+      <div className="section-title">Hospedaje</div>
+      
+      <div className="hosting">
+      <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>Apapacho hotel</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.apapachohotel.mx/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel2.png" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>Clandestino hotel</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://clandestinohotel.com/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>L'OTEL</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel4.png" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>BELMOND CASA DE SIERRA NEVADA</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.belmond.com/hotels/north-america/mexico/san-miguel-de-allende/belmond-casa-de-sierra-nevada/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel5.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA QUEBRADA HOTEL</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://hotelcasaquebrada.mx/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel6.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA 1810</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://hotels.cloudbeds.com/reservation/oqBpi9#checkin=2024-03-24&checkout=2024-03-25">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel7.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>HOTEL MATILDA</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Aldama 53 · San Miguel de Allende, Gto. México 37700</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://hotelmatilda.com/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel8.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>LIVE AQUA</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Calzada de la Presa No. 85 Zona Centro, 37700 San Miguel de Allende, Gto., México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.liveaqua.com/hoteles-y-resorts/live-aqua-urban-resort-san-miguel-de-allende?gclid=CjwKCAjwzaSLBhBJEiwAJSRoktxuYj2yQbFhSdgbbyYZfKF3Z4lumxMMj_PwzYAGdIxNw3fm2LZotRoCujsQAvD_BwE&gclsrc=aw.ds">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel9.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>ROSEWOOD HOTEL</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro ,San Miguel de Allende, Gto. México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.rosewoodhotels.com/en/san-miguel-de-allende/offers">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel10.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA HOYOS</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Mesones No. 14 , Zona Centro San Miguel de Allende, Gto., 37700, México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.casahoyos.mx/es">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel11.png" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>AMATTE</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Salida real a Querétaro 168, Zona Centro, 37700 San Miguel de Allende Gto.</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://amatte.com.mx/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel12.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>REAL DE MINAS</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Camino Viejo al Panteón 1, San Antonio, 37700 San Miguel de Allende, Gto. México</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.realdeminas.com/es/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel13.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>LA MORADA HOTEL</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Correo #10 Centro. San Miguel de Allende Guanajuato, Mexico 37700</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.lamoradahotel.com.mx/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel14.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>NUMU BOUTIQUE HOTEL- BY HYATT</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.hyatt.com/en-US/hotel/mexico/numu/bjxub?src=corp_lclb_gmb_seo_bjxub">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel15.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>ILOROJO</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Salida Real a Querétaro 136-A, Zona Centro, 37774 San Miguel de Allende, Gto.</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.ilorojohotel.com/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel16.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA BLANCA HOTEL</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Juarez No. 7 CentroSan Miguel de Allende Gto 37700</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://casablanca7.com/es/">Visit website</a>
+      </div>
+
+      <div className="hosting">
+      <img src="/hotel17.jpeg" alt="Your Image" className="hosting-image"  />
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>HACIENDA LOS PICACHOS</div>
+      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Carretera San Miguel de Allende, Qto. Km. 3, San Jose de la Posta, 37700 San Miguel de Allende, Gto.</div>
+      <div style={{ marginTop: '4vh' }}></div>
+      <a style={{ fontSize: '20px'}} href="https://www.haciendalospicachos.com.mx/">Visit website</a>
+      </div>
+
+      <div className="horizontal-line"></div>
+      </div>
+      
+      <div className="container-four">
+          <div className="section-title">Maquillaje y peinado</div>
+          <div className="itinerary-info">
+          
+          <p><strong style={{ fontSize: '24px' }}>Maquillaje</strong></p>
+          <p><strong>Ubicacion</strong></p>
+          
+          <p style={{ fontSize: '24px' }}>Peinado</p>
+          <p><strong>Ubicacion</strong></p>    
+          </div>
+          <div className="horizontal-line"></div>
+      </div>
+
+      <div className="container-five">
+          <div className="section-title">Transporte</div>
+          <div className="itinerary-info">
+          <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
+          <p><strong style={{ fontSize: '24px' }}>Cuando?</strong></p>
+          <p><strong>Viernes 16 de agosto</strong></p>
+          <p><strong style={{ fontSize: '24px' }}>Donde?</strong></p>
+          <p><strong>Hacienda San José Lavista</strong></p>
+        
+          <p><strong>Boda religiosa</strong></p>
+          <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
+          </div>
+          <div className="horizontal-line"></div>
+      </div>
+
+      <div className="container-six">
+          <div className="section-title">Mesa de regalos</div>
+          <div className="itinerary-info">
+          
+          <p><strong style={{ fontSize: '24px' }}>Palacio de hierro</strong></p>
+          <p><strong>Evento número 385296</strong></p> 
+          <a style={{ fontSize: '20px'}} href="https://www.elpalaciodehierro.com/buscar?eventId=385296">Click aqui para ver mesa de regalos online</a>
+             
+
+          <p style={{ fontSize: '24px' }}>Cuenta bancaria</p>
+          <p><strong>cuenta</strong></p>    
+          </div>
+          <div className="horizontal-line"></div>
+      </div>
+      
+    </div>
     </Layout>
   );
 };
 
-export default Home;
+export default LandingPage;

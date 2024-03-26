@@ -2,12 +2,11 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 body {
-    font-family: 'Poppins', serif; 
-    color: #141111;
-    background-color: #138EC3; /* Adjust the color as needed */
+    font-family: 'Pinyon Script', cursive; 
+    color: #ffff;
+    background-color: #4D5A46; /* Adjust the color as needed */
 }
 
 
@@ -16,7 +15,7 @@ body {
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
   height: 10vh; /* Make the container take up the full viewport height */
-  background-color: #138EC3; /* Add a background color as needed */
+  background-color: #4D5A46; /* Add a background color as needed */
 }
 
 /* Define a CSS class for input fields */

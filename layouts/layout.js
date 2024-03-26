@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
     <div>
       {/* Include the Google Fonts stylesheet */}
       <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet"
       />
 
@@ -46,6 +46,7 @@ const Layout = ({ children }) => {
       {/* Styles */}
       <style jsx global>{`
         body {
+          
           margin: 0;
           padding: 0;
           display: flex;
@@ -120,37 +121,6 @@ const Layout = ({ children }) => {
         }
       `}</style>
 
-
-<ul>
-          <li>
-            <Link href="/home/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about/about">About</Link>
-          </li>
-
-          <li>
-            <Link href="/register/registerForm">Register</Link>
-          </li>
-          <li>
-            <Link href="/login/login">Login</Link>
-          </li>
-          {state.clearanceLevel <= 2 && state.clearanceLevel > 0 && (
-            <li>
-              <Link href="/master/master">Master</Link>
-            </li>
-          )}
-        </ul>
-
-        <ul className="nav-links-right">
-    
-      <li>
-            <Link href="/home/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about/about">About</Link>
-          </li>
-    </ul>
 
     </div>
 
