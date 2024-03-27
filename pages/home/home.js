@@ -265,7 +265,7 @@ const LandingPage = () => {
 
         .section-subtitle {
         font-size: 28px;
-        font-family: "Red Hat Display", serif; 
+        
         font-weight: 300;
         }
 
@@ -467,7 +467,7 @@ const LandingPage = () => {
 
         .section-subtitle {
         font-size: 28px;
-        font-family: &quot;Red Hat Display&quot;, sans-serif; 
+        
         font-weight: 300;
         }
 
