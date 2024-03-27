@@ -8,6 +8,7 @@ const LandingPage = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [sections, setSections] = useState([]);
+  const [isMobileViewport, setIsMobileViewport] = useState(false);
 
   // Define sections and their scroll positions
   const sectionsData = [
@@ -47,7 +48,7 @@ const LandingPage = () => {
     });
   };
 
-  const yourCarouselItems1 = [
+  const yourCarouselItemsMobile = [
     
     {
       imagePath: '/dyc1.jpg',
@@ -99,13 +100,52 @@ const LandingPage = () => {
       
       
     },
+  ];
+
+  const yourCarouselItemsDesktop = [
+    
     {
       imagePath: '/dyc11.jpeg',
       
       
     },
+    {
+      imagePath: '/dyc12.jpeg',
+      
+      
+    },
+    {
+      imagePath: '/dyc13.jpeg',
+      
+      
+    },
+    {
+      imagePath: '/dyc14.jpeg',
+      
+      
+    },
     
   ];
+
+  useEffect(() => {
+    const checkIsMobileViewport = () => {
+        setIsMobileViewport(window.innerWidth <= 768); // Example threshold for mobile viewport width
+    };
+
+    // Check viewport width on initial render
+    checkIsMobileViewport();
+
+    // Add event listener to update viewport width on window resize
+    window.addEventListener('resize', checkIsMobileViewport);
+
+    // Cleanup function to remove event listener
+    return () => {
+        window.removeEventListener('resize', checkIsMobileViewport);
+    };
+}, []);
+
+  const carouselItems = isMobileViewport ? yourCarouselItemsMobile : yourCarouselItemsDesktop;
+
 
   const Carousel = ({ items }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -355,7 +395,7 @@ const LandingPage = () => {
 
 
 
-              @media screen and (min-width: 800px) and (min-height: 600px) {
+              @media screen and (min-width: 768px) and (min-height: 600px) {
 
                 
         .burger-menu {
@@ -516,7 +556,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 2980vh;
+          margin-top: 3300vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -625,7 +665,7 @@ const LandingPage = () => {
       </div>
       <div className="container">
       <div className="section-title">Fotos</div>
-      <Carousel items={yourCarouselItems1}/>
+      <Carousel items={carouselItems}/>
       {/* 
       <img src="/dyc1.jpg" alt="Your Image" className="image"  />
       <img src="/dyc2.jpg" alt="Your Image" className="image"  />
@@ -701,20 +741,20 @@ const LandingPage = () => {
       </div>
       
       <div className="container-three">
-      <div className="section-title">Hospedaje</div>
+      <div className="section-title" style={{marginBottom: '-55vh' }}>Hospedaje</div>
       
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">Apapacho hotel</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
+      <div className="hosting-title">APAPACHO HOTEL</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.apapachohotel.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel2.png" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">Clandestino hotel</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>
+      <div className="hosting-title">CLANDESTINO HOTEL</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://clandestinohotel.com/">Visit website</a>
       </div>
@@ -722,119 +762,119 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title">L&rsquo;OTEL</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel4.png" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>BELMOND CASA DE SIERRA NEVADA</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>
+      <div className="hosting-title">BELMOND CASA DE SIERRA NEVADA</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.belmond.com/hotels/north-america/mexico/san-miguel-de-allende/belmond-casa-de-sierra-nevada/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel5.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA QUEBRADA HOTEL</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>
+      <div className="hosting-title">CASA QUEBRADA HOTEL</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotelcasaquebrada.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel6.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA 1810</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>
+      <div className="hosting-title">CASA 1810</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotels.cloudbeds.com/reservation/oqBpi9#checkin=2024-03-24&checkout=2024-03-25">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel7.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>HOTEL MATILDA</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Aldama 53 · San Miguel de Allende, Gto. México 37700</div>
+      <div className="hosting-title">HOTEL MATILDA</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Aldama 53 · San Miguel de Allende, Gto. México 37700</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotelmatilda.com/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel8.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>LIVE AQUA</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Calzada de la Presa No. 85 Zona Centro, 37700 San Miguel de Allende, Gto., México</div>
+      <div className="hosting-title">LIVE AQUA</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Calzada de la Presa No. 85 Zona Centro, 37700 San Miguel de Allende, Gto., México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.liveaqua.com/hoteles-y-resorts/live-aqua-urban-resort-san-miguel-de-allende?gclid=CjwKCAjwzaSLBhBJEiwAJSRoktxuYj2yQbFhSdgbbyYZfKF3Z4lumxMMj_PwzYAGdIxNw3fm2LZotRoCujsQAvD_BwE&gclsrc=aw.ds">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel9.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>ROSEWOOD HOTEL</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro ,San Miguel de Allende, Gto. México</div>
+      <div className="hosting-title">ROSEWOOD HOTEL</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro ,San Miguel de Allende, Gto. México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.rosewoodhotels.com/en/san-miguel-de-allende/offers">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel10.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA HOYOS</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Mesones No. 14 , Zona Centro San Miguel de Allende, Gto., 37700, México</div>
+      <div className="hosting-title">CASA HOYOS</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Mesones No. 14 , Zona Centro San Miguel de Allende, Gto., 37700, México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.casahoyos.mx/es">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel11.png" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>AMATTE</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Salida real a Querétaro 168, Zona Centro, 37700 San Miguel de Allende Gto.</div>
+      <div className="hosting-title">AMATTE</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Salida real a Querétaro 168, Zona Centro, 37700 San Miguel de Allende Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://amatte.com.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel12.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>REAL DE MINAS</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Camino Viejo al Panteón 1, San Antonio, 37700 San Miguel de Allende, Gto. México</div>
+      <div className="hosting-title">REAL DE MINAS</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Camino Viejo al Panteón 1, San Antonio, 37700 San Miguel de Allende, Gto. México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.realdeminas.com/es/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel13.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>LA MORADA HOTEL</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Correo #10 Centro. San Miguel de Allende Guanajuato, Mexico 37700</div>
+      <div className="hosting-title">LA MORADA HOTEL</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Correo #10 Centro. San Miguel de Allende Guanajuato, Mexico 37700</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.lamoradahotel.com.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel14.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>NUMU BOUTIQUE HOTEL- BY HYATT</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>
+      <div className="hosting-title">NUMU BOUTIQUE HOTEL- BY HYATT</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.hyatt.com/en-US/hotel/mexico/numu/bjxub?src=corp_lclb_gmb_seo_bjxub">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel15.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>ILOROJO</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Salida Real a Querétaro 136-A, Zona Centro, 37774 San Miguel de Allende, Gto.</div>
+      <div className="hosting-title">ILOROJO</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Salida Real a Querétaro 136-A, Zona Centro, 37774 San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.ilorojohotel.com/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel16.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>CASA BLANCA HOTEL</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Juarez No. 7 CentroSan Miguel de Allende Gto 37700</div>
+      <div className="hosting-title">CASA BLANCA HOTEL</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Juarez No. 7 CentroSan Miguel de Allende Gto 37700</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://casablanca7.com/es/">Visit website</a>
       </div>
 
       <div className="hosting">
       <img src="/hotel17.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>HACIENDA LOS PICACHOS</div>
-      <div style={{ fontSize: '20px', marginTop: '2vh' }}>Carretera San Miguel de Allende, Qto. Km. 3, San Jose de la Posta, 37700 San Miguel de Allende, Gto.</div>
+      <div className="hosting-title">HACIENDA LOS PICACHOS</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Carretera San Miguel de Allende, Qto. Km. 3, San Jose de la Posta, 37700 San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.haciendalospicachos.com.mx/">Visit website</a>
       </div>
