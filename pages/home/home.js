@@ -185,7 +185,7 @@ const LandingPage = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #3d3d3d;
+          background-color: #A09D93;
           z-index: 998;
           display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
         }
@@ -387,7 +387,7 @@ const LandingPage = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #3d3d3d;
+          background-color: #A09D93;
           z-index: 998;
           display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
         }
