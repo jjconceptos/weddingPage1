@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
     <div>
       {/* Include the Google Fonts stylesheet */}
       <link
-        href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Pinyon+Script&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet"
       />
 
@@ -35,10 +35,11 @@ const Layout = ({ children }) => {
       </div>
 
       {/* Footer */}
+      {/* 
       <footer>
-        {/* Footer content */}
         &copy; {new Date().getFullYear()} JRF. All rights reserved.
       </footer>
+      */}
 
       
 

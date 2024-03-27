@@ -4,7 +4,8 @@
 @import 'tailwindcss/utilities';
 
 body {
-    font-family: 'Pinyon Script', cursive; 
+    font-family: "Lateef", serif;
+    font-weight: 200;
     color: #ffff;
     background-color: #A09D93; /* Adjust the color as needed */
 }
@@ -15,7 +16,7 @@ body {
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
   height: 10vh; /* Make the container take up the full viewport height */
-  background-color: #4D5A46; /* Add a background color as needed */
+  background-color: #A09D93; /* Add a background color as needed */
 }
 
 /* Define a CSS class for input fields */

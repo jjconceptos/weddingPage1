@@ -255,6 +255,14 @@ const LandingPage = () => {
         border-bottom: 1px solid #000;
         }
 
+        .logo-image {
+          position: relative;
+
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(.3); /* Scale the image by 1.3 times its original size */
+        }
+
         .title {
           font-size: 34px;
           width: 60vw;
@@ -418,7 +426,7 @@ const LandingPage = () => {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            padding-top: 10vh;      
+                  
         }
 
         .horizontal-line {
@@ -432,29 +440,28 @@ const LandingPage = () => {
 
         .image {
           position: relative;
-          margin-top: 100vw;
           width: 100%; /* Set the width to 70% of the viewport width */
           height: auto; /* Maintain the aspect ratio */
-          transform: scale(.5); /* Scale the image by 1.3 times its original size */
+          transform: scale(.3); /* Scale the image by 1.3 times its original size */
+          margin-bottom: -30%;
         }
 
-        .hosting-image {
-          position: relative;
-          margin-top: 100vw;
-          width: 100%; /* Set the width to 70% of the viewport width */
-          height: auto; /* Maintain the aspect ratio */
-          transform: scale(1.75); /* Scale the image by 1.3 times its original size */
-        }
-        
-
+      
         .main-title-section-container {
         position: absolute;
-        margin-top: -50vh;
+        margin-top: -75vh;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
         border-bottom: 1px solid #000;
+        }
+
+        .logo-image {
+          position: relative;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(1.3); /* Scale the image by 1.3 times its original size */
         }
 
         .title {
@@ -517,8 +524,21 @@ const LandingPage = () => {
           }
 
           .hosting {
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          margin-bottom: 0; /* Adjusted margin for better separation from the next section */
           }
+
+          .hosting-title {
+            font-size: 100px;
+            margin-top: 25vh;
+        }
+
+            .hosting-image {
+              position: relative;
+              margin-top: 100vw;
+              width: 100%; /* Set the width to 70% of the viewport width */
+              height: auto; /* Maintain the aspect ratio */
+              transform: scale(1.75); /* Scale the image by 1.3 times its original size */
+            }
 
           .container-four {
             position: absolute;
@@ -685,7 +705,7 @@ const LandingPage = () => {
       
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>Apapacho hotel</div>
+      <div className="hosting-title">Apapacho hotel</div>
       <div style={{ fontSize: '20px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.apapachohotel.mx/">Visit website</a>
@@ -693,7 +713,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel2.png" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>Clandestino hotel</div>
+      <div className="hosting-title">Clandestino hotel</div>
       <div style={{ fontSize: '20px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://clandestinohotel.com/">Visit website</a>
@@ -701,7 +721,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>L&rsquo;OTEL</div>
+      <div className="hosting-title">L&rsquo;OTEL</div>
       <div style={{ fontSize: '20px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
