@@ -565,8 +565,9 @@ const LandingPage = () => {
           }
 
           .hosting {
-          margin-bottom: 0; /* Adjusted margin for better separation from the next section */
-          }
+            position: relative;
+            margin-bottom: -100vh; /* Adjusted margin for shorter vertical distance between hotels */
+        }
 
           .hosting-title {
             font-size: 100px;
