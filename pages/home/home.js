@@ -285,6 +285,7 @@ const LandingPage = () => {
         text-align: center;
         margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
         border-bottom: 1px solid #000;
+        
         }
 
         .logo-image {
@@ -298,6 +299,7 @@ const LandingPage = () => {
         .title {
           font-size: 34px;
           width: 60vw;
+          font-family: "Cherolina", serif;
         }
 
         .section-title {
@@ -330,7 +332,7 @@ const LandingPage = () => {
 
           .itinerary-info {
             margin-top: 10vh; /* Adjust margin-top as needed */
-            font-family: "Cherolina", serif;
+            
           }
 
           .container-two {
@@ -513,6 +515,7 @@ const LandingPage = () => {
         .title {
           font-size: 34px;
           width: 60vw;
+          font-family: "Cherolina", serif;
         }
 
         .section-title {
@@ -664,6 +667,7 @@ const LandingPage = () => {
       <div className="title">
         Daniela y Cesar
       </div>
+
 
       <div className="sub-title" onClick={handleConocenosClick}>
        2024

@@ -3,11 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@font-face {
-  font-family: "Cherolina";
-  src: url("https://db.onlinewebfonts.com/t/57f0d312017e3471c956900c601e683d.eot");
-  font-weight: 200; /* Adjust the font weight as needed */
-}
 
 body {
     font-family: 'Cherolina'; /* Use the custom font */
