@@ -309,7 +309,7 @@ const LandingPage = () => {
         }
 
         .section-title {
-        font-size: 34px;
+        font-size: 50px;
         }
 
         .section-subtitle {
@@ -329,7 +329,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 400vh;
+          margin-top: 390vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -338,6 +338,7 @@ const LandingPage = () => {
 
           .itinerary-info {
             margin-top: 10vh; /* Adjust margin-top as needed */
+            font-family: "Baskervville", serif;
           }
 
           .container-two {
@@ -355,7 +356,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 1820vh;
+          margin-top: 2050vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -365,6 +366,12 @@ const LandingPage = () => {
           .hosting {
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
+
+          .hosting-title {
+            font-size: 40px;
+            margin-top: 25vh;
+        }
+  
 
           .container-four {
             position: absolute;
@@ -700,14 +707,14 @@ const LandingPage = () => {
           <li style={{ fontSize: '12px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
          
 
-          <p><strong>Boda religiosa</strong></p>
+          <p><strong style={{ fontSize: '30px' }}>Boda religiosa</strong></p>
           <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
           <p>Dress Code: Rigurosa Etiqueta</p>
           <li>Ceremonia Religiosa: 5:00 pm</li>
           <li>Cata: 6:00 pm</li>
           <li>Recepción: 7:00 pm</li>
 
-          <p><strong>Domingo 18 de agosto Hacienda San José Lavista:</strong></p>
+          <p><strong style={{ fontSize: '30px' }}>Domingo 18 de agosto Hacienda San José Lavista:</strong></p>
           <li>Tornaboda: 12:00 pm</li>
           </div>
           {/* <div className="horizontal-line"></div>*/}
@@ -743,7 +750,7 @@ const LandingPage = () => {
       </div>
       
       <div className="container-three">
-      <div className="section-title" style={{marginBottom: '-135vh' }}>Hospedaje</div>
+      <div className="section-title">Hospedaje</div>
       
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
