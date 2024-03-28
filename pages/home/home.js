@@ -510,7 +510,8 @@ const LandingPage = () => {
         }
 
         .section-title {
-        font-size: 34px;
+        font-size: 104px;
+    
         }
 
         .section-subtitle {
@@ -708,7 +709,7 @@ const LandingPage = () => {
           <p><strong>Domingo 18 de agosto Hacienda San José Lavista:</strong></p>
           <li>Tornaboda: 12:00 pm</li>
           </div>
-          <div className="horizontal-line"></div>
+          {/* <div className="horizontal-line"></div>*/}
       </div>
       
       <div className="container-two">
@@ -737,11 +738,11 @@ const LandingPage = () => {
           <p >Etiqueta Rigurosa </p>
           {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
           </div>   
-      <div className="horizontal-line"></div>
+      {/* <div className="horizontal-line"></div>*/}
       </div>
       
       <div className="container-three">
-      <div className="section-title" style={{marginBottom: '-55vh' }}>Hospedaje</div>
+      <div className="section-title" style={{marginBottom: '-135vh' }}>Hospedaje</div>
       
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
@@ -879,7 +880,7 @@ const LandingPage = () => {
       <a style={{ fontSize: '20px'}} href="https://www.haciendalospicachos.com.mx/">Visit website</a>
       </div>
 
-      <div className="horizontal-line"></div>
+      {/* <div className="horizontal-line"></div>*/}
       </div>
       
       <div className="container-four">
@@ -922,7 +923,7 @@ const LandingPage = () => {
           <p style={{ fontSize: '24px' }}>Cuenta bancaria</p>
           <p><strong>cuenta</strong></p>    
           </div>
-          <div className="horizontal-line"></div>
+          {/* <div className="horizontal-line"></div> */}
       </div>
       
     </div>
