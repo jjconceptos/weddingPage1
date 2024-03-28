@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Cherolina';
-  src: url('/cherolina.ttf') format('truetype');
+  src: url('/fonts/cherolina/cherolina.otf') format('truetype');
   font-weight: 200; /* Adjust the font weight as needed */
 }
 
