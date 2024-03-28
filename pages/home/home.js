@@ -275,15 +275,7 @@ const LandingPage = () => {
           height: auto; /* Maintain the aspect ratio */
           transform: scale(.5); /* Scale the image by 1.3 times its original size */
         }
-
-        .hosting-image {
-          position: relative;
-          margin-top: 100vw;
-          width: 100%; /* Set the width to 70% of the viewport width */
-          height: auto; /* Maintain the aspect ratio */
-          transform: scale(1.75); /* Scale the image by 1.3 times its original size */
-        }
-        
+ 
 
         .main-title-section-container {
         position: absolute;
@@ -338,7 +330,7 @@ const LandingPage = () => {
 
           .itinerary-info {
             margin-top: 10vh; /* Adjust margin-top as needed */
-            font-family: "Baskervville", serif;
+            font-family: "Cherolina", serif;
           }
 
           .container-two {
@@ -368,10 +360,17 @@ const LandingPage = () => {
           }
 
           .hosting-title {
-            font-size: 30px;
+            font-size: 28px;
             margin-top: 25vh;
         }
   
+        .hosting-image {
+          position: relative;
+          margin-top: 100vw;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(1.75); /* Scale the image by 1.3 times its original size */
+        }
 
           .container-four {
             position: absolute;

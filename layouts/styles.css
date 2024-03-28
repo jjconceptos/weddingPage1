@@ -4,13 +4,13 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-  font-family: 'Cherolina';
-  src: url('/fonts/cherolina/cherolina.otf') format('truetype');
+  font-family: "Cherolina";
+  src: url("https://db.onlinewebfonts.com/t/57f0d312017e3471c956900c601e683d.eot");
   font-weight: 200; /* Adjust the font weight as needed */
 }
 
 body {
-    font-family: 'Cherolina', serif; /* Use the custom font */
+    font-family: 'Cherolina'; /* Use the custom font */
     font-weight: 200; /* Ensure the correct font weight is applied */
     color: #ffff;
     background-color: #A09D93; /* Adjust the color as needed */
