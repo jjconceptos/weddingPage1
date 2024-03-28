@@ -557,7 +557,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 3300vh;
+          margin-top: 3280vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -893,7 +893,7 @@ const LandingPage = () => {
           <p style={{ fontSize: '24px' }}>Peinado</p>
           <p><strong>Ubicacion</strong></p>    
           </div>
-          <div className="horizontal-line"></div>
+          {/*<div className="horizontal-line"></div>*/}
       </div>
 
       <div className="container-five">
@@ -908,7 +908,7 @@ const LandingPage = () => {
           <p><strong>Boda religiosa</strong></p>
           <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
           </div>
-          <div className="horizontal-line"></div>
+         {/* <div className="horizontal-line"></div>*/}
       </div>
 
       <div className="container-six">
