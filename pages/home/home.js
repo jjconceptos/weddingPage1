@@ -819,7 +819,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel9.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title">ROSEWOOD HOTEL</div>
-      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro ,San Miguel de Allende, Gto. México</div>
+      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro, San Miguel de Allende, Gto. México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.rosewoodhotels.com/en/san-miguel-de-allende/offers">Visit website</a>
       </div>
