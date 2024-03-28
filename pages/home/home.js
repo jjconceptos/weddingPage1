@@ -299,7 +299,7 @@ const LandingPage = () => {
         .title {
           font-size: 34px;
           width: 60vw;
-          font-family: "Cherolina", serif;
+          
         }
 
         .section-title {
@@ -376,7 +376,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 3100vh;
+          margin-top: 3200vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -515,7 +515,7 @@ const LandingPage = () => {
         .title {
           font-size: 34px;
           width: 60vw;
-          font-family: "Cherolina", serif;
+          
         }
 
         .section-title {
