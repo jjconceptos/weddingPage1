@@ -344,6 +344,18 @@ const LandingPage = () => {
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
+          .color-palette {
+            display: grid;
+            grid-template-columns: repeat(3, 100px); /* Adjust the number and size of columns as needed */
+            gap: 10px; /* Adjust the gap between color squares */
+          }
+          
+          .color-square {
+            width: 100px; /* Adjust the width of color squares */
+            height: 100px; /* Adjust the height of color squares */
+            border-radius: 5px; /* Optional: Add rounded corners */
+          }
+
           .attire-info {
             margin-top: 20vh; /* Adjust margin-top as needed */
           }
@@ -560,6 +572,18 @@ const LandingPage = () => {
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
+          .color-palette {
+            display: grid;
+            grid-template-columns: repeat(3, 100px); /* Adjust the number and size of columns as needed */
+            gap: 10px; /* Adjust the gap between color squares */
+          }
+          
+          .color-square {
+            width: 100px; /* Adjust the width of color squares */
+            height: 100px; /* Adjust the height of color squares */
+            border-radius: 5px; /* Optional: Add rounded corners */
+          }
+
           .attire-info {
             margin-top: 20vh; /* Adjust margin-top as needed */
           }
@@ -725,8 +749,19 @@ const LandingPage = () => {
       
       <div className="container-two">
       <div className="section-title">Vestimenta</div>
-      <div className="attire-info">
 
+      <div style={{ fontSize: '30px' }}>Paleta de colores</div>
+
+      <div className="color-palette">
+        <div className="color-square" style={{ backgroundColor: '#4B4C2D' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#C19A68' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#DED5C8' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#271523' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#FFFFFF' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#D7AE42' }}></div>
+      </div>
+
+      <div className="attire-info">
           <p><strong style={{ fontSize: '30px' }}>Mujeres</strong></p>
 
           <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
