@@ -16,8 +16,7 @@ const Layout = ({ children }) => {
     <div>
       {/* Include the Google Fonts stylesheet */}
       <link
-        href="https://db.onlinewebfonts.com/c/57f0d312017e3471c956900c601e683d?family=Cherolina" 
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lateef:wght@200;300;400;500;600;700;800&family=Pinyon+Script&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"        rel="stylesheet"
       />
 
       

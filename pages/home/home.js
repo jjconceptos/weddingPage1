@@ -297,13 +297,13 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 34px;
+          font-size: 42px;
           width: 60vw;
           
         }
 
         .section-title {
-        font-size: 50px;
+        font-size: 40px;
         }
 
         .section-subtitle {
@@ -314,7 +314,7 @@ const LandingPage = () => {
 
         .container {
           position: absolute;
-          margin-top: 200vh;
+          margin-top: 150vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -323,7 +323,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 390vh;
+          margin-top: 300vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -337,7 +337,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 600vh;
+          margin-top: 500vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -525,7 +525,7 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 34px;
+          font-size: 100px;
           width: 60vw;
           
         }
@@ -688,8 +688,12 @@ const LandingPage = () => {
 <div className="presentation-card-container">
       <div className="main-title-section-container">
       <img src="/dycLogo.png" alt="Your Image" className="image"  />
-      <div className="title">
-        Daniela y Cesar
+      <link
+        href="https://db.onlinewebfonts.com/c/57f0d312017e3471c956900c601e683d?family=Cherolina" 
+        rel="stylesheet"
+      />
+      <div className="title" style={{ fontFamily: 'Cherolina'}}>
+        Daniela y César
       </div>
 
 
@@ -700,7 +704,7 @@ const LandingPage = () => {
 
       </div>
       <div className="container">
-      <div className="section-title">Fotos</div>
+      <div className="section-title"></div>
       <Carousel items={carouselItems}/>
       {/* 
       <img src="/dyc1.jpg" alt="Your Image" className="image"  />
@@ -750,7 +754,7 @@ const LandingPage = () => {
       <div className="container-two">
       <div className="section-title">Vestimenta</div>
 
-      <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
+       {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
 
       <div className="color-palette">
         <div className="color-square" style={{ backgroundColor: '#4B4C2D' }}></div>
@@ -759,7 +763,7 @@ const LandingPage = () => {
         <div className="color-square" style={{ backgroundColor: '#271523' }}></div>
         <div className="color-square" style={{ backgroundColor: '#FFFFFF' }}></div>
         <div className="color-square" style={{ backgroundColor: '#D7AE42' }}></div>
-      </div>
+      </div> */}
 
       <div className="attire-info">
           <p><strong style={{ fontSize: '30px' }}>Mujeres</strong></p>
