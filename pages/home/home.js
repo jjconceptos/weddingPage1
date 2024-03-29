@@ -750,7 +750,7 @@ const LandingPage = () => {
       <div className="container-two">
       <div className="section-title">Vestimenta</div>
 
-      <div style={{ fontSize: '30px' }}>Paleta de colores</div>
+      <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
 
       <div className="color-palette">
         <div className="color-square" style={{ backgroundColor: '#4B4C2D' }}></div>
