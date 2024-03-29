@@ -732,7 +732,6 @@ const LandingPage = () => {
           
           <p style={{ fontSize: '24px' }}>Dress Code:</p>
           <p >Cocktail Boho</p>
-          <li style={{ fontSize: '12px' }}>Cocktail: 4:00 pm – 5:00 pm</li>
           <li style={{ fontSize: '12px' }}>Ceremonia Civil: 5:00 pm</li>
           <li style={{ fontSize: '12px' }}>Callejoneada: 6:00 pm</li>
           <li style={{ fontSize: '12px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
