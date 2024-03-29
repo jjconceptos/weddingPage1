@@ -766,11 +766,13 @@ const LandingPage = () => {
 
           <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
           <p >Cocktail Boho</p>
-          <a href="https://www.pinterest.com.mx/danypesant/civil-dresscode/?invite_code=1b8145c874c94e44a6a05511c69c9786&sender=347410696163627453">Ideas</a>
+          <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453">Ideas</a>
           {/*<img src="/womensBoho.avif" alt="Your Image" className="image"  />*/}
   
           <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
           <p >Etiqueta Rigurosa </p>
+          <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453">Ideas</a>
+
           {/* <img src="/longDress.avif" alt="Your Image" className="image"  />*/}
           </div>
           <div className="attire-info">
@@ -778,10 +780,10 @@ const LandingPage = () => {
 
           <p><strong style={{ fontSize: '30px'}}>Boda civil</strong></p>
           <p >Cocktail Boho</p>
-          <a href="https://www.pinterest.com.mx/danypesant/civil-dresscode/?invite_code=1b8145c874c94e44a6a05511c69c9786&sender=347410696163627453">Ideas</a>
-          {/* Sections <img src="/casualAttire.jpeg" alt="Your Image" className="image"/>*/}
+          <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453">Ideas</a>          {/* Sections <img src="/casualAttire.jpeg" alt="Your Image" className="image"/>*/}
           <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
           <p >Etiqueta Rigurosa </p>
+          <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453">Ideas</a>
           {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
           </div>   
       {/* <div className="horizontal-line"></div>*/}
