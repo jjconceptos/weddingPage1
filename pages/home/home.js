@@ -311,7 +311,7 @@ const LandingPage = () => {
         }
 
         .section-title {
-        font-size: 40px;
+        font-size: 38px;
         }
 
         .section-subtitle {
@@ -382,7 +382,7 @@ const LandingPage = () => {
           }
 
           .hosting-title {
-            font-size: 26px;
+            font-size: 28px;
             margin-top: 25vh;
         }
   
