@@ -378,7 +378,7 @@ const LandingPage = () => {
           }
 
           .hosting {
-          margin-bottom: -30vh; /* Adjusted margin for better separation from the next section */
+          margin-bottom: -35vh; /* Adjusted margin for better separation from the next section */
           }
 
           .hosting-title {
@@ -822,7 +822,7 @@ const LandingPage = () => {
       <div className="container-three">
       <div className="section-title"><strong>Hospedaje</strong></div>
       
-      <div className="hosting">
+      <div style={{ marginTop: '-15vh'}} className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>APAPACHO HOTEL</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>*/}
