@@ -772,7 +772,7 @@ const LandingPage = () => {
           <li>Recepción: 7:00 pm</li>
 
           </div>
-          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh'}} />
           {/* <div className="horizontal-line"></div>*/}
       </div>
       
@@ -816,7 +816,7 @@ const LandingPage = () => {
           {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
           </div>   
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh'}} />
       </div>
       
       <div className="container-three">
