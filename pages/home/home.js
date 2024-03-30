@@ -736,7 +736,7 @@ const LandingPage = () => {
       <img src="/dyc10.jpg" alt="Your Image" className="image"  />
       */}
        {/* <div className="horizontal-line"></div>*/}
-       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh', transform: 'scale(.8)' }} />
+       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh', transform: 'scale(.6)' }} />
 
        
       </div>
