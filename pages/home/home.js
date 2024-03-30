@@ -781,7 +781,7 @@ const LandingPage = () => {
       </div>
       
       <div className="container-two">
-      <div className="section-title">Vestimenta</div>
+      <div className="section-title"><strong>Vestimenta</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
 
