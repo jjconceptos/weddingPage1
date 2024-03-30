@@ -701,9 +701,10 @@ const LandingPage = () => {
        2024
       </div>
      {/*  <div className="horizontal-line" style={{ width: '100%', height: '1px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
-
       </div>
+      
       <div className="container">
+      <img src="/rosemary.png" alt="Your Image" className="image"  />
       <div className="section-title"></div>
       <Carousel items={carouselItems}/>
       {/* 
