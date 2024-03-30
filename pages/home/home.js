@@ -829,7 +829,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>APAPACHO HOTEL</strong></div>
-      <div style={{ fontSize: '30px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
+      <div style={{ fontSize: '26px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.apapachohotel.mx/">Visit website</a>
       </div>
