@@ -932,7 +932,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel14.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title"><strong>NUMU BOUTIQUE HOTEL- BY HYATT</strong></div>
+      <div className="hosting-title"><strong>NUMU BOUTIQUE HOTEL</strong></div>
       <div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.hyatt.com/en-US/hotel/mexico/numu/bjxub?src=corp_lclb_gmb_seo_bjxub">Visit website</a>
