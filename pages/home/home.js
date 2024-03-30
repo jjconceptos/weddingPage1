@@ -268,6 +268,14 @@ const LandingPage = () => {
           margin-top: 50vh; /* Adjust margin as needed */
         }
 
+        .rosemary {
+          position: relative;
+         
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.6);
+        }
+
         .image {
           position: relative;
           margin-top: 100vw;
@@ -704,7 +712,7 @@ const LandingPage = () => {
       </div>
       
       <div className="container">
-      <img src="/rosemary.png" alt="Your Image" className="image"  />
+      
       <div className="section-title"></div>
       <Carousel items={carouselItems}/>
       {/* 
@@ -720,19 +728,25 @@ const LandingPage = () => {
       <img src="/dyc10.jpg" alt="Your Image" className="image"  />
       */}
        {/* <div className="horizontal-line"></div>*/}
+       <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh' }} />
+
+       
       </div>
        
       <div className="container-one">
           <div className="section-title">Itinerario</div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
-          <p><strong style={{ fontSize: '24px' }}>Cuando?</strong></p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong >Cuando?</strong></p>
+
           <p><strong>Viernes 16 de agosto</strong></p>
-          <p><strong style={{ fontSize: '24px' }}>Donde?</strong></p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Donde?</strong></p>
           <p><strong>Hacienda San José Lavista</strong></p>
+          <img src="/haciendaSanJose.jpeg" alt="Your Image" style={{ marginTop: '8vh',  transform: 'scale(1.6)'}} />
           
-          <p style={{ fontSize: '24px' }}>Dress Code:</p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Dresscode: </strong></p>
           <p >Cocktail Boho</p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li style={{ fontSize: '12px' }}>Ceremonia Civil: 5:00 pm</li>
           <li style={{ fontSize: '12px' }}>Callejoneada: 6:00 pm</li>
           <li style={{ fontSize: '12px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
@@ -748,6 +762,7 @@ const LandingPage = () => {
           <p><strong style={{ fontSize: '30px' }}>Domingo 18 de agosto Hacienda San José Lavista:</strong></p>
           <li>Tornaboda: 12:00 pm</li>
           </div>
+          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '28vh',  transform: 'scale(1.2)'}} />
           {/* <div className="horizontal-line"></div>*/}
       </div>
       
