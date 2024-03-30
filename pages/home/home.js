@@ -844,7 +844,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title"><strong>L&rsquo;OTEL</strong>L&rsquo;OTEL</div>
+      <div className="hosting-title"><strong>L&rsquo;</strong>OTEL</div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
