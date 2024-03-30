@@ -828,7 +828,7 @@ const LandingPage = () => {
       
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">APAPACHO HOTEL</div>
+      <div className="hosting-title"><strong>APAPACHO HOTEL</strong></div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.apapachohotel.mx/">Visit website</a>
@@ -836,7 +836,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel2.png" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">CLANDESTINO HOTEL</div>
+      <div className="hosting-title"><strong>CLANDESTINO HOTEL</strong></div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://clandestinohotel.com/">Visit website</a>
@@ -844,7 +844,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">L&rsquo;OTEL</div>
+      <div className="hosting-title"><strong>L&rsquo;OTEL</strong>L&rsquo;OTEL</div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
@@ -852,7 +852,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel4.png" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">BELMOND CASA DE SIERRA NEVADA</div>
+      <div className="hosting-title"><strong>BELMOND CASA DE SIERRA NEVADA</strong></div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.belmond.com/hotels/north-america/mexico/san-miguel-de-allende/belmond-casa-de-sierra-nevada/">Visit website</a>
@@ -860,7 +860,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel5.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">CASA QUEBRADA HOTEL</div>
+      <div className="hosting-title"><strong>CASA QUEBRADA HOTEL</strong></div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotelcasaquebrada.mx/">Visit website</a>
@@ -868,7 +868,7 @@ const LandingPage = () => {
 
       <div className="hosting">
       <img src="/hotel6.jpeg" alt="Your Image" className="hosting-image"  />
-      <div className="hosting-title">CASA 1810</div>
+      <div className="hosting-title"><strong>CASA 1810</strong></div>
       <div style={{ fontSize: '30px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotels.cloudbeds.com/reservation/oqBpi9#checkin=2024-03-24&checkout=2024-03-25">Visit website</a>
