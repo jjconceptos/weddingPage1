@@ -738,28 +738,34 @@ const LandingPage = () => {
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong >Cuando?</strong></p>
-
           <p><strong>Viernes 16 de agosto</strong></p>
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Donde?</strong></p>
           <p><strong>Hacienda San José Lavista</strong></p>
-          <img src="/haciendaSanJose.jpeg" alt="Your Image" style={{ marginTop: '8vh',  transform: 'scale(1.6)'}} />
+          {/*<img src="/haciendaSanJose.jpeg" alt="Your Image" style={{ marginTop: '8vh',  transform: 'scale(1.6)'}} />*/}
           
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Dresscode: </strong></p>
+          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Cocktail Boho</p>
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
-          <li style={{ fontSize: '12px' }}>Ceremonia Civil: 5:00 pm</li>
-          <li style={{ fontSize: '12px' }}>Callejoneada: 6:00 pm</li>
-          <li style={{ fontSize: '12px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
+          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
+          <li style={{ fontSize: '18px' }}>Callejoneada: 6:00 pm</li>
+          <li style={{ fontSize: '18px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
          
 
-          <p><strong style={{ fontSize: '30px' }}>Boda religiosa</strong></p>
-          <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
-          <p>Dress Code: Rigurosa Etiqueta</p>
+          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Boda religiosa</strong></p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong >Cuando?</strong></p>
+          <p><strong>Sábado 17 de Agosto</strong></p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Donde?</strong></p>
+          <p><strong>Hacienda San José Lavista</strong></p>
+          <p>Dress Code: Etiqueta rigurosa</p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li>Ceremonia Religiosa: 5:00 pm</li>
           <li>Cata: 6:00 pm</li>
           <li>Recepción: 7:00 pm</li>
 
-          <p><strong style={{ fontSize: '30px' }}>Domingo 18 de agosto Hacienda San José Lavista:</strong></p>
+          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Tornaboda</strong></p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong >Cuando?</strong></p>
+          <p><strong>Domingo 18 de Agosto</strong></p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li>Tornaboda: 12:00 pm</li>
           </div>
           <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '28vh',  transform: 'scale(1.2)'}} />
