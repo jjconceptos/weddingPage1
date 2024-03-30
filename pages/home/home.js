@@ -822,7 +822,7 @@ const LandingPage = () => {
       <div className="container-three">
       <div className="section-title"><strong>Hospedaje</strong></div>
       
-      <div style={{ marginTop: '-55vh'}} className="hosting">
+      <div style={{ marginTop: '-30vh'}} className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>APAPACHO HOTEL</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>*/}
