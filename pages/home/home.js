@@ -736,7 +736,7 @@ const LandingPage = () => {
       <img src="/dyc10.jpg" alt="Your Image" className="image"  />
       */}
        {/* <div className="horizontal-line"></div>*/}
-       <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh' }} />
+       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh' }} />
 
        
       </div>
@@ -771,13 +771,8 @@ const LandingPage = () => {
           <li>Cata: 6:00 pm</li>
           <li>Recepción: 7:00 pm</li>
 
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Tornaboda</strong></p>
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong >Cuando?</strong></p>
-          <p><strong>Domingo 18 de Agosto</strong></p>
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
-          <li>Tornaboda: 12:00 pm</li>
           </div>
-          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
           {/* <div className="horizontal-line"></div>*/}
       </div>
       
@@ -821,7 +816,7 @@ const LandingPage = () => {
           {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
           </div>   
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
       </div>
       
       <div className="container-three">
@@ -964,7 +959,7 @@ const LandingPage = () => {
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
 
       </div>
       
@@ -979,7 +974,7 @@ const LandingPage = () => {
           <p><strong>Ubicacion</strong></p>    
           </div>
           {/*<div className="horizontal-line"></div>*/}
-          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
 
       </div>
 
@@ -996,7 +991,7 @@ const LandingPage = () => {
           <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
           </div>
          {/* <div className="horizontal-line"></div>*/}
-         <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+         <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
 
       </div>
 
@@ -1013,7 +1008,7 @@ const LandingPage = () => {
           <p><strong>cuenta</strong></p>    
           </div>
           {/* <div className="horizontal-line"></div> */}
-          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
 
       </div>
       
