@@ -378,7 +378,7 @@ const LandingPage = () => {
           }
 
           .hosting {
-          margin-bottom: 5vh; /* Adjusted margin for better separation from the next section */
+          margin-bottom: 0vh; /* Adjusted margin for better separation from the next section */
           }
 
           .hosting-title {
