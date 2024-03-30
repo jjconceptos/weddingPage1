@@ -331,7 +331,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 300vh;
+          margin-top: 345vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -345,7 +345,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 500vh;
+          margin-top: 575vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -370,7 +370,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 1925vh;
+          margin-top: 2060vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -396,7 +396,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 3275vh;
+          margin-top: 3500vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -405,7 +405,7 @@ const LandingPage = () => {
 
           .container-five {
             position: absolute;
-          margin-top: 3350vh;
+          margin-top: 3600vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -414,7 +414,7 @@ const LandingPage = () => {
 
           .container-six {
             position: absolute;
-          margin-top: 3440vh;
+          margin-top: 3700vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -504,6 +504,14 @@ const LandingPage = () => {
           height: 1px; /* Set the height of the line */
           background-color: #000; /* Set the color of the line */
           margin-top: 50vh; /* Adjust margin as needed */
+        }
+
+        .rosemary {
+          position: relative;
+         
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.8);
         }
 
         .image {
@@ -768,7 +776,7 @@ const LandingPage = () => {
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li>Tornaboda: 12:00 pm</li>
           </div>
-          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '28vh',  transform: 'scale(1.2)'}} />
+          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
           {/* <div className="horizontal-line"></div>*/}
       </div>
       
@@ -812,6 +820,7 @@ const LandingPage = () => {
           {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
           </div>   
       {/* <div className="horizontal-line"></div>*/}
+      <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
       </div>
       
       <div className="container-three">
@@ -954,6 +963,8 @@ const LandingPage = () => {
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
+      <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+
       </div>
       
       <div className="container-four">
@@ -967,6 +978,8 @@ const LandingPage = () => {
           <p><strong>Ubicacion</strong></p>    
           </div>
           {/*<div className="horizontal-line"></div>*/}
+          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+
       </div>
 
       <div className="container-five">
@@ -982,6 +995,8 @@ const LandingPage = () => {
           <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
           </div>
          {/* <div className="horizontal-line"></div>*/}
+         <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+
       </div>
 
       <div className="container-six">
@@ -997,6 +1012,8 @@ const LandingPage = () => {
           <p><strong>cuenta</strong></p>    
           </div>
           {/* <div className="horizontal-line"></div> */}
+          <img src="/rosemary.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+
       </div>
       
     </div>
