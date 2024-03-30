@@ -383,7 +383,7 @@ const LandingPage = () => {
 
           .hosting-title {
             font-size: 24px;
-            margin-top: 5vh;
+            margin-top: 15vh;
         }
   
         .hosting-image {
