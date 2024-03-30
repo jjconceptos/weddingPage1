@@ -742,7 +742,7 @@ const LandingPage = () => {
       </div>
        
       <div className="container-one">
-          <div className="section-title">Itinerario</div>
+          <div className="section-title"><strong>Itinerario</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong >Cuando?</strong></p>
@@ -824,7 +824,7 @@ const LandingPage = () => {
       </div>
       
       <div className="container-three">
-      <div className="section-title">Hospedaje</div>
+      <div className="section-title"><strong>Hospedaje</strong></div>
       
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
@@ -968,7 +968,7 @@ const LandingPage = () => {
       </div>
       
       <div className="container-four">
-          <div className="section-title">Maquillaje y peinado</div>
+          <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
           <p><strong style={{ fontSize: '24px' }}>Maquillaje</strong></p>
@@ -983,7 +983,7 @@ const LandingPage = () => {
       </div>
 
       <div className="container-five">
-          <div className="section-title">Transporte</div>
+          <div className="section-title"><strong>Transporte</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
           <p><strong style={{ fontSize: '24px' }}>Cuando?</strong></p>
@@ -1000,7 +1000,7 @@ const LandingPage = () => {
       </div>
 
       <div className="container-six">
-          <div className="section-title">Mesa de regalos</div>
+          <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
           
           <p><strong style={{ fontSize: '24px' }}>Palacio de hierro</strong></p>
