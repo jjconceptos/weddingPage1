@@ -768,7 +768,7 @@ const LandingPage = () => {
           <p>Dress Code: Etiqueta rigurosa</p>
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li>Ceremonia Religiosa: 5:00 pm</li>
-          <li>Cata: 6:00 pm</li>
+          <li>Coctél: 6:00 pm</li>
           <li>Recepción: 7:00 pm</li>
 
           </div>
@@ -825,7 +825,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>APAPACHO HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.apapachohotel.mx/">Visit website</a>
       </div>
@@ -833,7 +833,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel2.png" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>CLANDESTINO HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://clandestinohotel.com/">Visit website</a>
       </div>
@@ -841,7 +841,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>L&rsquo;</strong>OTEL</div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
       </div>
@@ -849,7 +849,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel4.png" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>BELMOND CASA DE SIERRA NEVADA</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.belmond.com/hotels/north-america/mexico/san-miguel-de-allende/belmond-casa-de-sierra-nevada/">Visit website</a>
       </div>
@@ -857,7 +857,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel5.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>CASA QUEBRADA HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotelcasaquebrada.mx/">Visit website</a>
       </div>
@@ -865,7 +865,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel6.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>CASA 1810</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotels.cloudbeds.com/reservation/oqBpi9#checkin=2024-03-24&checkout=2024-03-25">Visit website</a>
       </div>
@@ -873,7 +873,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel7.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>HOTEL MATILDA</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Aldama 53 · San Miguel de Allende, Gto. México 37700</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Aldama 53 · San Miguel de Allende, Gto. México 37700</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://hotelmatilda.com/">Visit website</a>
       </div>
@@ -881,7 +881,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel8.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>LIVE AQUA</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Calzada de la Presa No. 85 Zona Centro, 37700 San Miguel de Allende, Gto., México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Calzada de la Presa No. 85 Zona Centro, 37700 San Miguel de Allende, Gto., México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.liveaqua.com/hoteles-y-resorts/live-aqua-urban-resort-san-miguel-de-allende?gclid=CjwKCAjwzaSLBhBJEiwAJSRoktxuYj2yQbFhSdgbbyYZfKF3Z4lumxMMj_PwzYAGdIxNw3fm2LZotRoCujsQAvD_BwE&gclsrc=aw.ds">Visit website</a>
       </div>
@@ -889,7 +889,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel9.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>ROSEWOOD HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro, San Miguel de Allende, Gto. México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro, San Miguel de Allende, Gto. México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.rosewoodhotels.com/en/san-miguel-de-allende/offers">Visit website</a>
       </div>
@@ -897,7 +897,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel10.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>CASA HOYOS</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Mesones No. 14 , Zona Centro San Miguel de Allende, Gto., 37700, México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Mesones No. 14 , Zona Centro San Miguel de Allende, Gto., 37700, México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.casahoyos.mx/es">Visit website</a>
       </div>
@@ -905,7 +905,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel11.png" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>AMATTE</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Salida real a Querétaro 168, Zona Centro, 37700 San Miguel de Allende Gto.</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Salida real a Querétaro 168, Zona Centro, 37700 San Miguel de Allende Gto.</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://amatte.com.mx/">Visit website</a>
       </div>
@@ -913,7 +913,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel12.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>REAL DE MINAS</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Camino Viejo al Panteón 1, San Antonio, 37700 San Miguel de Allende, Gto. México</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Camino Viejo al Panteón 1, San Antonio, 37700 San Miguel de Allende, Gto. México</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.realdeminas.com/es/">Visit website</a>
       </div>
@@ -921,7 +921,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel13.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>LA MORADA HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Correo #10 Centro. San Miguel de Allende Guanajuato, Mexico 37700</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Correo #10 Centro. San Miguel de Allende Guanajuato, Mexico 37700</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.lamoradahotel.com.mx/">Visit website</a>
       </div>
@@ -929,7 +929,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel14.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>NUMU BOUTIQUE HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.hyatt.com/en-US/hotel/mexico/numu/bjxub?src=corp_lclb_gmb_seo_bjxub">Visit website</a>
       </div>
@@ -937,7 +937,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel15.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>ILOROJO</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Salida Real a Querétaro 136-A, Zona Centro, 37774 San Miguel de Allende, Gto.</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Salida Real a Querétaro 136-A, Zona Centro, 37774 San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.ilorojohotel.com/">Visit website</a>
       </div>
@@ -945,7 +945,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel16.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>CASA BLANCA HOTEL</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Juarez No. 7 CentroSan Miguel de Allende Gto 37700</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Juarez No. 7 CentroSan Miguel de Allende Gto 37700</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://casablanca7.com/es/">Visit website</a>
       </div>
@@ -953,7 +953,7 @@ const LandingPage = () => {
       <div className="hosting">
       <img src="/hotel17.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>HACIENDA LOS PICACHOS</strong></div>
-      <div style={{ fontSize: '23px', marginTop: '2vh' }}>Carretera San Miguel de Allende, Qto. Km. 3, San Jose de la Posta, 37700 San Miguel de Allende, Gto.</div>
+      {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Carretera San Miguel de Allende, Qto. Km. 3, San Jose de la Posta, 37700 San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '4vh' }}></div>
       <a style={{ fontSize: '20px'}} href="https://www.haciendalospicachos.com.mx/">Visit website</a>
       </div>
@@ -977,7 +977,7 @@ const LandingPage = () => {
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
 
       </div>
-
+      {/* 
       <div className="container-five">
           <div className="section-title"><strong>Transporte</strong></div>
           <div className="itinerary-info">
@@ -990,11 +990,11 @@ const LandingPage = () => {
           <p><strong>Boda religiosa</strong></p>
           <p><strong>Sábado 17 de agosto Hacienda San José Lavista</strong></p>
           </div>
-         {/* <div className="horizontal-line"></div>*/}
+        
          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
-
       </div>
-
+      */}
+    
       <div className="container-six">
           <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
