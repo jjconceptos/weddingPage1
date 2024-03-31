@@ -766,7 +766,9 @@ const LandingPage = () => {
           <p><strong>Sábado 17 de Agosto</strong></p>
           
           <p><strong>Hacienda San José Lavista</strong></p>
-          <p>Dress Code: Etiqueta rigurosa</p>
+          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
+          <p >Etiqueta rigurosa</p>
+
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li>Ceremonia Religiosa: 5:00 pm</li>
           <li><span>Coctél:</span><br />
