@@ -396,7 +396,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 1740vh;
+          margin-top: 1737vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -931,7 +931,7 @@ const LandingPage = () => {
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '59vh',  transform: 'scale(1.2)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '55vh',  transform: 'scale(1.2)'}} />
 
       </div>
       
