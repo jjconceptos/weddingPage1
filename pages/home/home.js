@@ -736,7 +736,7 @@ const LandingPage = () => {
       <img src="/dyc10.jpg" alt="Your Image" className="image"  />
       */}
        {/* <div className="horizontal-line"></div>*/}
-       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh', transform: 'scale(.6)' }} />
+       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh', transform: 'scale(.4)' }} />
 
        
       </div>
@@ -755,6 +755,10 @@ const LandingPage = () => {
           
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Cocktail Boho</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Ladies</a>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Gentlemen</a>
+          </div>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
         
@@ -776,6 +780,10 @@ const LandingPage = () => {
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Etiqueta rigurosa</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Ladies</a>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Gentlemen</a>
+          </div>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
           <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Religiosa: 5:00 pm</li>
