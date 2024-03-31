@@ -785,7 +785,7 @@ const LandingPage = () => {
           <span>7:00 pm</span></li>
 
           </div>
-          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.8)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
           {/* <div className="horizontal-line"></div>*/}
       </div>
       
@@ -931,7 +931,7 @@ const LandingPage = () => {
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '55vh',  transform: 'scale(1.2)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '55vh',  transform: 'scale(.6)'}} />
 
       </div>
       
@@ -946,7 +946,7 @@ const LandingPage = () => {
           <p><strong>Ubicacion</strong></p>    
           </div>
           {/*<div className="horizontal-line"></div>*/}
-          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
 
       </div>
       {/* 
@@ -980,7 +980,7 @@ const LandingPage = () => {
           <p><strong>cuenta</strong></p>    
           </div>
           {/* <div className="horizontal-line"></div> */}
-          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
 
       </div>
 
@@ -1025,7 +1025,7 @@ const LandingPage = () => {
           {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
           </div>   
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.8)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
       </div>
       
     </div>
