@@ -345,7 +345,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 2055vh;
+          margin-top: 1965vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -396,7 +396,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 1765vh;
+          margin-top: 1740vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -405,7 +405,7 @@ const LandingPage = () => {
 
           .container-five {
             position: absolute;
-          margin-top: 1855vh;
+          margin-top: 1545vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -414,7 +414,7 @@ const LandingPage = () => {
 
           .container-six {
             position: absolute;
-          margin-top: 1955vh;
+          margin-top: 1825vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -931,7 +931,7 @@ const LandingPage = () => {
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '55vh',  transform: 'scale(1.2)'}} />
 
       </div>
       
