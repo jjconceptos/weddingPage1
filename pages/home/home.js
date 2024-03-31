@@ -757,7 +757,7 @@ const LandingPage = () => {
           <p >Cocktail Boho</p>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-          <div style={{  }}>
+          <div style={{ listStylePosition: 'inside' }}>
           <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
           <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
           <span>6:00 pm</span></li>
