@@ -754,7 +754,7 @@ const LandingPage = () => {
 
           
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p >Cocktail Boho</p>
+          <p style={{ fontSize: '18px'}}>Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
@@ -779,7 +779,7 @@ const LandingPage = () => {
 
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p >Etiqueta rigurosa</p>
+          <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
