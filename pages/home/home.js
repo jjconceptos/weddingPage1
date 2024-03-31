@@ -345,7 +345,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 575vh;
+          margin-top: 5575vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -370,7 +370,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 1850vh;
+          margin-top:   1100vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -581,7 +581,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 550vh;
+          margin-top: 5550vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -606,7 +606,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 2550vh;
+          margin-top: 550vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -789,48 +789,7 @@ const LandingPage = () => {
           {/* <div className="horizontal-line"></div>*/}
       </div>
       
-      <div className="container-two">
-      <div className="section-title"><strong>Vestimenta</strong></div>
-
-       {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
-
-      <div className="color-palette">
-        <div className="color-square" style={{ backgroundColor: '#4B4C2D' }}></div>
-        <div className="color-square" style={{ backgroundColor: '#C19A68' }}></div>
-        <div className="color-square" style={{ backgroundColor: '#DED5C8' }}></div>
-        <div className="color-square" style={{ backgroundColor: '#271523' }}></div>
-        <div className="color-square" style={{ backgroundColor: '#FFFFFF' }}></div>
-        <div className="color-square" style={{ backgroundColor: '#D7AE42' }}></div>
-      </div> */}
-
-      <div className="attire-info">
-          <p><strong style={{ fontSize: '30px' }}>Mujeres</strong></p>
-
-          <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
-          <p >Cocktail Boho</p>
-          <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>
-          {/*<img src="/womensBoho.avif" alt="Your Image" className="image"  />*/}
-  
-          <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
-          <p >Etiqueta Rigurosa </p>
-          <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>
-
-          {/* <img src="/longDress.avif" alt="Your Image" className="image"  />*/}
-          </div>
-          <div className="attire-info">
-          <p><strong style={{ fontSize: '30px' }}>Hombres</strong></p>
-
-          <p><strong style={{ fontSize: '30px'}}>Boda civil</strong></p>
-          <p >Cocktail Boho</p>
-          <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>     
-          <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
-          <p >Etiqueta Rigurosa </p>
-          <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>
-          {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
-          </div>   
-      {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.8)'}} />
-      </div>
+     
       
       <div className="container-three">
       <div className="section-title"><strong>Hospedaje</strong></div>
@@ -1023,6 +982,50 @@ const LandingPage = () => {
           {/* <div className="horizontal-line"></div> */}
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(1.2)'}} />
 
+      </div>
+
+
+      <div className="container-two">
+      <div className="section-title"><strong>Vestimenta</strong></div>
+
+       {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
+
+      <div className="color-palette">
+        <div className="color-square" style={{ backgroundColor: '#4B4C2D' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#C19A68' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#DED5C8' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#271523' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#FFFFFF' }}></div>
+        <div className="color-square" style={{ backgroundColor: '#D7AE42' }}></div>
+      </div> */}
+
+      <div className="attire-info">
+          <p><strong style={{ fontSize: '30px' }}>Mujeres</strong></p>
+
+          <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
+          <p >Cocktail Boho</p>
+          <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>
+          {/*<img src="/womensBoho.avif" alt="Your Image" className="image"  />*/}
+  
+          <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
+          <p >Etiqueta Rigurosa </p>
+          <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>
+
+          {/* <img src="/longDress.avif" alt="Your Image" className="image"  />*/}
+          </div>
+          <div className="attire-info">
+          <p><strong style={{ fontSize: '30px' }}>Hombres</strong></p>
+
+          <p><strong style={{ fontSize: '30px'}}>Boda civil</strong></p>
+          <p >Cocktail Boho</p>
+          <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>     
+          <p style={{ fontSize: '30px', marginTop: '20vh' }}><strong>Boda religiosa</strong></p>
+          <p >Etiqueta Rigurosa </p>
+          <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas</a>
+          {/* <img src="/blackTie.jpeg" alt="Your Image" className="image"  />*/}
+          </div>   
+      {/* <div className="horizontal-line"></div>*/}
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.8)'}} />
       </div>
       
     </div>
