@@ -756,8 +756,8 @@ const LandingPage = () => {
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Ladies</a>
-            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Gentlemen</a>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
           </div>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
@@ -781,8 +781,8 @@ const LandingPage = () => {
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Ladies</a>
-            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Gentlemen</a>
+            <a href="#" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
+            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
           </div>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
