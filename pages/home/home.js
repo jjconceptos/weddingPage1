@@ -746,7 +746,7 @@ const LandingPage = () => {
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
           
-          <p style={{ marginTop: '7vh'}}><strong>Viernes 16 de agosto</strong></p>
+          <p style={{ marginTop: '7vh', textDecoration: 'underline'}}><strong>Viernes 16 de agosto</strong></p>
          
           <p style={{ marginTop: '2vh'}}><strong>Hacienda San José Lavista</strong></p>
 
@@ -766,9 +766,12 @@ const LandingPage = () => {
 
           <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
           
-          <p style={{ marginTop: '7vh'}}><strong>Sábado 17 de Agosto</strong></p>
+          <p style={{ marginTop: '7vh', textDecoration: 'underline'}}><strong>Sábado 17 de Agosto</strong></p>
           
           <p style={{ marginTop: '2vh'}}><strong>Hacienda San José Lavista</strong></p>
+
+          <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
+
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Etiqueta rigurosa</p>
