@@ -14,11 +14,11 @@ const LandingPage = () => {
   const sectionsData = [
     { name: 'Inicio', scrollPosition: 0 },
     { name: 'Fotos', scrollPosition: 680 },
-    { name: 'Vestimenta', scrollPosition: 10500 },
     { name: 'Hospedaje', scrollPosition: 12000 },
     { name: 'Maquillaje y peinado', scrollPosition: 27000 },
     { name: 'Transporte', scrollPosition: 27800 },
     { name: 'Mesa de regalos', scrollPosition: 28600 },
+    { name: 'Vestimenta', scrollPosition: 10500 },
     // Add more sections as needed
   ];
 
