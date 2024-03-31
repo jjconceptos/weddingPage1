@@ -757,12 +757,12 @@ const LandingPage = () => {
           <p >Cocktail Boho</p>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-          <div style={{ listStylePosition: 'inside' }}>
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
+          
+          <li style={{ fontSize: '18px', marginTop: '4vh', display: 'flex', alignItems: 'flex-start' }}>Ceremonia Civil: 5:00 pm</li>
+          <li style={{ fontSize: '18px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'  }}><span>Callejoneada:</span><br />
           <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
-          </div>
+          <li style={{ fontSize: '18px', display: 'flex', alignItems: 'flex-start' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
+         
           <img src="/haciendaSanJose.jpeg" alt="Your Image" style={{ marginTop: '8vh',  transform: 'scale(1.6)'}} />
 
           <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
