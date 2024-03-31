@@ -746,7 +746,7 @@ const LandingPage = () => {
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
           
-          <p><strong>Viernes 16 de agosto</strong></p>
+          <p style={{ marginTop: '4vh'}}><strong>Viernes 16 de agosto</strong></p>
          
           <p><strong>Hacienda San José Lavista</strong></p>
           
@@ -763,9 +763,10 @@ const LandingPage = () => {
 
           <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
           
-          <p><strong>Sábado 17 de Agosto</strong></p>
+          <p style={{ marginTop: '4vh'}}><strong>Sábado 17 de Agosto</strong></p>
           
           <p><strong>Hacienda San José Lavista</strong></p>
+
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p >Etiqueta rigurosa</p>
 
