@@ -769,7 +769,8 @@ const LandingPage = () => {
           <p>Dress Code: Etiqueta rigurosa</p>
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Horarios: </strong></p>
           <li>Ceremonia Religiosa: 5:00 pm</li>
-          <li>Coctél: 6:00 pm</li>
+          <li><span>Coctél:</span><br />
+          <span>6:00 pm</span></li>
           <li>Recepción: 7:00 pm</li>
 
           </div>
