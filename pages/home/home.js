@@ -777,10 +777,11 @@ const LandingPage = () => {
           <p >Etiqueta rigurosa</p>
 
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-          <li>Ceremonia Religiosa: 5:00 pm</li>
-          <li><span>Coctél:</span><br />
+          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Religiosa: 5:00 pm</li>
+          <li style={{ fontSize: '18px' }}><span>Coctél:</span><br />
           <span>6:00 pm</span></li>
-          <li>Recepción: 7:00 pm</li>
+          <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
+          <span>7:00 pm</span></li>
 
           </div>
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.8)'}} />
