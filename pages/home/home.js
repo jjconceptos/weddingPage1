@@ -243,7 +243,7 @@ const LandingPage = () => {
         .menu-item {
           margin-bottom: 20px;
           font-size: 20px;
-          color: #ffff;
+          color: #271523;
           cursor: pointer;
         }
 
@@ -482,7 +482,7 @@ const LandingPage = () => {
         .menu-item {
           margin-bottom: 20px;
           font-size: 20px;
-          color: #ffff;
+          color: #271523;
           cursor: pointer;
         }
 
@@ -548,7 +548,7 @@ const LandingPage = () => {
         }
 
         .section-title {
-        font-size: 104px;
+        font-size: 70px;
         font-weight: bold;
         }
 
