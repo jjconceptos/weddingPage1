@@ -345,7 +345,7 @@ const LandingPage = () => {
 
           .itinerary-image {
             margin-top: 8vh; 
-            transform: 'scale(2)'
+            transform: scale(1.6);
           }
 
           .container-two {
