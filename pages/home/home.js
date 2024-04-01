@@ -574,7 +574,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 370vh;
+          margin-top: 375vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -617,7 +617,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 2550vh;
+          margin-top: 2042vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -630,7 +630,7 @@ const LandingPage = () => {
         }
 
           .hosting-title {
-            font-size: 100px;
+            font-size: 50px;
             margin-top: 25vh;
         }
 
@@ -813,7 +813,7 @@ const LandingPage = () => {
       <div className="container-three">
       <div className="section-title"><strong>Hospedaje</strong></div>
       
-      <div style={{ marginTop: '-30vh'}} className="hosting">
+      <div style={{ marginTop: '-120vh'}} className="hosting">
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>APAPACHO HOTEL</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>*/}
