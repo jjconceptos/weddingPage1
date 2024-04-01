@@ -289,6 +289,16 @@ const LandingPage = () => {
           transform: scale(.6);
         }
 
+        .rosemary-3 {
+          position: relative;
+          margin-top: 55vh;
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.6);
+        }
+
+        
+
         .image {
           position: relative;
           margin-top: 100vw;
@@ -535,6 +545,14 @@ const LandingPage = () => {
           margin-left: auto; /* Center horizontally */
           margin-right: auto; /* Center horizontally */
           transform: scale(.8);
+        }
+
+        .rosemary-3 {
+          position: relative;
+          margin-top: 55vh;
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.6);
         }
 
         .image {
@@ -974,7 +992,7 @@ const LandingPage = () => {
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
-      <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '55vh',  transform: 'scale(.6)'}} />
+      <img src="/oliveWreath.png" alt="Your Image" className="rosemary-3"/>
 
       </div>
       
