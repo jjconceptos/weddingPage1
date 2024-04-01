@@ -343,6 +343,11 @@ const LandingPage = () => {
             
           }
 
+          .itinerary-image {
+            margin-top: 8vh; 
+            transform: 'scale(1.6)'
+          }
+
           .container-two {
           position: absolute;
           margin-top: 1930vh;
@@ -560,7 +565,7 @@ const LandingPage = () => {
 
         .container {
           position: absolute;
-          margin-top: 200vh;
+          margin-top: 170vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -569,7 +574,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 350vh;
+          margin-top: 370vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -578,6 +583,11 @@ const LandingPage = () => {
 
           .itinerary-info {
             margin-top: 10vh; /* Adjust margin-top as needed */
+          }
+
+          .itinerary-image {
+            margin-top: 20vh; 
+            transform: scale(1.6);
           }
 
           .container-two {
@@ -768,7 +778,7 @@ const LandingPage = () => {
           <span>6:00 pm</span></li>
           <li style={{ fontSize: '18px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
          
-          <img src="/haciendaSanJose.jpeg" alt="Your Image" style={{ marginTop: '8vh',  transform: 'scale(1.6)'}} />
+          <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
 
           <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
           
