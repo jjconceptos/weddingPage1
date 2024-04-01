@@ -199,7 +199,7 @@ const LandingPage = () => {
         .bar {
           width: 35px;
           height: 5px;
-          background-color: #000;
+          background-color: #271523;
           margin: 6px 0;
           transition: 0.4s;
         }
@@ -438,7 +438,7 @@ const LandingPage = () => {
         .bar {
           width: 35px;
           height: 5px;
-          background-color: #000;
+          background-color: #271523;
           margin: 6px 0;
           transition: 0.4s;
         }
