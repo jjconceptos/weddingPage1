@@ -1018,7 +1018,7 @@ const LandingPage = () => {
           
           <p><strong style={{ fontSize: '24px' }}>Palacio de hierro</strong></p>
           <p><strong>Evento número 385296</strong></p> 
-          <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
+          <a style={{ fontSize: '18px', textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
              
 
           <p style={{ fontSize: '24px' }}>Cuenta bancaria</p>
