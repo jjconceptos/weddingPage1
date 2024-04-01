@@ -14,9 +14,9 @@ const LandingPage = () => {
   const sectionsData = [
     { name: 'Inicio', scrollPosition: 0 },
     { name: 'Fotos', scrollPosition: 680 },
-    { name: 'Itinerario', scrollPosition: 1280 },
-    { name: 'Hospedaje', scrollPosition: 2900 },
-    { name: 'Maquillaje y peinado', scrollPosition: 27000 },
+    { name: 'Itinerario', scrollPosition: 1300 },
+    { name: 'Hospedaje', scrollPosition: 3100 },
+    { name: 'Maquillaje y peinado', scrollPosition: 6700 },
     { name: 'Transporte', scrollPosition: 27800 },
     { name: 'Mesa de regalos', scrollPosition: 28600 },
     { name: 'Vestimenta', scrollPosition: 10500 },
