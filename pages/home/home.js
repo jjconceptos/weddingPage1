@@ -549,7 +549,7 @@ const LandingPage = () => {
 
         .rosemary-3 {
           position: relative;
-          margin-top: 55vh;
+          margin-top: 140vh;
           margin-left: auto; /* Center horizontally */
           margin-right: auto; /* Center horizontally */
           transform: scale(.6);
@@ -627,7 +627,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 3860vh;
+          margin-top: 3903vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -652,7 +652,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 2042vh;
+          margin-top: 2085vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -685,7 +685,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 3650vh;
+          margin-top: 3693vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -694,7 +694,7 @@ const LandingPage = () => {
 
           .container-five {
             position: absolute;
-          margin-top: 3750vh;
+          margin-top: 3758vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -703,7 +703,7 @@ const LandingPage = () => {
 
           .container-six {
             position: absolute;
-          margin-top: 3730vh;
+          margin-top: 3772vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
