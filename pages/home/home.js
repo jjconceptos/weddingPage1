@@ -13,8 +13,8 @@ const LandingPage = () => {
    // Define sections and their scroll positions
    const sectionsDataMobile = [
     { name: 'Inicio', scrollPosition: 0 },
-    { name: 'Fotos', scrollPosition: 700 },
-    { name: 'Itinerario', scrollPosition: 1460 },
+    { name: 'Fotos', scrollPosition: 710 },
+    { name: 'Itinerario', scrollPosition: 1470 },
     { name: 'Hospedaje', scrollPosition: 3800 },
     { name: 'Maquillaje y peinado', scrollPosition: 6700 },
     { name: 'Transporte', scrollPosition: 27800 },
