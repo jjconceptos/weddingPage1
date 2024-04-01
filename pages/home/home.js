@@ -10,11 +10,11 @@ const LandingPage = () => {
   const [sections, setSections] = useState([]);
   const [isMobileViewport, setIsMobileViewport] = useState(false);
 
-  // Define sections and their scroll positions
-  const sectionsData = [
+   // Define sections and their scroll positions
+   const sectionsDataMobile = [
     { name: 'Inicio', scrollPosition: 0 },
-    { name: 'Fotos', scrollPosition: 680 },
-    { name: 'Itinerario', scrollPosition: 1600 },
+    { name: 'Fotos', scrollPosition: 660 },
+    { name: 'Itinerario', scrollPosition: 1300 },
     { name: 'Hospedaje', scrollPosition: 3800 },
     { name: 'Maquillaje y peinado', scrollPosition: 6700 },
     { name: 'Transporte', scrollPosition: 27800 },
@@ -23,11 +23,25 @@ const LandingPage = () => {
     // Add more sections as needed
   ];
 
+  // Define sections and their scroll positions
+  const sectionsDataDesktop = [
+    { name: 'Inicio', scrollPosition: 0 },
+    { name: 'Fotos', scrollPosition: 855 },
+    { name: 'Itinerario', scrollPosition: 1600 },
+    { name: 'Hospedaje', scrollPosition: 3700 },
+    { name: 'Maquillaje y peinado', scrollPosition: 28700 },
+    { name: 'Transporte', scrollPosition: 27800 },
+    { name: 'Mesa de regalos', scrollPosition: 28600 },
+    { name: 'Vestimenta', scrollPosition: 10500 },
+    // Add more sections as needed
+  ];
+
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Set sections only when the menu is opened
+    // Set sections based on viewport width
     if (!isMenuOpen) {
-      setSections(sectionsData);
+      const sections = window.innerWidth <= 768 ? sectionsDataMobile : sectionsDataDesktop;
+      setSections(sections);
     } else {
       setSections([]); // Clear sections when the menu is closed
     }
@@ -706,7 +720,7 @@ const LandingPage = () => {
   <>
     <div className="menu-overlay" onClick={handleToggleMenu}></div>
     <div className="menu-items">
-      {sectionsData.map((section, index) => (
+      {sections.map((section, index) => (
         <div className="menu-item" key={index} onClick={() => handleMenuItemClick(section.scrollPosition)}>
           {section.name}
         </div>
