@@ -715,7 +715,7 @@ const LandingPage = () => {
        
         
 
-        @media screen and (min-width: 768px) and (min-height: 600px) {
+        @media screen and (min-width: 1290px) and (min-height: 800px) {
 
                 
         .burger-menu {
