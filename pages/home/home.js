@@ -411,7 +411,7 @@ const LandingPage = () => {
 
           .hosting-title {
             font-size: 24px;
-            margin-top: 15vh;
+            margin-top: 8vh;
         }
 
         .hosting-first-margin {
@@ -666,7 +666,7 @@ const LandingPage = () => {
   
             .hosting-title {
               font-size: 24px;
-              margin-top: 15vh;
+              margin-top: 9vh;
           }
   
           .hosting-first-margin {
