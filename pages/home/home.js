@@ -1270,6 +1270,8 @@ const LandingPage = () => {
         href="https://db.onlinewebfonts.com/c/57f0d312017e3471c956900c601e683d?family=Cherolina" 
         rel="stylesheet"
       />
+      <img src="/plantLeft.png" alt="Your Image" className="image"  />
+      <img src="/plantRight.png" alt="Your Image" className="image"  />
       <div className="title" style={{ fontFamily: 'Cherolina'}}>
         Daniela y César
       </div>
