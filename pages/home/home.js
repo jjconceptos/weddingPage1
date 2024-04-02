@@ -971,7 +971,7 @@ const LandingPage = () => {
               }
 
            
-              @media screen and (max-width: 173.95mm) {
+              @media screen and (min-width: 1920px) and (min-height: 1080px) {
                    
                 .burger-menu {
                   position: fixed;
@@ -1123,7 +1123,7 @@ const LandingPage = () => {
         
                   .container-one {
                     position: absolute;
-                  margin-top: 375vh;
+                  margin-top: 345vh;
                   left: 50%;
                   transform: translate(-50%, -50%);
                   text-align: center;
@@ -1141,7 +1141,7 @@ const LandingPage = () => {
         
                   .container-two {
                   position: absolute;
-                  margin-top: 3903vh;
+                  margin-top: 3616vh;
                   left: 50%;
                   transform: translate(-50%, -50%);
                   text-align: center;
@@ -1166,7 +1166,7 @@ const LandingPage = () => {
         
                   .container-three {
                     position: absolute;
-                  margin-top: 20085vh;
+                  margin-top: 1942vh;
                   left: 50%;
                   transform: translate(-50%, -50%);
                   text-align: center;
@@ -1199,7 +1199,7 @@ const LandingPage = () => {
         
                   .container-four {
                     position: absolute;
-                  margin-top: 3693vh;
+                  margin-top: 3453vh;
                   left: 50%;
                   transform: translate(-50%, -50%);
                   text-align: center;
@@ -1217,7 +1217,7 @@ const LandingPage = () => {
         
                   .container-six {
                     position: absolute;
-                  margin-top: 3772vh;
+                  margin-top: 3509vh;
                   left: 50%;
                   transform: translate(-50%, -50%);
                   text-align: center;
