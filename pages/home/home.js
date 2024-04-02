@@ -715,7 +715,7 @@ const LandingPage = () => {
        
         
 
-        @media screen and (min-width: 1290px) and (min-height: 800px) {
+        @media screen and (min-width: 1290px) and (min-height: 600px) {
 
                 
         .burger-menu {
@@ -1122,7 +1122,7 @@ const LandingPage = () => {
         
                   .container-one {
                     position: absolute;
-                  margin-top: 340vh;
+                  margin-top: 335vh;
                   left: 50%;
                   transform: translate(-50%, -50%);
                   text-align: center;
