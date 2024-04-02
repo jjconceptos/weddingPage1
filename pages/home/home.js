@@ -1327,7 +1327,8 @@ const LandingPage = () => {
           <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
           <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
           <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}>Rompe Hielos: 7:00 pm – 11:00 pm</li>
+          <li style={{ fontSize: '18px' }}><span>Rompe hielos:</span><br />
+          <span>7:00 pm - 11:00pm</span></li>
          
           <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
 
