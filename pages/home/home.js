@@ -302,9 +302,10 @@ const LandingPage = () => {
         .image {
           position: relative;
           margin-top: 100vw;
+          margin-bottom: 10vw;
           width: 100%; /* Set the width to 70% of the viewport width */
           height: auto; /* Maintain the aspect ratio */
-          transform: scale(.5); /* Scale the image by 1.3 times its original size */
+          transform: scale(1.5); /* Scale the image by 1.3 times its original size */
         }
  
 
