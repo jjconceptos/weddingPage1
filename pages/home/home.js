@@ -1370,7 +1370,7 @@ const LandingPage = () => {
       <img src="/hotel1.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>APAPACHO</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>*/}
-      <div style={{ marginTop: '4vh' }}></div>
+      <div style={{ marginTop: '2vh' }}></div>
       <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.apapachohotel.mx/">Visit website</a>
       </div>
 
@@ -1378,7 +1378,7 @@ const LandingPage = () => {
       <img src="/hotel2.png" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>CLANDESTINO</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>*/}
-      <div style={{ marginTop: '4vh' }}></div>
+      <div style={{ marginTop: '2vh' }}></div>
       <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://clandestinohotel.com/">Visit website</a>
       </div>
 
@@ -1386,7 +1386,7 @@ const LandingPage = () => {
       <img src="/hotel3.jpeg" alt="Your Image" className="hosting-image"  />
       <div className="hosting-title"><strong>L&rsquo;</strong>OTEL</div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>*/}
-      <div style={{ marginTop: '4vh' }}></div>
+      <div style={{ marginTop: '2vh' }}></div>
       <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
       </div>
 
