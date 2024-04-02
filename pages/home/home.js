@@ -1572,7 +1572,7 @@ const LandingPage = () => {
       </div> */}
 
       <div className="attire-info">
-          <p><strong style={{ fontSize: '30px' }}>Damas</strong></p>
+          
 
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
@@ -1585,7 +1585,7 @@ const LandingPage = () => {
           {/* <img src="/longDress.avif" alt="Your Image" className="image"  />*/}
           </div>
           <div className="attire-info">
-          <p><strong style={{ fontSize: '30px' }}>Caballeros</strong></p>
+         
           <p><strong style={{ fontSize: '30px' }}>Ceremonia religiosa</strong></p>
           <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
           <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
