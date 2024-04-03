@@ -810,7 +810,7 @@ const LandingPage = () => {
 
         .rosemary-3 {
           position: relative;
-          margin-top: 140vh;
+          margin-top: 180vh;
           margin-left: auto; /* Center horizontally */
           margin-right: auto; /* Center horizontally */
           transform: scale(.6);
@@ -1306,7 +1306,7 @@ const LandingPage = () => {
       <img src="/dyc10.jpg" alt="Your Image" className="image"  />
       */}
        {/* <div className="horizontal-line"></div>*/}
-       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh', transform: 'scale(.6)' }} />
+       <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '8vh', transform: 'scale(.5)' }} />
 
        
       </div>
