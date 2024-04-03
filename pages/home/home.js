@@ -1585,7 +1585,7 @@ const LandingPage = () => {
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
           
           <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '2vh' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas damas</a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas caballeros</a>
           </div>
