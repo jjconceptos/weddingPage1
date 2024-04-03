@@ -18,7 +18,7 @@ const LandingPage = () => {
     { name: 'Hospedaje', scrollPosition: 3400 },
     { name: 'Maquillaje y peinado', scrollPosition: 11900 },
     { name: 'Mesa de regalos', scrollPosition: 12355 },
-    { name: 'Vestimenta', scrollPosition: 13000 },
+    { name: 'Dresscode', scrollPosition: 13000 },
     // Add more sections as needed
   ];
 
@@ -30,7 +30,7 @@ const LandingPage = () => {
     { name: 'Hospedaje', scrollPosition: 3700 },
     { name: 'Maquillaje y peinado', scrollPosition: 26000 },
     { name: 'Mesa de regalos', scrollPosition: 26600 },
-    { name: 'Vestimenta', scrollPosition: 27100 },
+    { name: 'Dresscode', scrollPosition: 27100 },
     // Add more sections as needed
   ];
 
@@ -1566,7 +1566,7 @@ const LandingPage = () => {
 
 
       <div className="container-two">
-      <div className="section-title"><strong>Vestimenta</strong></div>
+      <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
 
@@ -1583,11 +1583,11 @@ const LandingPage = () => {
           
 
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Cocktail Boho</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
-            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
+          
+          <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
+            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas damas</a>
+            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas caballeros</a>
           </div>
 
           {/* <img src="/longDress.avif" alt="Your Image" className="image"  />*/}
@@ -1595,11 +1595,11 @@ const LandingPage = () => {
           <div className="attire-info">
          
           <p><strong style={{ fontSize: '30px' }}>Ceremonia religiosa</strong></p>
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
+          
           <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
-            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
+            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas damas</a>
+            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Ideas caballeros</a>
           </div>
           </div>   
       {/* <div className="horizontal-line"></div>*/}
