@@ -870,7 +870,7 @@ const LandingPage = () => {
 
           .container-one {
             position: absolute;
-          margin-top: 375vh;
+          margin-top: 370vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -913,7 +913,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 2085vh;
+          margin-top: 1985vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
