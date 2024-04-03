@@ -922,7 +922,7 @@ const LandingPage = () => {
 
           .hosting {
             position: relative;
-            margin-bottom: -100vh; /* Adjusted margin for shorter vertical distance between hotels */
+            margin-bottom: -140vh; /* Adjusted margin for shorter vertical distance between hotels */
         }
 
           .hosting-title {
