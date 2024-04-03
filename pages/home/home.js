@@ -99,44 +99,46 @@ const LandingPage = () => {
       
     },
     {
-      imagePath: '/dyc8.jpg',
-      
-      
+      imagePath: '/dyc8.jpg',  
     },
     {
-      imagePath: '/dyc9.jpg',
-    
-      
+      imagePath: '/dyc9.jpg',  
     },
     {
       imagePath: '/dyc10.jpg',
-      
-      
+    },
+    {
+      imagePath: '/dyc11.jpg',
     },
   ];
 
   const yourCarouselItemsDesktop = [
     
+    
     {
-      imagePath: '/dyc11.jpeg',
-      
-      
+      imagePath: '/dyc12.jpg', 
     },
     {
-      imagePath: '/dyc12.jpeg',
-      
-      
+      imagePath: '/dyc13.jpg', 
     },
     {
-      imagePath: '/dyc13.jpeg',
-      
-      
+      imagePath: '/dyc15.jpg',
     },
     {
-      imagePath: '/dyc14.jpeg',
-      
-      
+      imagePath: '/dyc16.jpg',
     },
+    {
+      imagePath: '/dyc17.jpg',
+    },
+    {
+      imagePath: '/dyc18.jpg',
+    },
+    {
+      imagePath: '/dyc19.jpg',
+    },
+    {
+      imagePath: '/dyc20.jpg',
+    }
     
   ];
 
