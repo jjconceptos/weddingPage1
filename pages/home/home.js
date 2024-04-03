@@ -1594,7 +1594,7 @@ const LandingPage = () => {
           </div>
           <div className="attire-info">
          
-          <p><strong style={{ fontSize: '30px', marginTop: '5vh' }}>Ceremonia religiosa</strong></p>
+          <p><strong style={{ fontSize: '30px', marginTop: '1vh' }}>Ceremonia religiosa</strong></p>
           
           <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
