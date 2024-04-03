@@ -1566,7 +1566,7 @@ const LandingPage = () => {
 
 
       <div className="container-two">
-      <div className="section-title"><strong>Dresscode</strong></div>
+      <div className="section-title" style={{ display: 'flex', marginBottom: '-13vh', marginTop: '2vh' }}><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
 
@@ -1582,7 +1582,7 @@ const LandingPage = () => {
       <div className="attire-info">
           
 
-          <p><strong style={{ fontSize: '30px', marginTop: '8vh' }}>Ceremonia civil</strong></p>
+          <p><strong style={{ fontSize: '30px'}}>Ceremonia civil</strong></p>
           
           <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
@@ -1594,9 +1594,9 @@ const LandingPage = () => {
           </div>
           <div className="attire-info">
          
-          <p><strong style={{ fontSize: '30px', marginTop: '1vh' }}>Ceremonia religiosa</strong></p>
+          <p><strong style={{ fontSize: '30px', marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
           
-          <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
+          <p style={{ fontSize: '24px'}}>Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}><span>Ideas</span><br></br><span>damas</span></a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}><span>Ideas</span><br></br><span>caballeros</span></a>
