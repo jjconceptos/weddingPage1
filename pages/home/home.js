@@ -1582,7 +1582,7 @@ const LandingPage = () => {
       <div className="attire-info">
           
 
-          <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
+          <p><strong style={{ fontSize: '30px', marginTop: '8vh' }}>Ceremonia civil</strong></p>
           
           <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
@@ -1594,7 +1594,7 @@ const LandingPage = () => {
           </div>
           <div className="attire-info">
          
-          <p><strong style={{ fontSize: '30px' }}>Ceremonia religiosa</strong></p>
+          <p><strong style={{ fontSize: '30px', marginTop: '5vh' }}>Ceremonia religiosa</strong></p>
           
           <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
