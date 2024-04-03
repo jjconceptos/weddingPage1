@@ -376,7 +376,7 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 1575vh;
+          margin-top: 1552vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -396,7 +396,7 @@ const LandingPage = () => {
           }
 
           .attire-info {
-            margin-top: 20vh; /* Adjust margin-top as needed */
+            margin-top: 5vh; /* Adjust margin-top as needed */
           }
 
           .container-three {
@@ -1566,7 +1566,7 @@ const LandingPage = () => {
 
 
       <div className="container-two">
-      <div className="section-title" style={{ display: 'flex', marginBottom: '-13vh', marginTop: '2vh' }}><strong>Dresscode</strong></div>
+      <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
 
@@ -1579,9 +1579,7 @@ const LandingPage = () => {
         <div className="color-square" style={{ backgroundColor: '#D7AE42' }}></div>
       </div> */}
 
-      <div className="attire-info">
-          
-
+          <div className="attire-info">
           <p><strong style={{ fontSize: '30px'}}>Ceremonia civil</strong></p>
           
           <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
