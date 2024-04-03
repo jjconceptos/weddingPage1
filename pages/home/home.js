@@ -810,7 +810,7 @@ const LandingPage = () => {
 
         .rosemary-3 {
           position: relative;
-          margin-top: 180vh;
+          margin-top: 170vh;
           margin-left: auto; /* Center horizontally */
           margin-right: auto; /* Center horizontally */
           transform: scale(.6);
