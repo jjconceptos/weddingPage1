@@ -631,7 +631,7 @@ const LandingPage = () => {
   
             .container-two {
             position: absolute;
-            margin-top: 1650vh;
+            margin-top: 1645vh;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
