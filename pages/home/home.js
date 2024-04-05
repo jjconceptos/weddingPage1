@@ -14,10 +14,10 @@ const LandingPage = () => {
    const sectionsDataMobile = [
     { name: 'Inicio', scrollPosition: 0 },
     { name: 'Fotos', scrollPosition: 710 },
-    { name: 'Itinerario', scrollPosition: 1470 },
-    { name: 'Hospedaje', scrollPosition: 3400 },
-    { name: 'Mesa de regalos', scrollPosition: 12355 },
-    { name: 'Dresscode', scrollPosition: 13000 },
+    { name: 'Itinerario', scrollPosition: 1475 },
+    { name: 'Hospedaje', scrollPosition: 3410 },
+    { name: 'Mesa de regalos', scrollPosition: 12335 },
+    { name: 'Dresscode', scrollPosition: 12360 },
     // Add more sections as needed
   ];
 
