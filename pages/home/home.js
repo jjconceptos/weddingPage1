@@ -439,7 +439,7 @@ const LandingPage = () => {
 
           .container-four {
             position: absolute;
-          margin-top: 1389vh;
+          margin-top: 0vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -458,7 +458,7 @@ const LandingPage = () => {
           
           .container-six {
             position: absolute;
-          margin-top: 1463vh;
+          margin-top: 1389vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -1572,11 +1572,11 @@ const LandingPage = () => {
           <a style={{ fontSize: '18px', textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
              
 
-          <p style={{ fontSize: '24px' }}>Deposito bancario</p>
-          <p><strong>HSBC</strong></p>    
-          <p><strong>Daniela Yamilet Pérez Santiago</strong></p>    
-          <p><strong>Cuenta: 4065536443</strong></p>    
-          <p><strong>CLABE: 021028040655364439</strong></p>    
+          <p style={{ fontSize: '24px' }}><strong>Deposito bancario</strong></p>
+          <p style={{ fontSize: '18px', marginTop: '1vh' }}>HSBC</p>    
+          <p style={{ fontSize: '18px', marginTop: '1vh' }}>Daniela Yamilet Pérez Santiago</p>    
+          <p style={{ fontSize: '18px', marginTop: '1vh' }}>Cuenta: 4065536443</p>    
+          <p style={{ fontSize: '18px', marginTop: '1vh' }}>CLABE: 021028040655364439</p>    
 
           </div>
           {/* <div className="horizontal-line"></div> */}
