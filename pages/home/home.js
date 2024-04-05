@@ -1530,7 +1530,7 @@ const LandingPage = () => {
       <img src="/oliveWreath.png" alt="Your Image" className="rosemary-3"/>
 
       </div>
-      
+      {/* 
       <div className="container-four">
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
@@ -1541,10 +1541,10 @@ const LandingPage = () => {
           <p style={{ fontSize: '24px' }}>Peinado</p>
           <p><strong>Ubicacion</strong></p>    
           </div>
-          {/*<div className="horizontal-line"></div>*/}
+          
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
-
       </div>
+    */}
       {/* 
       <div className="container-five">
           <div className="section-title"><strong>Transporte</strong></div>
@@ -1572,8 +1572,12 @@ const LandingPage = () => {
           <a style={{ fontSize: '18px', textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
              
 
-          <p style={{ fontSize: '24px' }}>Cuenta bancaria</p>
-          <p><strong>cuenta</strong></p>    
+          <p style={{ fontSize: '24px' }}>Deposito bancario</p>
+          <p><strong>HSBC</strong></p>    
+          <p><strong>Daniela Yamilet Pérez Santiago</strong></p>    
+          <p><strong>Cuenta: 4065536443</strong></p>    
+          <p><strong>CLABE: 021028040655364439</strong></p>    
+
           </div>
           {/* <div className="horizontal-line"></div> */}
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
