@@ -16,8 +16,8 @@ const LandingPage = () => {
     { name: 'Fotos', scrollPosition: 710 },
     { name: 'Itinerario', scrollPosition: 1475 },
     { name: 'Hospedaje', scrollPosition: 3470 },
-    { name: 'Mesa de regalos', scrollPosition: 9500 },
-    { name: 'Dresscode', scrollPosition: 9250 },
+    { name: 'Mesa de regalos', scrollPosition: 9600 },
+    { name: 'Dresscode', scrollPosition: 9800 },
     // Add more sections as needed
   ];
 
