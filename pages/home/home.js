@@ -1535,10 +1535,13 @@ const LandingPage = () => {
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
-          <p><strong style={{ fontSize: '24px' }}>Foriu</strong></p>
-          <p>Hair and Makeup a domicilio</p>
-          
-          <p style={{ fontSize: '24px' }}>Código:</p>
+          <p><strong style={{ fontSize: '24px' }}><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
+          <p style={{ fontSize: '18px'}}>A domicilio</p>
+
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}>Contacto:</p>
+          <p style={{ fontSize: '18px'}}>5512891489</p>
+
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}>Código 10% off:</p>
           <p><strong>DANIELA&amp;CÉSAR</strong></p>  
           </div>
           
