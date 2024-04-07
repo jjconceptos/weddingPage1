@@ -16,6 +16,7 @@ const LandingPage = () => {
     { name: 'Fotos', scrollPosition: 710 },
     { name: 'Itinerario', scrollPosition: 1475 },
     { name: 'Hospedaje', scrollPosition: 3470 },
+    { name: 'Maquillaje y peinado', scrollPosition: 3470 },
     { name: 'Mesa de regalos', scrollPosition: 9600 },
     { name: 'Dresscode', scrollPosition: 10400 },
     // Add more sections as needed
@@ -27,6 +28,7 @@ const LandingPage = () => {
     { name: 'Fotos', scrollPosition: 855 },
     { name: 'Itinerario', scrollPosition: 1600 },
     { name: 'Hospedaje', scrollPosition: 3700 },
+    { name: 'Maquillaje y peinado', scrollPosition: 3470 },
     { name: 'Mesa de regalos', scrollPosition: 26600 },
     { name: 'Dresscode', scrollPosition: 27100 },
     // Add more sections as needed
@@ -1350,7 +1352,7 @@ const LandingPage = () => {
           <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
           <span>6:00 pm</span></li>
           <li style={{ fontSize: '18px' }}><span>Rompe hielos:</span><br />
-          <span>7:00 pm - 11:00pm</span></li>
+          <span>7:00 pm - 9:00pm</span></li>
          
           <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
 
@@ -1528,7 +1530,7 @@ const LandingPage = () => {
       <img src="/oliveWreath.png" alt="Your Image" className="rosemary-3"/>
 
       </div>
-      {/* 
+      
       <div className="container-four">
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
@@ -1542,7 +1544,7 @@ const LandingPage = () => {
           
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
       </div>
-    */}
+  
       {/* 
       <div className="container-five">
           <div className="section-title"><strong>Transporte</strong></div>
