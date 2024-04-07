@@ -1535,11 +1535,11 @@ const LandingPage = () => {
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
-          <p><strong style={{ fontSize: '24px' }}>Maquillaje</strong></p>
-          <p><strong>Ubicacion</strong></p>
+          <p><strong style={{ fontSize: '24px' }}>Foriu</strong></p>
+          <p>Hair and Makeup a domicilio</p>
           
-          <p style={{ fontSize: '24px' }}>Peinado</p>
-          <p><strong>Ubicacion</strong></p>    
+          <p style={{ fontSize: '24px' }}>Código:</p>
+          <p><strong>DANIELA&amp;CÉSAR</strong></p>  
           </div>
           
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
