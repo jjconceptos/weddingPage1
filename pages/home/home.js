@@ -1379,6 +1379,9 @@ const LandingPage = () => {
           <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
           <span>7:00 pm</span></li>
 
+          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
+
+
           </div>
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
           {/* <div className="horizontal-line"></div>*/}
