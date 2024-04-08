@@ -1545,7 +1545,7 @@ const LandingPage = () => {
           <p style={{ fontSize: '18px'}}>5512891489</p>
 
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Código 10% off:</strong></p>
-          <p><strong>DANIELA&amp;CÉSAR</strong></p>  
+          <p>DANIELA&amp;CÉSAR</p>  
           </div>
           
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
