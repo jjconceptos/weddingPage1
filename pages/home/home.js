@@ -1541,10 +1541,10 @@ const LandingPage = () => {
           <p><strong style={{ fontSize: '24px' }}><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
           <p style={{ fontSize: '18px'}}>A domicilio</p>
 
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}>Contacto:</p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Contacto:</strong></p>
           <p style={{ fontSize: '18px'}}>5512891489</p>
 
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}>Código 10% off:</p>
+          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Código 10% off:</strong></p>
           <p><strong>DANIELA&amp;CÉSAR</strong></p>  
           </div>
           
