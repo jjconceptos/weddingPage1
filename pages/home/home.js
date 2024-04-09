@@ -481,7 +481,7 @@ const LandingPage = () => {
         
 
        
-        
+      .safari .your-element {
 
         @media screen and (min-width: 768px) and (min-height: 600px) {
 
@@ -745,7 +745,8 @@ const LandingPage = () => {
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
-              }
+        }
+      }
 
               
 
