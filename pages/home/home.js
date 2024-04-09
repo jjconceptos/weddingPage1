@@ -644,24 +644,25 @@ const LandingPage = () => {
 
           
           
-.safari .container-one {
-    position: absolute;
-    margin-top: 370vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-}
-
-
-.chrome .container-one {
-    position: absolute;
-    margin-top: 380vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-}
+          .safari .container-one {
+            /* Safari-specific styles */
+            position: absolute;
+            margin-top: 370vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        }
+    
+        .chrome .container-one {
+            /* Chrome-specific styles */
+            position: absolute;
+            margin-top: 380vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        }
 
         
 
