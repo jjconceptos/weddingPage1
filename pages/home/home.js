@@ -663,7 +663,7 @@ const LandingPage = () => {
             /* Chrome-specific styles */
             margin-top: 500vh;
         }
-    }
+    
 
         
 
