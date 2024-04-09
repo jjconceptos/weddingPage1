@@ -641,7 +641,7 @@ const LandingPage = () => {
           
           
           .safari-container-one {
-            margin-top: 370vh;
+            margin-top: 270vh;
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
