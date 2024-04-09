@@ -650,7 +650,7 @@ const LandingPage = () => {
         }
     
         .chrome-container-one {
-          margin-top: 400vh;
+          margin-top: 500vh;
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
