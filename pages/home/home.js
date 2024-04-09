@@ -647,7 +647,7 @@ const LandingPage = () => {
           .safari .container-one {
             /* Safari-specific styles */
             position: absolute;
-            margin-top: 370vh;
+            margin-top: 390vh;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
