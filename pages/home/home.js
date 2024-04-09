@@ -653,7 +653,7 @@ const LandingPage = () => {
         }
     
         .chrome-container-one {
-          margin-top: 370vh;
+          margin-top: 400vh;
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -844,7 +844,7 @@ const LandingPage = () => {
 
       
        
-      
+      <div>
       {isSafari && (
         <div className="safari-container-one">
           
@@ -915,7 +915,7 @@ const LandingPage = () => {
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
           {/* <div className="horizontal-line"></div>*/}
       
-      
+          </div>
      
       
       <div className="container-three">
