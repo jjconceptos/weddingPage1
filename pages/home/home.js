@@ -654,7 +654,7 @@ const LandingPage = () => {
         
 
         
-          chrome .container-one {
+          .chrome .container-one {
             position: absolute;
           margin-top: 500vh;
           left: 50%;
