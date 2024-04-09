@@ -18,6 +18,7 @@ const LandingPage = () => {
     setIsSafari(userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1);
   }, []);
 
+  const containerClassName = isSafari ? 'safari container-one' : 'chrome container-one';
 
 
 
@@ -644,25 +645,25 @@ const LandingPage = () => {
 
           
           
-          .safari .container-one {
-            /* Safari-specific styles */
-            position: absolute;
-            margin-top: 390vh;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-        }
-    
-        .chrome .container-one {
-            /* Chrome-specific styles */
-            position: absolute;
-            margin-top: 380vh;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-        }
+.safari .container-one {
+        /* Safari-specific styles */
+        position: absolute;
+        margin-top: 370vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+    }
+
+    .chrome .container-one {
+        /* Chrome-specific styles */
+        position: absolute;
+        margin-top: 380vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+    }
 
         
 
@@ -844,7 +845,8 @@ const LandingPage = () => {
        
       </div>
        
-      <div className="container-one">
+      <div className={containerClassName}>
+
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
