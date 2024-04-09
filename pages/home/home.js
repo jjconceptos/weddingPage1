@@ -641,7 +641,7 @@ const LandingPage = () => {
           
           
           .safari-container-one {
-            margin-top: 270vh;
+            margin-top: 370vh;
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -650,7 +650,7 @@ const LandingPage = () => {
         }
     
         .chrome-container-one {
-          margin-top: 500vh;
+          margin-top: 400vh;
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -841,7 +841,7 @@ const LandingPage = () => {
 
       
        
-      <div className={containerClassName}>
+      <div className="safari-container-one">
 
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
