@@ -643,25 +643,26 @@ const LandingPage = () => {
           }
 
           
-          .safari .container-one {
-            position: absolute;
-          margin-top: 390vh;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-          }
-        
+          
+.safari .container-one {
+    position: absolute;
+    margin-top: 370vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+}
 
-        
-          .chrome .container-one {
-            position: absolute;
-          margin-top: 500vh;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-          }
+
+.chrome .container-one {
+    position: absolute;
+    margin-top: 380vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+}
+
         
 
           .itinerary-info {
