@@ -645,18 +645,25 @@ const LandingPage = () => {
 
           
           
-          
+          .container-one {
+           
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        }
     
         .safari .container-one {
             /* Safari-specific styles */
-            margin-top: 600vh;
+            margin-top: 370vh;
         }
         
         .chrome .container-one {
             /* Chrome-specific styles */
-            margin-top: 1000vh;
+            margin-top: 500vh;
         }
-    }
+    
 
         
 
