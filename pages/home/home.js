@@ -645,14 +645,7 @@ const LandingPage = () => {
 
           
           
-          .container-one {
-            /* Common styles for both Safari and Chrome */
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-        }
+          
     
         .safari .container-one {
             /* Safari-specific styles */
