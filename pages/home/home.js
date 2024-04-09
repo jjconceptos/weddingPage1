@@ -18,7 +18,7 @@ const LandingPage = () => {
     setIsSafari(userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1);
   }, []);
 
-  const containerClassName = isSafari ? 'safari container-one' : 'chrome container-one';
+  const containerClassName = isSafari ? 'safari. container-one' : 'chrome. container-one';
 
 
 
@@ -661,7 +661,7 @@ const LandingPage = () => {
     
         .chrome .container-one {
             /* Chrome-specific styles */
-            margin-top: 390vh;
+            margin-top: 500vh;
         }
     }
 
