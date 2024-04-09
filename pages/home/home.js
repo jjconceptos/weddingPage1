@@ -214,7 +214,7 @@ const LandingPage = () => {
     <Layout>
       <style jsx>{`
        
-      .safari .your-element {
+       
 
         .burger-menu {
           position: fixed;
@@ -746,11 +746,6 @@ const LandingPage = () => {
           }
 
               }
-      }
-
-
-
-      
 
               
 
