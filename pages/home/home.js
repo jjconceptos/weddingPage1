@@ -485,7 +485,279 @@ const LandingPage = () => {
        
       
 
-       
+        @media screen and (min-width: 768px) and (min-height: 600px) {
+
+                
+        .burger-menu {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          z-index: 999;
+          cursor: pointer;
+        }
+
+        .bar {
+          width: 35px;
+          height: 5px;
+          background-color: #271523;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+
+        // Rotate the first and third bar to create the burger menu icon effect
+        .change .bar-1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar-2 {
+          opacity: 0;
+        }
+
+        .change .bar-3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .menu-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #DED5C8;
+          z-index: 998;
+          display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
+        }
+
+        
+        .menu-items {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 999;
+          text-align: center;
+        }
+
+        .menu-item {
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: #271523;
+          cursor: pointer;
+        }
+
+        .section {
+          display: ${isMenuOpen ? 'block' : 'none'};
+        }
+
+        .presentation-card-container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+                  
+        }
+
+        .horizontal-line {
+          position: absolute;
+          left: 0;
+          width: 100% !important; /* Set the width to span the entire viewport */
+          height: 1px; /* Set the height of the line */
+          background-color: #000; /* Set the color of the line */
+          margin-top: 50vh; /* Adjust margin as needed */
+        }
+
+        .rosemary {
+          position: relative;
+         
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.8);
+        }
+
+        .rosemary-1 {
+          position: relative;
+         
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.6);
+        }
+
+        .rosemary-3 {
+          position: relative;
+          margin-top: 170vh;
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto; /* Center horizontally */
+          transform: scale(.6);
+        }
+
+        .image {
+          position: relative;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(.3); /* Scale the image by 1.3 times its original size */
+          margin-bottom: -30%;
+        }
+
+      
+        .main-title-section-container {
+        position: absolute;
+        margin-top: -75vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        border-bottom: 1px solid #000;
+        }
+
+        .logo-image {
+          position: relative;
+          width: 100%; /* Set the width to 70% of the viewport width */
+          height: auto; /* Maintain the aspect ratio */
+          transform: scale(1.3); /* Scale the image by 1.3 times its original size */
+        }
+
+        .title {
+          font-size: 100px;
+          width: 60vw;
+          
+        }
+
+        .section-title {
+        font-size: 70px;
+        font-weight: bold;
+        }
+
+        .section-subtitle {
+        font-size: 28px;
+        
+        font-weight: 300;
+        }
+
+        
+
+          
+          
+          .safari .container-one {
+            margin-top: 300vh;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+        }
+    
+        
+        
+        
+        .chrome .container-one {
+          margin-top: 500vh;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+      }
+
+        
+
+          .itinerary-info {
+            margin-top: 10vh; /* Adjust margin-top as needed */
+          }
+
+          .itinerary-image {
+            margin-top: 20vh; 
+            transform: scale(1.6);
+          }
+
+          .container-two {
+          position: absolute;
+          margin-top: 3005vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .color-palette {
+            display: grid;
+            grid-template-columns: repeat(3, 100px); /* Adjust the number and size of columns as needed */
+            gap: 10px; /* Adjust the gap between color squares */
+          }
+          
+          .color-square {
+            width: 100px; /* Adjust the width of color squares */
+            height: 100px; /* Adjust the height of color squares */
+            border-radius: 5px; /* Optional: Add rounded corners */
+          }
+
+          .attire-info {
+            margin-top: 20vh; /* Adjust margin-top as needed */
+          }
+
+          .container-three {
+            position: absolute;
+          margin-top: 1645vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .hosting {
+            position: relative;
+            margin-bottom: -140vh; /* Adjusted margin for shorter vertical distance between hotels */
+        }
+
+          .hosting-title {
+            font-size: 50px;
+            margin-top: 25vh;
+        }
+
+        .hosting-first-margin {
+          font-size: 24px;
+          margin-top: -120vh;
+          
+        }
+
+            .hosting-image {
+              position: relative;
+              margin-top: 100vw;
+              width: 100%; /* Set the width to 70% of the viewport width */
+              height: auto; /* Maintain the aspect ratio */
+              transform: scale(1.75); /* Scale the image by 1.3 times its original size */
+            }
+
+          .container-four {
+            position: absolute;
+          margin-top: 2824vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-five {
+            position: absolute;
+          margin-top: 0vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-six {
+            position: absolute;
+          margin-top: 2907vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+        }
+      
 
               
 
