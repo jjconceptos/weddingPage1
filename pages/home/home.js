@@ -643,23 +643,14 @@ const LandingPage = () => {
 
           
           
-          .safari-container-one {
-            margin-top: 370vh;
+          .container-one {
+           
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
             margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
         }
-
-        .chrome-container-one {
-          margin-top: 500vh;
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-      }
     
         
 
@@ -843,133 +834,9 @@ const LandingPage = () => {
        
       </div>
 
-      <div>
-      {isSafari && (
-        <div className="safari-container-one">
-          <div className="section-title"><strong>The weekend</strong></div>
-          <div className="itinerary-info">
-          <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
-          
-          <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Viernes 16 de agosto</strong></p>
-         
-          <p style={{ marginTop: '2vh', fontSize: '18px'}}><strong>Hacienda San José Lavista</strong></p>
-
-          <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
-
-          
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Cocktail Boho</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
-            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
-          </div>
-
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-        
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
-          <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}><span>Rompe hielos:</span><br />
-          <span>7:00 pm - 9:00pm</span></li>
-         
-          <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
-
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
-          
-          <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Sábado 17 de Agosto</strong></p>
-          
-          <p style={{ marginTop: '2vh', fontSize: '18px'}}><strong>Hacienda San José Lavista</strong></p>
-
-          <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
-
-
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
-            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
-          </div>
-
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Religiosa: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Coctél:</span><br />
-          <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
-          <span>7:00 pm</span></li>
-
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
-
-
-          </div>
-          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
-          {/* <div className="horizontal-line"></div>*/}
-        </div>
-      )}
-
-      {isChrome && (
-        <div className="chrome-container-one">
-          <div className="section-title"><strong>The weekend</strong></div>
-          <div className="itinerary-info">
-          <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
-          
-          <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Viernes 16 de agosto</strong></p>
-         
-          <p style={{ marginTop: '2vh', fontSize: '18px'}}><strong>Hacienda San José Lavista</strong></p>
-
-          <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
-
-          
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Cocktail Boho</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
-            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
-          </div>
-
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-        
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
-          <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}><span>Rompe hielos:</span><br />
-          <span>7:00 pm - 9:00pm</span></li>
-         
-          <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
-
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
-          
-          <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Sábado 17 de Agosto</strong></p>
-          
-          <p style={{ marginTop: '2vh', fontSize: '18px'}}><strong>Hacienda San José Lavista</strong></p>
-
-          <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
-
-
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-            <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
-            <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
-          </div>
-
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Religiosa: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Coctél:</span><br />
-          <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
-          <span>7:00 pm</span></li>
-
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
-
-
-          </div>
-          <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
-          {/* <div className="horizontal-line"></div>*/}
-        </div>
-      )}
-    </div>
+      
        
-      
+      <div className="container-one">
 
         
 
@@ -1030,7 +897,7 @@ const LandingPage = () => {
           </div>
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
           {/* <div className="horizontal-line"></div>*/}
-      
+      </div>
       
      
       
