@@ -844,18 +844,7 @@ const LandingPage = () => {
 
       
        
-      <div>
-      {isSafari && (
-        <div className="safari-container-one">
-          
-        </div>
-      )}
-
-      {isChrome && (
-        <div className="chrome-container-one">
-          
-        </div>
-      )}
+      <div className="safari-container-one">
 
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
