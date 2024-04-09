@@ -18,7 +18,8 @@ const LandingPage = () => {
     setIsSafari(userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1);
   }, []);
 
-  const containerClassName = isSafari ? 'safari. container-one' : 'chrome. container-one';
+  const containerClassName = isSafari ? 'safari container-one' : 'chrome container-one';
+
 
 
 
@@ -633,17 +634,7 @@ const LandingPage = () => {
         
         font-weight: 300;
         }
-
-        .container {
-          position: absolute;
-          margin-top: 170vh;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-          }
-
-          
+    
           
           .safari .container-one {
             margin-top: 370vh;
