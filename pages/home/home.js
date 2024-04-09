@@ -643,7 +643,7 @@ const LandingPage = () => {
 
           
           
-          .container-one {
+          .safari-container-one {
             margin-top: 370vh;
             position: absolute;
             left: 50%;
@@ -652,6 +652,14 @@ const LandingPage = () => {
             margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
         }
     
+        .chrome-container-one {
+          margin-top: 370vh;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+      }
         
 
         
@@ -836,9 +844,18 @@ const LandingPage = () => {
 
       
        
-      <div className="container-one">
+      
+      {isSafari && (
+        <div className="safari-container-one">
+          
+        </div>
+      )}
 
-        
+      {isChrome && (
+        <div className="chrome-container-one">
+          
+        </div>
+      )}
 
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
@@ -897,7 +914,7 @@ const LandingPage = () => {
           </div>
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
           {/* <div className="horizontal-line"></div>*/}
-      </div>
+      
       
      
       
