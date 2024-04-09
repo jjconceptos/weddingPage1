@@ -12,11 +12,8 @@ const LandingPage = () => {
   const [isChrome, setIsChrome] = useState(false);
   const [isSafari, setIsSafari] = useState(false);
 
-  useEffect(() => {
-    const userAgent = navigator.userAgent.toLowerCase();
-    setIsChrome(userAgent.indexOf('chrome') > -1);
-    setIsSafari(userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1);
-  }, []);
+  const containerClassName = isSafari ? 'safari-container-one' : 'chrome-container-one';
+
 
 
 
@@ -844,7 +841,7 @@ const LandingPage = () => {
 
       
        
-      <div className="safari-container-one">
+      <div className={containerClassName}>
 
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
