@@ -645,8 +645,8 @@ const LandingPage = () => {
 
           
           
-          .container-one {
-            /* Common styles for both Safari and Chrome */
+          .safari .container-one {
+            margin-top: 370vh;
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -654,16 +654,17 @@ const LandingPage = () => {
             margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
         }
     
-        .safari .container-one {
-            /* Safari-specific styles */
-            margin-top: 370vh;
-        }
+        
+        
         
         .chrome .container-one {
-            /* Chrome-specific styles */
-            margin-top: 500vh;
-        }
-    
+          margin-top: 370vh;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+      }
 
         
 
