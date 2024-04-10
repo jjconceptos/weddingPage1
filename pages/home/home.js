@@ -12,14 +12,22 @@ const LandingPage = () => {
   const [isChrome, setIsChrome] = useState(false);
   const [isSafari, setIsSafari] = useState(false);
 
-  // Browser detection logic...
-  
-  const containerClassName = isSafari ? 'safari-container-one' : 'chrome-container-one';
-
-  // Log the values of isSafari and isChrome
-  console.log('isSafari:', isSafari);
-  console.log('isChrome:', isChrome);
-
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      console.log('User Agent:', navigator.userAgent);
+      console.log('Vendor:', navigator.vendor);
+      
+      // Check if the userAgent contains 'Chrome'
+      const isChromeBrowser = /Chrome/.test(navigator.userAgent);
+      
+      // Check if the userAgent contains 'Safari'
+      const isSafariBrowser = /Safari/.test(navigator.userAgent) && /Apple/.test(navigator.vendor);
+      
+      // Update state variables based on browser type
+      setIsChrome(isChromeBrowser);
+      setIsSafari(isSafariBrowser);
+    }
+  }, []);
 
 
   
