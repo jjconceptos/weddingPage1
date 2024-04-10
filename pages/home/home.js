@@ -12,8 +12,13 @@ const LandingPage = () => {
   const [isChrome, setIsChrome] = useState(false);
   const [isSafari, setIsSafari] = useState(false);
 
-  const containerClassName = isSafari ? 'safari-container-one' : 'chrome-container-one';
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    setIsChrome(userAgent.indexOf('chrome') > -1);
+    setIsSafari(userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1);
+  }, []);
 
+  const containerClassName = isSafari ? 'safari container-one' : 'chrome container-one';
 
 
 
@@ -640,24 +645,25 @@ const LandingPage = () => {
 
           
           
-          .safari-container-one {
-            margin-top: 370vh;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-        }
-    
-        .chrome-container-one {
-          margin-top: 400vh;
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-      }
-        
+.safari .container-one {
+        /* Safari-specific styles */
+        position: absolute;
+        margin-top: 370vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+    }
+
+    .chrome .container-one {
+        /* Chrome-specific styles */
+        position: absolute;
+        margin-top: 380vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+    }
 
         
 
@@ -838,11 +844,8 @@ const LandingPage = () => {
 
        
       </div>
-
-      
        
-      <div className="safari-container-one">
-
+      <div className="container-one">
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
@@ -900,8 +903,8 @@ const LandingPage = () => {
           </div>
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh', transform: 'scale(.6)'}} />
           {/* <div className="horizontal-line"></div>*/}
+      </div>
       
-          </div>
      
       
       <div className="container-three">
