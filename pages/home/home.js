@@ -11,9 +11,18 @@ const LandingPage = () => {
   const [isMobileViewport, setIsMobileViewport] = useState(false);
   const [isChrome, setIsChrome] = useState(false);
   const [isSafari, setIsSafari] = useState(false);
+  const [browserClass, setBrowserClass] = useState('');
 
-  
-// here
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf('chrome') > -1) {
+      setBrowserClass('chrome');
+    } else if (userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1) {
+      setBrowserClass('safari');
+    } else {
+      // Handle other browsers or set a default class
+    }
+  }, []);
 
   
 
@@ -638,25 +647,23 @@ const LandingPage = () => {
 
           
           
-.safari .container-one {
-        /* Safari-specific styles */
-        position: absolute;
-        margin-top: 370vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-    }
-
-    .chrome .container-one {
-        /* Chrome-specific styles */
-        position: absolute;
-        margin-top: 380vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-    }
+          .container-one {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+          
+          .container-one.safari {
+            /* Safari-specific styles */
+            margin-top: 370vh;
+          }
+          
+          .container-one.chrome {
+            /* Chrome-specific styles */
+            margin-top: 385vh;
+          }
 
         
 
@@ -838,7 +845,7 @@ const LandingPage = () => {
        
       </div>
        
-      <div className="container-one">
+      <div className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
