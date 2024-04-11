@@ -781,7 +781,6 @@ const LandingPage = () => {
 
           .container-six {
             position: absolute;
-          margin-top: 2907vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -790,7 +789,7 @@ const LandingPage = () => {
 
           .container-six.safari {
             /* Safari-specific styles */
-            margin-top: 2926vh;
+            margin-top: 2920vh;
           }
           
           .container-six.chrome {
