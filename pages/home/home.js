@@ -691,7 +691,7 @@ const LandingPage = () => {
           
           .container-two.chrome {
             /* Chrome-specific styles */
-            margin-top: 3010vh;
+            margin-top: 3213vh;
           }
 
           .color-palette {
@@ -711,8 +711,7 @@ const LandingPage = () => {
           }
 
           .container-three {
-            position: absolute;
-          margin-top: 1645vh;
+          position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
@@ -721,12 +720,12 @@ const LandingPage = () => {
 
           .container-three.safari {
             /* Safari-specific styles */
-            margin-top: 1650vh;
+            margin-top: 1655vh;
           }
           
           .container-three.chrome {
             /* Chrome-specific styles */
-            margin-top: 1745vh;
+            margin-top: 1747vh;
           }
 
           .hosting {
@@ -754,12 +753,21 @@ const LandingPage = () => {
             }
 
           .container-four {
-            position: absolute;
-          margin-top: 2824vh;
+          position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-four.safari {
+            /* Safari-specific styles */
+            margin-top: 2824vh;
+          }
+          
+          .container-four.chrome {
+            /* Chrome-specific styles */
+            margin-top: 3006vh;
           }
 
           .container-five {
@@ -778,6 +786,16 @@ const LandingPage = () => {
           transform: translate(-50%, -50%);
           text-align: center;
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-six.safari {
+            /* Safari-specific styles */
+            margin-top: 2824vh;
+          }
+          
+          .container-six.chrome {
+            /* Chrome-specific styles */
+            margin-top: 3106vh;
           }
 
         }
@@ -1071,7 +1089,7 @@ const LandingPage = () => {
 
       </div>
       
-      <div className="container-four">
+      <div className={`container-four ${browserClass}`}>
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
@@ -1106,7 +1124,7 @@ const LandingPage = () => {
       </div>
       */}
     
-      <div className="container-six">
+    <div className={`container-six ${browserClass}`}>
           <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
           
@@ -1128,7 +1146,7 @@ const LandingPage = () => {
       </div>
 
 
-      <div className="container-two">
+      <div className={`container-two ${browserClass}`}>
       <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
