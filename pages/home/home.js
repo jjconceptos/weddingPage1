@@ -657,12 +657,12 @@ const LandingPage = () => {
           
           .container-one.safari {
             /* Safari-specific styles */
-            margin-top: 374vh;
+            margin-top: 375vh;
           }
           
           .container-one.chrome {
             /* Chrome-specific styles */
-            margin-top: 385vh;
+            margin-top: 388vh;
           }
 
         
