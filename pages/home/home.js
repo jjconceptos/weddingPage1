@@ -790,7 +790,7 @@ const LandingPage = () => {
 
           .container-six.safari {
             /* Safari-specific styles */
-            margin-top: 2824vh;
+            margin-top: 2950vh;
           }
           
           .container-six.chrome {
