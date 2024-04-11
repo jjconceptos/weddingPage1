@@ -678,11 +678,20 @@ const LandingPage = () => {
 
           .container-two {
           position: absolute;
-          margin-top: 3005vh;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-two.safari {
+            /* Safari-specific styles */
+            margin-top: 3005vh;
+          }
+          
+          .container-two.chrome {
+            /* Chrome-specific styles */
+            margin-top: 3010vh;
           }
 
           .color-palette {
@@ -708,6 +717,16 @@ const LandingPage = () => {
           transform: translate(-50%, -50%);
           text-align: center;
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-three.safari {
+            /* Safari-specific styles */
+            margin-top: 1645vh;
+          }
+          
+          .container-three.chrome {
+            /* Chrome-specific styles */
+            margin-top: 1745vh;
           }
 
           .hosting {
@@ -907,7 +926,7 @@ const LandingPage = () => {
       
      
       
-      <div className="container-three">
+      <div className={`container-three ${browserClass}`}>
       <div className="section-title"><strong>Hospedaje</strong></div>
       
       <div className="hosting">
