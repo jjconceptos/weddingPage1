@@ -856,7 +856,7 @@ const LandingPage = () => {
       <div className="sub-title" onClick={handleConocenosClick}>
        2024
       </div>
-     {/*  <div className="horizontal-line" style={{ width: '100%', height: '1px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
+     {/*  <div className="horizontal-line" style={{ width: '100%', height: '2px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
       </div>
       
       <div className="container">
