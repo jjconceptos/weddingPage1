@@ -881,7 +881,7 @@ const LandingPage = () => {
        
       </div>
        
-      <div className={`container-one `}>
+      <div className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
@@ -943,7 +943,7 @@ const LandingPage = () => {
       
      
       
-      <div className={`container-three `}>
+      <div className={`container-three ${browserClass}`}>
       <div className="section-title"><strong>Hospedaje</strong></div>
       
       <div className="hosting">
@@ -1088,7 +1088,7 @@ const LandingPage = () => {
 
       </div>
       
-      <div className={`container-four`}>
+      <div className={`container-four ${browserClass}`}>
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
@@ -1123,7 +1123,7 @@ const LandingPage = () => {
       </div>
       */}
     
-    <div className={`container-six`}>
+    <div className={`container-six ${browserClass}`}>
           <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
           
@@ -1145,7 +1145,7 @@ const LandingPage = () => {
       </div>
 
 
-      <div className={`container-two`}>
+      <div className={`container-two ${browserClass}`}>
       <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
