@@ -843,12 +843,9 @@ const LandingPage = () => {
 <div className="presentation-card-container">
       <div className="main-title-section-container">
       <img src="/dycLogo.png" alt="Your Image" className="image"  />
-      <link
-        href="https://db.onlinewebfonts.com/c/57f0d312017e3471c956900c601e683d?family=Cherolina" 
-        rel="stylesheet"
-      />
       
-      <div className="title" style={{ fontFamily: 'Cherolina'}}>
+      
+      <div >
         Daniela y César
       </div>
 
