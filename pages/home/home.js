@@ -648,6 +648,7 @@ const LandingPage = () => {
           
           
           .container-one {
+            margin-top: 375vh;
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -677,6 +678,7 @@ const LandingPage = () => {
           }
 
           .container-two {
+          margin-top: 3017vh;
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -711,6 +713,7 @@ const LandingPage = () => {
           }
 
           .container-three {
+            margin-top: 1655vh;
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -753,6 +756,7 @@ const LandingPage = () => {
             }
 
           .container-four {
+            margin-top: 2835vh;
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -780,6 +784,7 @@ const LandingPage = () => {
           }
 
           .container-six {
+            margin-top: 2920vh;
             position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -881,7 +886,7 @@ const LandingPage = () => {
        
       </div>
        
-      <div className={`container-one ${browserClass}`}>
+      <div className={`container-one `}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
@@ -943,7 +948,7 @@ const LandingPage = () => {
       
      
       
-      <div className={`container-three ${browserClass}`}>
+      <div className={`container-three `}>
       <div className="section-title"><strong>Hospedaje</strong></div>
       
       <div className="hosting">
@@ -1088,7 +1093,7 @@ const LandingPage = () => {
 
       </div>
       
-      <div className={`container-four ${browserClass}`}>
+      <div className={`container-four`}>
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
@@ -1123,7 +1128,7 @@ const LandingPage = () => {
       </div>
       */}
     
-    <div className={`container-six ${browserClass}`}>
+    <div className={`container-six`}>
           <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
           
@@ -1145,7 +1150,7 @@ const LandingPage = () => {
       </div>
 
 
-      <div className={`container-two ${browserClass}`}>
+      <div className={`container-two`}>
       <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
