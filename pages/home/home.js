@@ -665,16 +665,7 @@ const LandingPage = () => {
             transform: translate(-50%, -50%);
             text-align: center;
             margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-          }
-          
-          .container-one.safari {
-            /* Safari-specific styles */
-            margin-top: 375vh;
-          }
-          
-          .container-one.chrome {
-            /* Chrome-specific styles */
-            margin-top: 388vh;
+            height: calc(var(--presentation-card-height) * 26); /* Set height based on custom property */
           }
 
         
@@ -852,7 +843,7 @@ const LandingPage = () => {
   </div>
 ))}
 
-<div className="presentation-card-container">
+<div className="presentation-card-container" style={{ '--presentation-card-height': `${presentationCardHeight}px` }}>
       <div className="main-title-section-container">
       <img src="/dycLogo.png" alt="Your Image" className="image"  />
       
