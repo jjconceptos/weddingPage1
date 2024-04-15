@@ -890,8 +890,7 @@ const LandingPage = () => {
        
       </div>
        
-            <div className="container-one" style={{ height: `${presentationCardHeight * 3.5}vh` }}>
-
+      <div className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
@@ -953,7 +952,7 @@ const LandingPage = () => {
       
      
       
-      <div className="container-three" style={{ height: `${presentationCardHeight * 10.9}vh` }}>
+      <div className={`container-three ${browserClass}`}>
       <div className="section-title"><strong>Hospedaje</strong></div>
       
       <div className="hosting">
