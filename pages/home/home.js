@@ -1049,7 +1049,7 @@ const LandingPage = () => {
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              height: calc(var(--presentation-card-height) * 100); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 700); /* Set height based on custom property */
             }
   
             .hosting {
