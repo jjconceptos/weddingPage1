@@ -1044,12 +1044,12 @@ const LandingPage = () => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              height: calc(var(--presentation-card-height) * 88); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 93); /* Set height based on custom property */
             }
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              height: calc(var(--presentation-card-height) * 88); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 93); /* Set height based on custom property */
             }
   
             .hosting {
