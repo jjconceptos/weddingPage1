@@ -665,6 +665,15 @@ const LandingPage = () => {
             transform: translate(-50%, -50%);
             text-align: center;
             margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-one.safari {
+            /* Safari-specific styles */
+            height: calc(var(--presentation-card-height) * 26); /* Set height based on custom property */
+          }
+          
+          .container-one.chrome {
+            /* Chrome-specific styles */
             height: calc(var(--presentation-card-height) * 26); /* Set height based on custom property */
           }
 
@@ -719,6 +728,15 @@ const LandingPage = () => {
             transform: translate(-50%, -50%);
             text-align: center;
             margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          }
+
+          .container-three.safari {
+            /* Safari-specific styles */
+            height: calc(var(--presentation-card-height) * 82); /* Set height based on custom property */
+          }
+          
+          .container-three.chrome {
+            /* Chrome-specific styles */
             height: calc(var(--presentation-card-height) * 80); /* Set height based on custom property */
           }
 
