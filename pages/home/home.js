@@ -714,21 +714,12 @@ const LandingPage = () => {
           }
 
           .container-three {
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-          }
-
-          .container-three.safari {
-            /* Safari-specific styles */
-            margin-top: 1655vh;
-          }
-          
-          .container-three.chrome {
-            /* Chrome-specific styles */
-            margin-top: 1747vh;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+            height: calc(var(--presentation-card-height) * 80); /* Set height based on custom property */
           }
 
           .hosting {
