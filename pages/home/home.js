@@ -1044,7 +1044,7 @@ const LandingPage = () => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              height: calc(var(--presentation-card-height) * 93); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 120); /* Set height based on custom property */
             }
             
             .container-three.chrome {
