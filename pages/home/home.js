@@ -373,7 +373,7 @@ const LandingPage = () => {
         }
 
         .section-title {
-        font-size: 5vw;
+        font-size: 8vw;
         }
 
         .section-subtitle {
