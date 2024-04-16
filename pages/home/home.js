@@ -498,7 +498,7 @@ const LandingPage = () => {
        
       
 
-        @media screen and (width: 768px) and (height: 600px) {
+        @media screen and (min-width: 768px) and (min-height: 600px) {
 
                 
         .burger-menu {
@@ -1045,7 +1045,7 @@ const LandingPage = () => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              height: calc(var(--presentation-card-height) * 189); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 89); /* Set height based on custom property */
             }
             
             .container-three.chrome {
