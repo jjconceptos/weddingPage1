@@ -589,7 +589,6 @@ const LandingPage = () => {
 
         .rosemary-1 {
           position: relative;
-         
           margin-left: auto; /* Center horizontally */
           margin-right: auto; /* Center horizontally */
           transform: scale(.6);
@@ -660,7 +659,6 @@ const LandingPage = () => {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
           .container-one.safari {
@@ -689,7 +687,6 @@ const LandingPage = () => {
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
           .container-two.safari {
@@ -723,7 +720,6 @@ const LandingPage = () => {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
           .container-three.safari {
@@ -733,7 +729,7 @@ const LandingPage = () => {
           
           .container-three.chrome {
             /* Chrome-specific styles */
-            height: calc(var(--presentation-card-height) * 80); /* Set height based on custom property */
+            height: calc(var(--presentation-card-height) * 77); /* Set height based on custom property */
           }
 
           .hosting {
@@ -765,7 +761,6 @@ const LandingPage = () => {
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
           .container-four.safari {
@@ -792,7 +787,6 @@ const LandingPage = () => {
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
 
           .container-six.safari {
