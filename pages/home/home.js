@@ -367,7 +367,7 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 6vw;  
+          font-size: 7vw;  
         }
 
         .section-title {
@@ -630,7 +630,7 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 5vw;
+          font-size: 4vw;
         }
 
         .section-title {
@@ -1233,7 +1233,7 @@ const LandingPage = () => {
          
           <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
 
-          <p style={{ fontSize: '7vw', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
+          <p className="title" style={{ marginTop: '15vh' }}><strong>Ceremonia religiosa</strong></p>
           
           <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Sábado 17 de Agosto</strong></p>
           
