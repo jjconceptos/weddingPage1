@@ -1211,7 +1211,7 @@ const LandingPage = () => {
       <div className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
-          <p><strong style={{ fontSize: '30px' }}>Ceremonia civil</strong></p>
+          <p><strong style={{ fontSize: '6vw' }}>Ceremonia civil</strong></p>
           
           <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Viernes 16 de agosto</strong></p>
          
@@ -1237,7 +1237,7 @@ const LandingPage = () => {
          
           <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
 
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
+          <p style={{ fontSize: '6vw', marginTop: '7vh' }}><strong>Ceremonia religiosa</strong></p>
           
           <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Sábado 17 de Agosto</strong></p>
           
@@ -1260,7 +1260,7 @@ const LandingPage = () => {
           <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
           <span>7:00 pm</span></li>
 
-          <p style={{ fontSize: '30px', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
+          <p style={{ fontSize: '6vw', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
 
 
           </div>
@@ -1436,7 +1436,7 @@ const LandingPage = () => {
       <div className="container-five">
           <div className="section-title"><strong>Transporte</strong></div>
           <div className="itinerary-info">
-          <p><strong style={{ fontSize: '30px' }}>Boda civil</strong></p>
+          <p><strong style={{ fontSize: '6vw' }}>Boda civil</strong></p>
           <p><strong style={{ fontSize: '24px' }}>Cuando?</strong></p>
           <p><strong>Viernes 16 de agosto</strong></p>
           <p><strong style={{ fontSize: '24px' }}>Donde?</strong></p>
@@ -1475,7 +1475,7 @@ const LandingPage = () => {
       <div className={`container-two ${browserClass}`}>
       <div className="section-title"><strong>Dresscode</strong></div>
 
-       {/* <div style={{ fontSize: '30px', marginTop: '10vh' }}>Paleta de colores</div>
+       {/* <div style={{ fontSize: '6vw', marginTop: '10vh' }}>Paleta de colores</div>
 
       <div className="color-palette">
         <div className="color-square" style={{ backgroundColor: '#4B4C2D' }}></div>
@@ -1487,7 +1487,7 @@ const LandingPage = () => {
       </div> */}
 
           <div className="attire-info">
-          <p><strong style={{ fontSize: '30px'}}>Ceremonia civil</strong></p>
+          <p><strong style={{ fontSize: '6vw'}}>Ceremonia civil</strong></p>
           
           <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
@@ -1499,7 +1499,7 @@ const LandingPage = () => {
           </div>
           <div className="attire-info">
          
-          <p><strong style={{ fontSize: '30px', marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
+          <p><strong style={{ fontSize: '6vw', marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
           
           <p style={{ fontSize: '24px'}}>Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
