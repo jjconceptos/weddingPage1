@@ -1045,12 +1045,12 @@ const LandingPage = () => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              height: calc(var(--presentation-card-height) * 120); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 84); /* Set height based on custom property */
             }
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              height: calc(var(--presentation-card-height) * 700); /* Set height based on custom property */
+              height: calc(var(--presentation-card-height) * 82); /* Set height based on custom property */
             }
   
             .hosting {
