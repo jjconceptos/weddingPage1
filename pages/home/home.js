@@ -367,9 +367,7 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 7vw;
-          width: 60vw;
-          
+          font-size: 6vw;  
         }
 
         .section-title {
@@ -632,9 +630,7 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 100px;
-          width: 60vw;
-          
+          font-size: 5vw;
         }
 
         .section-title {
@@ -945,8 +941,8 @@ const LandingPage = () => {
           }
   
           .title {
-            font-size: 100px;
-            width: 60vw;
+            font-size: 5vw;
+           
             
           }
   
@@ -1211,7 +1207,7 @@ const LandingPage = () => {
       <div className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
-          <p><strong style={{ fontSize: '7vw' }}>Ceremonia civil</strong></p>
+          <p className="title"><strong>Ceremonia civil</strong></p>
           
           <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Viernes 16 de agosto</strong></p>
          
