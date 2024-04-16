@@ -812,7 +812,7 @@ const LandingPage = () => {
         }
 
         
-        @media screen and (min-width: 1440px) and (min-height: 900px) {
+        @media screen and (width: 1440px) and (height: 900px) {
           
           .burger-menu {
             position: fixed;
