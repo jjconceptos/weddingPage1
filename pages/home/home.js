@@ -392,7 +392,7 @@ const LandingPage = () => {
             }
 
             .content {
-              font-size: 2vw;
+              font-size: 5vw;
               
               
               }
