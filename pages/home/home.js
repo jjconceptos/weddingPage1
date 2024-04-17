@@ -374,13 +374,13 @@ const LandingPage = () => {
         }
 
         .minor-subtitle {
-          font-size: 5vw;
+          font-size: 6vw;
           
           font-weight: 300;
           }
 
           .important-content {
-            font-size: 6vw;
+            font-size: 5vw;
             font-weight: 300;
             }
 
