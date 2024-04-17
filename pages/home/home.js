@@ -659,17 +659,10 @@ const LandingPage = () => {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            margin-top: 225%;
           }
 
-          .container-one.safari {
-            /* Safari-specific styles */
-            height: calc(var(--presentation-card-height) * 26); /* Set height based on custom property */
-          }
-          
-          .container-one.chrome {
-            /* Chrome-specific styles */
-            height: calc(var(--presentation-card-height) * 26); /* Set height based on custom property */
-          }
+         
 
         
 
@@ -1250,7 +1243,7 @@ const LandingPage = () => {
           <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
           <span>7:00 pm</span></li>
 
-          <p style={{ fontSize: '7vw', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
+          <p style={{ fontSize: '3vw', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
 
 
           </div>
