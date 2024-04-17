@@ -659,8 +659,17 @@ const LandingPage = () => {
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            margin-top: 225%;
           }
+
+          .container-one.safari {
+            /* Safari-specific styles */
+            margin-top: 230%;        
+            }
+          
+          .container-one.chrome {
+            /* Chrome-specific styles */
+            margin-top: 222%;       
+             }
 
          
 
@@ -717,13 +726,11 @@ const LandingPage = () => {
 
           .container-three.safari {
             /* Safari-specific styles */
-            height: calc(var(--presentation-card-height) * 79); /* Set height based on custom property */
-          }
+            margin-top: 958%;           }
           
           .container-three.chrome {
             /* Chrome-specific styles */
-            height: calc(var(--presentation-card-height) * 74); /* Set height based on custom property */
-          }
+            margin-top: 984%;           }
 
           .hosting {
             position: relative;
