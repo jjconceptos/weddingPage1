@@ -638,7 +638,7 @@ const LandingPage = () => {
         }
 
         .section-subtitle {
-        font-size: 28px;
+        font-size: 2vw;
         
         font-weight: 300;
         }
@@ -738,12 +738,12 @@ const LandingPage = () => {
         }
 
           .hosting-title {
-            font-size: 50px;
+            font-size: 5vw;
             margin-top: 25vh;
         }
 
         .hosting-first-margin {
-          font-size: 24px;
+          font-size: 2vw;
           margin-top: -120vh;
           
         }
@@ -802,317 +802,6 @@ const LandingPage = () => {
         }
 
         
-        @media screen and (width: 1440px) and (height: 900px) {
-          
-          .burger-menu {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 999;
-            cursor: pointer;
-          }
-  
-          .bar {
-            width: 35px;
-            height: 5px;
-            background-color: #271523;
-            margin: 6px 0;
-            transition: 0.4s;
-          }
-  
-          // Rotate the first and third bar to create the burger menu icon effect
-          .change .bar-1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-          }
-  
-          .change .bar-2 {
-            opacity: 0;
-          }
-  
-          .change .bar-3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
-          }
-  
-          .menu-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #DED5C8;
-            z-index: 998;
-            display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
-          }
-  
-          
-          .menu-items {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 999;
-            text-align: center;
-          }
-  
-          .menu-item {
-            margin-bottom: 20px;
-            font-size: 20px;
-            color: #271523;
-            cursor: pointer;
-          }
-  
-          .section {
-            display: ${isMenuOpen ? 'block' : 'none'};
-          }
-  
-          .presentation-card-container {
-              width: 100%;
-              margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-                    
-          }
-  
-          .horizontal-line {
-            position: absolute;
-            left: 0;
-            width: 100% !important; /* Set the width to span the entire viewport */
-            height: 1px; /* Set the height of the line */
-            background-color: #000; /* Set the color of the line */
-            margin-top: 50vh; /* Adjust margin as needed */
-          }
-  
-          .rosemary {
-            position: relative;
-           
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
-            transform: scale(.8);
-          }
-  
-          .rosemary-1 {
-            position: relative;
-           
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
-            transform: scale(.6);
-          }
-  
-          .rosemary-3 {
-            position: relative;
-            margin-top: 170vh;
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
-            transform: scale(.6);
-          }
-  
-          .image {
-            position: relative;
-            width: 100%; /* Set the width to 70% of the viewport width */
-            height: auto; /* Maintain the aspect ratio */
-            transform: scale(.3); /* Scale the image by 1.3 times its original size */
-            margin-bottom: -30%;
-          }
-  
-        
-          .main-title-section-container {
-          position: absolute;
-          margin-top: -75vh;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-          border-bottom: 1px solid #000;
-          }
-  
-          .logo-image {
-            position: relative;
-            width: 100%; /* Set the width to 70% of the viewport width */
-            height: auto; /* Maintain the aspect ratio */
-            transform: scale(1.3); /* Scale the image by 1.3 times its original size */
-          }
-  
-          .title {
-            font-size: 5vw;
-           
-            
-          }
-  
-          .section-title {
-          font-size: 70px;
-          font-weight: bold;
-          }
-  
-          .section-subtitle {
-          font-size: 28px;
-          
-          font-weight: 300;
-          }
-  
-          .container {
-            position: absolute;
-            margin-top: 170vh;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-            }
-  
-            
-            
-            .container-one {
-              position: absolute;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              text-align: center;
-            }
-  
-            .container-one.safari {
-              /* Safari-specific styles */
-              margin-top: 222%;        
-              }
-            
-            .container-one.chrome {
-              /* Chrome-specific styles */
-              margin-top: 222%;       
-               }
-  
-  
-          
-  
-            .itinerary-info {
-              margin-top: 10vh; /* Adjust margin-top as needed */
-            }
-  
-            .itinerary-image {
-              margin-top: 20vh; 
-              transform: scale(1.6);
-            }
-  
-            .container-two {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-            }
-  
-            .container-two.safari {
-              /* Safari-specific styles */
-              margin-top: 3017vh;
-            }
-            
-            .container-two.chrome {
-              /* Chrome-specific styles */
-              margin-top: 3213vh;
-            }
-  
-            .color-palette {
-              display: grid;
-              grid-template-columns: repeat(3, 100px); /* Adjust the number and size of columns as needed */
-              gap: 10px; /* Adjust the gap between color squares */
-            }
-            
-            .color-square {
-              width: 100px; /* Adjust the width of color squares */
-              height: 100px; /* Adjust the height of color squares */
-              border-radius: 5px; /* Optional: Add rounded corners */
-            }
-  
-            .attire-info {
-              margin-top: 20vh; /* Adjust margin-top as needed */
-            }
-  
-            .container-three {
-              position: absolute;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              text-align: center;
-              margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-            }
-  
-            .container-three.safari {
-              /* Safari-specific styles */
-              height: calc(var(--presentation-card-height) * 89); /* Set height based on custom property */
-            }
-            
-            .container-three.chrome {
-              /* Chrome-specific styles */
-              height: calc(var(--presentation-card-height) * 88); /* Set height based on custom property */
-            }
-  
-            .hosting {
-              position: relative;
-              margin-bottom: -140vh; /* Adjusted margin for shorter vertical distance between hotels */
-          }
-  
-            .hosting-title {
-              font-size: 50px;
-              margin-top: 25vh;
-          }
-  
-          .hosting-first-margin {
-            font-size: 24px;
-            margin-top: -120vh;
-            
-          }
-  
-              .hosting-image {
-                position: relative;
-                margin-top: 100vw;
-                width: 100%; /* Set the width to 70% of the viewport width */
-                height: auto; /* Maintain the aspect ratio */
-                transform: scale(1.75); /* Scale the image by 1.3 times its original size */
-              }
-  
-            .container-four {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-            }
-  
-            .container-four.safari {
-              /* Safari-specific styles */
-              margin-top: 2835vh;
-            }
-            
-            .container-four.chrome {
-              /* Chrome-specific styles */
-              margin-top: 3006vh;
-            }
-  
-            .container-five {
-              position: absolute;
-            margin-top: 0vh;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-            }
-  
-            .container-six {
-              position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
-            }
-  
-            .container-six.safari {
-              /* Safari-specific styles */
-              margin-top: 2920vh;
-            }
-            
-            .container-six.chrome {
-              /* Chrome-specific styles */
-              margin-top: 3106vh;
-            }
-
-        }
 
               
 
@@ -1154,7 +843,7 @@ const LandingPage = () => {
   </div>
 ))}
 
-<div className="presentation-card-container" style={{ '--presentation-card-height': `${presentationCardHeight}px` }}>
+<div className="presentation-card-container">
       <div className="main-title-section-container">
       <img src="/dycLogo.png" alt="Your Image" className="image"  />
       {/* <link
@@ -1165,12 +854,12 @@ const LandingPage = () => {
       <div className="title" style={{ fontFamily: 'Cherolina'}}></div>*/}
       
       
-      <div >
+      <div>
         Daniela y César
       </div>
 
 
-      <div className="sub-title" onClick={handleConocenosClick}>
+      <div onClick={handleConocenosClick}>
        2024
       </div>
      {/*  <div className="horizontal-line" style={{ width: '100%', height: '2px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
@@ -1203,9 +892,9 @@ const LandingPage = () => {
           <div className="itinerary-info">
           <p className="title"><strong>Ceremonia civil</strong></p>
           
-          <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Viernes 16 de agosto</strong></p>
+          <p className="section-subtitle" style={{ marginTop: '7vh', textDecoration: 'underline'}}><strong>Viernes 16 de agosto</strong></p>
          
-          <p style={{ marginTop: '2vh', fontSize: '18px'}}><strong>Hacienda San José Lavista</strong></p>
+          <p className="section-subtitle" style={{ marginTop: '2vh'}}><strong>Hacienda San José Lavista</strong></p>
 
           <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
 
