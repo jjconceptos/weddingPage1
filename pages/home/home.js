@@ -369,25 +369,18 @@ const LandingPage = () => {
 
         .major-subtitle {
           font-size: 7vw;
-        
-        
         }
 
         .minor-subtitle {
           font-size: 6vw;
-          
-          font-weight: 300;
           }
 
           .important-content {
             font-size: 5vw;
-            font-weight: 300;
             }
 
             .content {
-              font-size: 5vw;
-              
-              
+              font-size: 4vw;
               }
 
         
@@ -656,18 +649,18 @@ const LandingPage = () => {
 
         .minor-subtitle {
           font-size: 3vw;
-          font-weight: 300;
+         
           }
 
 
           .important-content {
             font-size: 2vw;
-            font-weight: 300;
+           
             }
 
             .content {
               font-size: 1.5vw;
-              font-weight: 300;
+           
               }
 
         .container {
