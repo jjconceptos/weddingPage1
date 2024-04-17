@@ -496,7 +496,7 @@ const LandingPage = () => {
        
       
 
-        @media screen and (width: 768px) and (height: 600px) {
+        @media screen and (min-width: 768px) and (min-height: 600px) {
 
                 
         .burger-menu {
@@ -1030,15 +1030,18 @@ const LandingPage = () => {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center;
+              margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
             }
   
             .container-three.safari {
               /* Safari-specific styles */
-              margin-top: 3000%;           }
+              height: calc(var(--presentation-card-height) * 89); /* Set height based on custom property */
+            }
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              margin-top: 3000%;   
+              height: calc(var(--presentation-card-height) * 88); /* Set height based on custom property */
+            }
   
             .hosting {
               position: relative;
