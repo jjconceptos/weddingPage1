@@ -837,6 +837,326 @@ const LandingPage = () => {
 
         
 
+        @media screen and (min-width: 1366) and (min-height: 668px) {
+
+                
+          .burger-menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+            cursor: pointer;
+          }
+  
+          .bar {
+            width: 35px;
+            height: 5px;
+            background-color: #271523;
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+  
+          // Rotate the first and third bar to create the burger menu icon effect
+          .change .bar-1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+          }
+  
+          .change .bar-2 {
+            opacity: 0;
+          }
+  
+          .change .bar-3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+          }
+  
+          .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #DED5C8;
+            z-index: 998;
+            display: ${isMenuOpen ? 'block' : 'none'}; // Show overlay when menu is open
+          }
+  
+          
+          .menu-items {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            text-align: center;
+          }
+  
+          .menu-item {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #271523;
+            cursor: pointer;
+          }
+  
+          .section {
+            display: ${isMenuOpen ? 'block' : 'none'};
+          }
+  
+          .presentation-card-container {
+              width: 100%;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+                    
+          }
+  
+          .horizontal-line {
+            position: absolute;
+            left: 0;
+            width: 100% !important; /* Set the width to span the entire viewport */
+            height: 1px; /* Set the height of the line */
+            background-color: #000; /* Set the color of the line */
+            margin-top: 50vh; /* Adjust margin as needed */
+          }
+  
+          .rosemary {
+            position: relative;
+           
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            transform: scale(.8);
+          }
+  
+          .rosemary-1 {
+            position: relative;
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            transform: scale(.6);
+          }
+  
+          .rosemary-3 {
+            position: relative;
+            margin-top: 170vh;
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            transform: scale(.6);
+          }
+  
+          .image {
+            position: relative;
+            width: 100%; /* Set the width to 70% of the viewport width */
+            height: auto; /* Maintain the aspect ratio */
+            transform: scale(.3); /* Scale the image by 1.3 times its original size */
+            margin-bottom: -30%;
+          }
+  
+        
+          .main-title-section-container {
+          position: absolute;
+          margin-top: -75vh;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+          border-bottom: 1px solid #000;
+          }
+  
+          .logo-image {
+            position: relative;
+            width: 100%; /* Set the width to 70% of the viewport width */
+            height: auto; /* Maintain the aspect ratio */
+            transform: scale(1.3); /* Scale the image by 1.3 times its original size */
+          }
+  
+          .title {
+            font-size: 4vw;
+          }
+  
+          .section-title {
+          font-size: 5vw;
+          font-weight: bold;
+          }
+  
+          .major-subtitle {
+            font-size: 4vw;
+         
+          }
+  
+          .minor-subtitle {
+            font-size: 3vw;
+            font-weight: 300;
+            }
+  
+  
+            .important-content {
+              font-size: 2vw;
+              font-weight: 300;
+              }
+  
+              .content {
+                font-size: 1.5vw;
+                font-weight: 300;
+                }
+  
+          .container {
+            position: absolute;
+            margin-top: 170vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+            }
+  
+            
+            
+            .container-one {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+            }
+  
+            .container-one.safari {
+              /* Safari-specific styles */
+              margin-top: 230%;        
+              }
+            
+            .container-one.chrome {
+              /* Chrome-specific styles */
+              margin-top: 222%;       
+               }
+  
+           
+  
+          
+  
+            .itinerary-info {
+              margin-top: 10vh; /* Adjust margin-top as needed */
+            }
+  
+            .itinerary-image {
+              margin-top: 20vh; 
+              transform: scale(1.6);
+            }
+  
+            .container-two {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+  
+            .container-two.safari {
+              /* Safari-specific styles */
+              margin-top: 3017vh;
+            }
+            
+            .container-two.chrome {
+              /* Chrome-specific styles */
+              margin-top: 3213vh;
+            }
+  
+            .color-palette {
+              display: grid;
+              grid-template-columns: repeat(3, 100px); /* Adjust the number and size of columns as needed */
+              gap: 10px; /* Adjust the gap between color squares */
+            }
+            
+            .color-square {
+              width: 100px; /* Adjust the width of color squares */
+              height: 100px; /* Adjust the height of color squares */
+              border-radius: 5px; /* Optional: Add rounded corners */
+            }
+  
+            .attire-info {
+              margin-top: 20vh; /* Adjust margin-top as needed */
+            }
+  
+            .container-three {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+            }
+  
+            .container-three.safari {
+              /* Safari-specific styles */
+              margin-top: 958%;           }
+            
+            .container-three.chrome {
+              /* Chrome-specific styles */
+              margin-top: 984%;           }
+  
+            .hosting {
+              position: relative;
+              margin-bottom: -140vh; /* Adjusted margin for shorter vertical distance between hotels */
+          }
+  
+            .hosting-title {
+              font-size: 5vw;
+              margin-top: 25vh;
+          }
+  
+          .hosting-first-margin {
+            font-size: 2vw;
+            margin-top: -120vh;
+            
+          }
+  
+              .hosting-image {
+                position: relative;
+                margin-top: 100vw;
+                width: 100%; /* Set the width to 70% of the viewport width */
+                height: auto; /* Maintain the aspect ratio */
+                transform: scale(1.75); /* Scale the image by 1.3 times its original size */
+              }
+  
+            .container-four {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+  
+            .container-four.safari {
+              /* Safari-specific styles */
+              margin-top: 2835vh;
+            }
+            
+            .container-four.chrome {
+              /* Chrome-specific styles */
+              margin-top: 3006vh;
+            }
+  
+            .container-five {
+              position: absolute;
+            margin-top: 0vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
+            }
+  
+            .container-six {
+              position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+  
+            .container-six.safari {
+              /* Safari-specific styles */
+              margin-top: 2920vh;
+            }
+            
+            .container-six.chrome {
+              /* Chrome-specific styles */
+              margin-top: 3106vh;
+            }
+  
+          }
+
               
 
           
@@ -1024,7 +1344,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>CASA QUEBRADA</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel de Allende, Gto., México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://hotelcasaquebrada.mx/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://hotelcasaquebrada.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1032,7 +1352,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>CASA 1810</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Hidalgo #8, San Miguel de Allende, Gto. México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://hotels.cloudbeds.com/reservation/oqBpi9#checkin=2024-03-24&checkout=2024-03-25">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://hotels.cloudbeds.com/reservation/oqBpi9#checkin=2024-03-24&checkout=2024-03-25">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1040,7 +1360,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>MATILDA</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Aldama 53 · San Miguel de Allende, Gto. México 37700</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://hotelmatilda.com/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://hotelmatilda.com/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1048,7 +1368,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>LIVE AQUA</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Calzada de la Presa No. 85 Zona Centro, 37700 San Miguel de Allende, Gto., México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.liveaqua.com/hoteles-y-resorts/live-aqua-urban-resort-san-miguel-de-allende?gclid=CjwKCAjwzaSLBhBJEiwAJSRoktxuYj2yQbFhSdgbbyYZfKF3Z4lumxMMj_PwzYAGdIxNw3fm2LZotRoCujsQAvD_BwE&gclsrc=aw.ds">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.liveaqua.com/hoteles-y-resorts/live-aqua-urban-resort-san-miguel-de-allende?gclid=CjwKCAjwzaSLBhBJEiwAJSRoktxuYj2yQbFhSdgbbyYZfKF3Z4lumxMMj_PwzYAGdIxNw3fm2LZotRoCujsQAvD_BwE&gclsrc=aw.ds">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1056,7 +1376,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>ROSEWOOD</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 11, Col. Centro, San Miguel de Allende, Gto. México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.rosewoodhotels.com/en/san-miguel-de-allende/offers">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.rosewoodhotels.com/en/san-miguel-de-allende/offers">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1064,7 +1384,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>CASA HOYOS</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Mesones No. 14 , Zona Centro San Miguel de Allende, Gto., 37700, México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.casahoyos.mx/es">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.casahoyos.mx/es">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1072,7 +1392,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>AMATTE</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Salida real a Querétaro 168, Zona Centro, 37700 San Miguel de Allende Gto.</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://amatte.com.mx/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://amatte.com.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1080,7 +1400,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>REAL DE MINAS</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Camino Viejo al Panteón 1, San Antonio, 37700 San Miguel de Allende, Gto. México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.realdeminas.com/es/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.realdeminas.com/es/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1088,7 +1408,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>LA MORADA</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Correo #10 Centro. San Miguel de Allende Guanajuato, Mexico 37700</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.lamoradahotel.com.mx/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.lamoradahotel.com.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1096,7 +1416,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>NUMU</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Nemesio Diez 20, Zona Centro, 37700 San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.hyatt.com/en-US/hotel/mexico/numu/bjxub?src=corp_lclb_gmb_seo_bjxub">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.hyatt.com/en-US/hotel/mexico/numu/bjxub?src=corp_lclb_gmb_seo_bjxub">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1104,7 +1424,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>ILOROJO</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Salida Real a Querétaro 136-A, Zona Centro, 37774 San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.ilorojohotel.com/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.ilorojohotel.com/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1112,7 +1432,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>CASA BLANCA</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Juarez No. 7 CentroSan Miguel de Allende Gto 37700</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://casablanca7.com/es/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://casablanca7.com/es/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -1120,7 +1440,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>HACIENDA LOS PICACHOS</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Carretera San Miguel de Allende, Qto. Km. 3, San Jose de la Posta, 37700 San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.haciendalospicachos.com.mx/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.haciendalospicachos.com.mx/">Visit website</a>
       </div>
 
       {/* <div className="horizontal-line"></div>*/}
@@ -1132,8 +1452,8 @@ const LandingPage = () => {
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
-          <p><strong style={{ fontSize: '24px' }}><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
-          <p style={{ fontSize: '18px'}}>A domicilio</p>
+          <p><strong className="major-subtitle"><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
+          <p className="content">A domicilio</p>
 
           <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Contacto:</strong></p>
           <p style={{ fontSize: '18px'}}>5512891489</p>
