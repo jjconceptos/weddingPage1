@@ -302,14 +302,7 @@ const LandingPage = () => {
             padding-top: 10vh;      
         }
 
-        .horizontal-line {
-          position: absolute;
-          left: 0;
-          width: 100% !important; /* Set the width to span the entire viewport */
-          height: 1px; /* Set the height of the line */
-          background-color: #000; /* Set the color of the line */
-          margin-top: 50vh; /* Adjust margin as needed */
-        }
+       
 
         .rosemary {
           position: relative;
@@ -387,7 +380,7 @@ const LandingPage = () => {
           }
 
           .important-content {
-            font-size: 3vw;
+            font-size: 6vw;
             font-weight: 300;
             }
 
