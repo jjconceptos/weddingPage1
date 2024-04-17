@@ -374,11 +374,30 @@ const LandingPage = () => {
         font-size: 8vw;
         }
 
-        .section-subtitle {
-        font-size: 5vw;
+        .major-subtitle {
+          font-size: 7vw;
         
-        font-weight: 300;
+        
         }
+
+        .minor-subtitle {
+          font-size: 5vw;
+          
+          font-weight: 300;
+          }
+
+          .important-content {
+            font-size: 3vw;
+            font-weight: 300;
+            }
+
+            .content {
+              font-size: 2vw;
+              
+              
+              }
+
+        
 
         .container {
           position: absolute;
@@ -637,11 +656,26 @@ const LandingPage = () => {
         font-weight: bold;
         }
 
-        .section-subtitle {
-        font-size: 2vw;
-        
-        font-weight: 300;
+        .major-subtitle {
+          font-size: 4vw;
+       
         }
+
+        .minor-subtitle {
+          font-size: 3vw;
+          font-weight: 300;
+          }
+
+
+          .important-content {
+            font-size: 2vw;
+            font-weight: 300;
+            }
+
+            .content {
+              font-size: 1.5vw;
+              font-weight: 300;
+              }
 
         .container {
           position: absolute;
@@ -890,53 +924,53 @@ const LandingPage = () => {
       <div className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
-          <p className="title"><strong>Ceremonia civil</strong></p>
+          <p className="major-subtitle"><strong>Ceremonia civil</strong></p>
           
-          <p className="section-subtitle" style={{ marginTop: '7vh', textDecoration: 'underline'}}><strong>Viernes 16 de agosto</strong></p>
+          <p className="important-content" style={{ marginTop: '7vh', textDecoration: 'underline'}}><strong>Viernes 16 de agosto</strong></p>
          
-          <p className="section-subtitle" style={{ marginTop: '2vh'}}><strong>Hacienda San José Lavista</strong></p>
+          <p className="important-content" style={{ marginTop: '2vh'}}><strong>Hacienda San José Lavista</strong></p>
 
           <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
 
           
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Cocktail Boho</p>
+          <p className="minor-subtitle" style={{marginTop: '7vh' }}><strong>Dresscode: </strong></p>
+          <p className="important-content">Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
           </div>
 
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
+          <p className="minor-subtitle" style={{ marginTop: '7vh' }}><strong>Horarios: </strong></p>
         
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Civil: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Callejoneada:</span><br />
+          <li className="content" style={{marginTop: '4vh' }}><span>Ceremonia Civil: </span><br />5:00 pm</li>
+          <li className="content"><span>Callejoneada:</span><br />
           <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}><span>Rompe hielos:</span><br />
+          <li className="content"><span>Rompe hielos:</span><br />
           <span>7:00 pm - 9:00pm</span></li>
          
           <img src="/haciendaSanJose.jpeg" alt="Your Image" className="itinerary-image"/>
 
-          <p className="title" style={{ marginTop: '15vh' }}><strong>Ceremonia religiosa</strong></p>
+          <p className="major-subtitle" style={{ marginTop: '15vh' }}><strong>Ceremonia religiosa</strong></p>
           
-          <p style={{ marginTop: '7vh', textDecoration: 'underline', fontSize: '18px'}}><strong>Sábado 17 de Agosto</strong></p>
+          <p className="important-content" style={{ marginTop: '7vh', textDecoration: 'underline'}}><strong>Sábado 17 de Agosto</strong></p>
           
-          <p style={{ marginTop: '2vh', fontSize: '18px'}}><strong>Hacienda San José Lavista</strong></p>
+          <p className="important-content" style={{ marginTop: '2vh' }}><strong>Hacienda San José Lavista</strong></p>
 
           <a href="https://www.google.com/maps/place/Hacienda+San+Jose+Lavista/@20.9440982,-100.8882974,13z/data=!4m10!1m2!2m1!1shacienda+san+jose+la+vista!3m6!1s0x842b454de851701f:0x2f02f6565a48f63!8m2!3d20.9440982!4d-100.8161996!15sChpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YVocIhpoYWNpZW5kYSBzYW4gam9zZSBsYSB2aXN0YZIBBndpbmVyeeABAA!16s%2Fg%2F11h0_k895?entry=ttu" style={{ textDecoration: 'underline', color: '#ffff' }}>Ubicacion</a>
 
 
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Dresscode: </strong></p>
-          <p style={{ fontSize: '18px'}}>Etiqueta rigurosa</p>
+          <p className="minor-subtitle" style={{ marginTop: '7vh' }}><strong>Dresscode: </strong></p>
+          <p className="important-content">Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Damas</a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}>Caballeros</a>
           </div>
 
-          <p style={{ fontSize: '24px', marginTop: '7vh' }}><strong>Horarios: </strong></p>
-          <li style={{ fontSize: '18px', marginTop: '4vh' }}>Ceremonia Religiosa: 5:00 pm</li>
-          <li style={{ fontSize: '18px' }}><span>Coctél:</span><br />
+          <p className="minor-subtitle" style={{ marginTop: '7vh' }}><strong>Horarios: </strong></p>
+          <li className="content" style={{ marginTop: '4vh' }}><span>Ceremonia Religiosa:</span> <br />5:00 pm</li>
+          <li className="content"><span>Coctél:</span><br />
           <span>6:00 pm</span></li>
-          <li style={{ fontSize: '18px' }}><span>Recepción:</span><br />
+          <li className="content"><span>Recepción:</span><br />
           <span>7:00 pm</span></li>
 
           <p style={{ fontSize: '3vw', marginTop: '7vh' }}><strong>SIN NIÑOS</strong></p>
@@ -958,7 +992,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>APAPACHO</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Bajada del chorro #11 Col.Centro, San Miguel de Allende, Gto. Mexico</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.apapachohotel.mx/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.apapachohotel.mx/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -966,7 +1000,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>CLANDESTINO</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Recreo 31, Centro. San Miguel De Allende, Gto, México</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://clandestinohotel.com/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://clandestinohotel.com/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -974,7 +1008,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>L&rsquo;</strong>OTEL</div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Callejón de Chiquitos 1A, Centro, San Miguel de Allende, Gto.</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://l-otelgroup.com/chiquitos/">Visit website</a>
       </div>
 
       <div className="hosting">
@@ -982,7 +1016,7 @@ const LandingPage = () => {
       <div className="hosting-title"><strong>BELMOND</strong></div>
       {/*<div style={{ fontSize: '23px', marginTop: '2vh' }}>Hospicio 35 San Miguel de Allende, Gto. México 37700</div>*/}
       <div style={{ marginTop: '1vh' }}></div>
-      <a style={{ fontSize: '20px', textDecoration: 'underline', color: '#ffff'}} href="https://www.belmond.com/hotels/north-america/mexico/san-miguel-de-allende/belmond-casa-de-sierra-nevada/">Visit website</a>
+      <a className="content" style={{ textDecoration: 'underline', color: '#ffff'}} href="https://www.belmond.com/hotels/north-america/mexico/san-miguel-de-allende/belmond-casa-de-sierra-nevada/">Visit website</a>
       </div>
 
       <div className="hosting">
