@@ -1024,7 +1024,7 @@ const LandingPage = () => {
             
             .container-one.chrome {
               /* Chrome-specific styles */
-              margin-top: 300%;       
+              margin-top: 222%;       
                }
   
            
