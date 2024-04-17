@@ -967,18 +967,18 @@ const LandingPage = () => {
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center;
-              margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
             }
   
             .container-one.safari {
               /* Safari-specific styles */
-              height: calc(var(--presentation-card-height) * 40); /* Set height based on custom property */
-            }
+              margin-top: 222%;        
+              }
             
             .container-one.chrome {
               /* Chrome-specific styles */
-              height: calc(var(--presentation-card-height) * 26); /* Set height based on custom property */
-            }
+              margin-top: 222%;       
+               }
+  
   
           
   
