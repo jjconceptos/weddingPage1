@@ -1010,12 +1010,8 @@ const LandingPage = () => {
             
             .container-one.chrome {
               /* Chrome-specific styles */
-              top: 210%;       
+              top: 110%;       
                }
-  
-           
-  
-          
   
             .itinerary-info {
               margin-top: 10vh; /* Adjust margin-top as needed */
@@ -1072,7 +1068,7 @@ const LandingPage = () => {
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              top: 1104%;           }
+              top: 504%;           }
   
             .hosting {
               position: relative;
