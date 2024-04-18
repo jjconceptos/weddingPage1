@@ -440,7 +440,7 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 1925%;
+          margin-top: 1625%;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
