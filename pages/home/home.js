@@ -1040,7 +1040,7 @@ const LandingPage = () => {
             
             .container-two.chrome {
               /* Chrome-specific styles */
-              margin-top: 2360%;
+              margin-top: 3060%;
             }
   
             .color-palette {
@@ -1068,11 +1068,11 @@ const LandingPage = () => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              margin-top: 1002%;           }
+              margin-top: 1202%;           }
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              margin-top: 1014%;           }
+              margin-top: 1214%;           }
   
             .hosting {
               position: relative;
