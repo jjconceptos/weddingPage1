@@ -1187,7 +1187,7 @@ const LandingPage = () => {
       </div> */}
 
           <div className="attire-info">
-          <p className="major-subtitle"><strong >Ceremonia civil</strong></p>
+          <p className="minor-subtitle"><strong >Ceremonia civil</strong></p>
           
           <p className="important-content">Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
@@ -1199,7 +1199,7 @@ const LandingPage = () => {
           </div>
           <div className="attire-info">
          
-          <p className="major-subtitle"><strong style={{ marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
+          <p className="minor-subtitle"><strong style={{ marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
           
           <p className="important-content">Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
