@@ -1123,10 +1123,10 @@ const LandingPage = () => {
           <p className="important-content">A domicilio</p>
 
           <p className="minor-subtitle" style={{ marginTop: '5vh' }}><strong>Contacto:</strong></p>
-          <p className="imortant-content">5512891489</p>
+          <p className="important-content">5512891489</p>
 
           <p className="minor-subtitle" style={{  marginTop: '5vh' }}><strong>Código 10% off:</strong></p>
-          <p className="imortant-content">DANIELA&amp;CÉSAR</p>  
+          <p className="important-content">DANIELA&amp;CÉSAR</p>  
           </div>
           
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
@@ -1154,16 +1154,16 @@ const LandingPage = () => {
           <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
           
-          <p><strong style={{ fontSize: '24px' }}>Palacio de hierro</strong></p>
-          <p><strong>Evento número 385296</strong></p> 
-          <a style={{ fontSize: '18px', textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
+          <p className="minor-subtitle"><strong >Palacio de hierro</strong></p>
+          <p className="important-content"><strong>Evento número 385296</strong></p> 
+          <a className="important-content" style={{ textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
              
 
-          <p style={{ fontSize: '24px' }}><strong>Deposito bancario</strong></p>
-          <p style={{ fontSize: '18px', marginTop: '1vh' }}>HSBC</p>    
-          <p style={{ fontSize: '18px', marginTop: '1vh' }}>Daniela Yamilet Pérez Santiago</p>    
-          <p style={{ fontSize: '18px', marginTop: '1vh' }}>Cuenta: 4065536443</p>    
-          <p style={{ fontSize: '18px', marginTop: '1vh' }}>CLABE: 021028040655364439</p>    
+          <p className="minor-subtitle"><strong>Deposito bancario</strong></p>
+          <p className="content" style={{ marginTop: '1vh' }}>HSBC</p>    
+          <p className="important-content" style={{ marginTop: '1vh' }}>Daniela Yamilet Pérez Santiago</p>    
+          <p style={{ marginTop: '1vh' }}>Cuenta: 4065536443</p>    
+          <p style={{  marginTop: '1vh' }}>CLABE: 021028040655364439</p>    
 
           </div>
           {/* <div className="horizontal-line"></div> */}
