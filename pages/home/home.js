@@ -1010,7 +1010,7 @@ const LandingPage = () => {
             
             .container-one.chrome {
               /* Chrome-specific styles */
-              top: -30%;       
+              top: -40%;       
                }
   
             .itinerary-info {
