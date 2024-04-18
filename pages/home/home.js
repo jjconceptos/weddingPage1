@@ -1040,7 +1040,7 @@ const LandingPage = () => {
             
             .container-two.chrome {
               /* Chrome-specific styles */
-              margin-top: 2060%;
+              margin-top: 2360%;
             }
   
             .color-palette {
