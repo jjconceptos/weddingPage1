@@ -1187,9 +1187,9 @@ const LandingPage = () => {
       </div> */}
 
           <div className="attire-info">
-          <p><strong style={{ fontSize: '7vw'}}>Ceremonia civil</strong></p>
+          <p className="major-subtitle"><strong >Ceremonia civil</strong></p>
           
-          <p style={{ fontSize: '24px'}}>Cocktail Boho</p>
+          <p className="important-content">Cocktail Boho</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-civil-ceremony/?invite_code=8dd54549174d44dfb788935e9ae7c876&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}><span>Ideas</span><br></br><span>damas</span></a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-civil-ceremony/?invite_code=d82ae94f2f2d4a5eb8a30982ef6ba4d0&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}><span>Ideas</span><br></br><span>caballeros</span></a>
@@ -1199,9 +1199,9 @@ const LandingPage = () => {
           </div>
           <div className="attire-info">
          
-          <p><strong style={{ fontSize: '7vw', marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
+          <p className="major-subtitle"><strong style={{ marginTop: '-10vh' }}>Ceremonia religiosa</strong></p>
           
-          <p style={{ fontSize: '24px'}}>Etiqueta rigurosa</p>
+          <p className="important-content">Etiqueta rigurosa</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2vh' }}>
             <a href="https://www.pinterest.com.mx/danypesant/women-dresscode-ceremonia-religiosa/?invite_code=ba0030bf2d4746e7b215b95709355aad&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}><span>Ideas</span><br></br><span>damas</span></a>
             <a href="https://www.pinterest.com.mx/danypesant/men-dresscode-ceremonia-religiosa/?invite_code=26d707542cfc4f1c944e9b9eb58f9abf&sender=347410696163627453" style={{ textDecoration: 'underline', color: '#ffff' }}><span>Ideas</span><br></br><span>caballeros</span></a>
