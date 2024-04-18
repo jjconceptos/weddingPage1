@@ -1155,15 +1155,15 @@ const LandingPage = () => {
           <div className="itinerary-info">
           
           <p className="minor-subtitle"><strong >Palacio de hierro</strong></p>
-          <p className="important-content"><strong>Evento número 385296</strong></p> 
+          <p className="important-content">Evento número 385296</p> 
           <a className="important-content" style={{ textDecoration: 'underline', color: '#ffff' }} href="https://www.elpalaciodehierro.com/buscar?eventId=385296" >Ver mesa de regalos online</a>
              
 
-          <p className="minor-subtitle" style={{ marginTop: '3vh' }}><strong>Deposito bancario</strong></p>
-          <p className="content" style={{ marginTop: '1vh' }}>HSBC</p>    
-          <p className="content" style={{ marginTop: '1vh' }}>Daniela Yamilet Pérez Santiago</p>    
-          <p className="content" style={{ marginTop: '1vh' }}>Cuenta: 4065536443</p>    
-          <p className="content" style={{  marginTop: '1vh' }}>CLABE: 021028040655364439</p>    
+          <p className="minor-subtitle" style={{ marginTop: '6vh' }}><strong>Deposito bancario</strong></p>
+          <p className="important-content" style={{ marginTop: '1vh' }}>HSBC</p>    
+          <p className="important-content" style={{ marginTop: '1vh' }}>Daniela Yamilet Pérez Santiago</p>    
+          <p className="important-content" style={{ marginTop: '1vh' }}>Cuenta: 4065536443</p>    
+          <p className="important-content" style={{  marginTop: '1vh' }}>CLABE: 021028040655364439</p>    
 
           </div>
           {/* <div className="horizontal-line"></div> */}
