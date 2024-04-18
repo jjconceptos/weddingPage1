@@ -1119,14 +1119,14 @@ const LandingPage = () => {
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
-          <p><strong className="major-subtitle"><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
-          <p className="content">A domicilio</p>
+          <p><strong className="minor-subtitle"><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
+          <p className="important-content">A domicilio</p>
 
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Contacto:</strong></p>
-          <p style={{ fontSize: '18px'}}>5512891489</p>
+          <p className="minor-subtitle" style={{ marginTop: '5vh' }}><strong>Contacto:</strong></p>
+          <p className="imortant-content">5512891489</p>
 
-          <p style={{ fontSize: '24px', marginTop: '5vh' }}><strong>Código 10% off:</strong></p>
-          <p>DANIELA&amp;CÉSAR</p>  
+          <p className="minor-subtitle" style={{  marginTop: '5vh' }}><strong>Código 10% off:</strong></p>
+          <p className="imortant-content">DANIELA&amp;CÉSAR</p>  
           </div>
           
           <img src="/oliveWreath.png" alt="Your Image" className="rosemary" style={{ marginTop: '15vh',  transform: 'scale(.6)'}} />
