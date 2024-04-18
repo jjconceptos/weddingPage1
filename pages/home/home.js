@@ -1072,7 +1072,7 @@ const LandingPage = () => {
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              margin-top: 1800vh;           }
+              margin-top: 2200vh;           }
   
             .hosting {
               position: relative;
