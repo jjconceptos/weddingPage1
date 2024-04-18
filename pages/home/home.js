@@ -688,7 +688,7 @@ const LandingPage = () => {
           
           .container-one.chrome {
             /* Chrome-specific styles */
-            margin-top: 222%;       
+            margin-top: 230%;       
              }
 
          
@@ -718,7 +718,7 @@ const LandingPage = () => {
           
           .container-two.chrome {
             /* Chrome-specific styles */
-            margin-top: 3213vh;
+            margin-top: 1860%;
           }
 
           .color-palette {
@@ -750,7 +750,7 @@ const LandingPage = () => {
           
           .container-three.chrome {
             /* Chrome-specific styles */
-            margin-top: 984%;           }
+            margin-top: 1014%;           }
 
           .hosting {
             position: relative;
@@ -790,7 +790,7 @@ const LandingPage = () => {
           
           .container-four.chrome {
             /* Chrome-specific styles */
-            margin-top: 3006vh;
+            margin-top: 1730%;
           }
 
           .container-five {
@@ -811,12 +811,12 @@ const LandingPage = () => {
 
           .container-six.safari {
             /* Safari-specific styles */
-            margin-top: 2920vh;
+            margin-top: 1830%;
           }
           
           .container-six.chrome {
             /* Chrome-specific styles */
-            margin-top: 3106vh;
+            margin-top: 1792%;
           }
 
         }
