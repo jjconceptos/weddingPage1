@@ -822,7 +822,7 @@ const LandingPage = () => {
         }
 
 
-        @media (max-width: 1250px) {
+        @media (min-width: 1440px) {
 
                 
           .burger-menu {
