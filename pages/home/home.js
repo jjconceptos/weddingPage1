@@ -1387,7 +1387,7 @@ const LandingPage = () => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              margin-top: 1002%;           }
+              margin-top: 1800vh;           }
             
             .container-three.chrome {
               /* Chrome-specific styles */
