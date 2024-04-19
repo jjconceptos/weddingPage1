@@ -59,6 +59,7 @@ const handleMenuItemClick = (elementId) => {
   if (element) {
     console.log("Element found:", element); // Log the element found
     element.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   } else {
     console.log("Element not found for elementId:", elementId); // Log if the element is not found
   }
