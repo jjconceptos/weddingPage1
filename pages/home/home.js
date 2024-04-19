@@ -691,12 +691,9 @@ const LandingPage = () => {
           
           .container-one.chrome {
             /* Chrome-specific styles */
-            margin-top: 230%;       
+            margin-top: 300vh;       
              }
 
-         
-
-        
 
           .itinerary-info {
             margin-top: 10vh; /* Adjust margin-top as needed */
