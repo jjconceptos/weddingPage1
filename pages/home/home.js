@@ -37,9 +37,9 @@ const sectionsData = [
   { name: 'Fotos', elementId: 'container' },
   { name: 'Itinerario', elementId: 'container-one' },
   { name: 'Hospedaje', elementId: 'container-three' },
-  { name: 'Maquillaje y peinado', elementId: 'maquillaje-peinado-section' },
-  { name: 'Mesa de regalos', elementId: 'mesa-regalos-section' },
-  { name: 'Dresscode', elementId: 'dresscode-section' },
+  { name: 'Maquillaje y peinado', elementId: 'container-four' },
+  { name: 'Mesa de regalos', elementId: 'container-six' },
+  { name: 'Dresscode', elementId: 'container-two' },
   // Add more sections as needed
 ];
 
@@ -1490,7 +1490,7 @@ const handleMenuItemClick = (elementId) => {
   
 
 
-<div className="presentation-card-container">
+<div id="presentation-card-container" className="presentation-card-container">
       <div className="main-title-section-container">
       <img src="/dycLogo.png" alt="Your Image" className="image"  />
       {/* <link
@@ -1511,7 +1511,7 @@ const handleMenuItemClick = (elementId) => {
      {/*  <div className="horizontal-line" style={{ width: '100%', height: '2px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
       </div>
       
-      <div className="container">
+      <div id="container" className="container">
       
       <div className="section-title"></div>
       <Carousel items={carouselItems}/>
@@ -1533,7 +1533,7 @@ const handleMenuItemClick = (elementId) => {
        
       </div>
        
-      <div className={`container-one ${browserClass}`}>
+      <div id="container-one" className={`container-one ${browserClass}`}>
           <div className="section-title"><strong>The weekend</strong></div>
           <div className="itinerary-info">
           <p className="major-subtitle"><strong>Ceremonia civil</strong></p>
@@ -1595,7 +1595,7 @@ const handleMenuItemClick = (elementId) => {
       
      
       
-      <div className={`container-three ${browserClass}`}>
+      <div id="container-three" className={`container-three ${browserClass}`}>
       <div className="section-title"><strong>Hospedaje</strong></div>
       
       <div className="hosting">
@@ -1740,7 +1740,7 @@ const handleMenuItemClick = (elementId) => {
 
       </div>
       
-      <div className={`container-four ${browserClass}`}>
+      <div id="container-four" className={`container-four ${browserClass}`}>
           <div className="section-title"><strong>Maquillaje y peinado</strong></div>
           <div className="itinerary-info">
           
@@ -1775,7 +1775,7 @@ const handleMenuItemClick = (elementId) => {
       </div>
       */}
     
-    <div className={`container-six ${browserClass}`}>
+    <div id="container-six" className={`container-six ${browserClass}`}>
           <div className="section-title"><strong>Mesa de regalos</strong></div>
           <div className="itinerary-info">
           
@@ -1797,7 +1797,7 @@ const handleMenuItemClick = (elementId) => {
       </div>
 
 
-      <div className={`container-two ${browserClass}`}>
+      <div id="container-two" className={`container-two ${browserClass}`}>
       <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '7vw', marginTop: '10vh' }}>Paleta de colores</div>
