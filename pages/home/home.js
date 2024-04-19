@@ -360,7 +360,8 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 7vw;  
+          font-size: 7vw;
+          font-family: 'Cherolina', serif;
         }
 
         .section-title {
@@ -634,7 +635,8 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 4vw;
+          font-size: 7vw;
+          font-family: 'Cherolina', serif;
         }
 
         .section-title {
@@ -956,7 +958,8 @@ const LandingPage = () => {
           }
   
           .title {
-            font-size: 4vw;
+            font-size: 7vw;
+            font-family: 'Cherolina', serif;
           }
   
           .section-title {
@@ -1273,7 +1276,8 @@ const LandingPage = () => {
           }
   
           .title {
-            font-size: 4vw;
+            font-size: 7vw;
+            font-family: 'Cherolina', serif;
           }
   
           .section-title {
@@ -1514,7 +1518,7 @@ const LandingPage = () => {
       <div className="title" style={{ fontFamily: 'Cherolina'}}></div>*/}
       
       
-      <div className="cherolina-font">
+      <div className="title">
       Daniela y César
     </div>
 
