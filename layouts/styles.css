@@ -3,6 +3,18 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Define @font-face rule for Cherolina */
+@font-face {
+  font-family: 'Cherolina';
+  src: url('/fonts/cherolina/Cherolina.woff') format('woff');
+  /* Add other font formats if necessary */
+}
+
+/* Apply Cherolina font to specific elements */
+.cherolina-font {
+  font-family: 'Cherolina', serif;
+  /* Add other Cherolina font styles as needed */
+}
 
 body {
     font-family: "Baskervville", serif;

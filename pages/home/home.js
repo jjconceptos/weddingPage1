@@ -1514,10 +1514,9 @@ const LandingPage = () => {
       <div className="title" style={{ fontFamily: 'Cherolina'}}></div>*/}
       
       
-      <div>
-        Daniela y César
-      </div>
-
+      <div className="cherolina-font">
+      Daniela y César
+    </div>
 
       <div onClick={handleConocenosClick}>
        2024
