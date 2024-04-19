@@ -360,7 +360,7 @@ const LandingPage = () => {
         }
 
         .title {
-          font-size: 8vw;
+          font-size: 9vw;
           font-family: 'Cherolina', serif;
         }
 
