@@ -715,7 +715,7 @@ const sectionsDataDesktop = [
 
           .container-two.safari {
             /* Safari-specific styles */
-            margin-top: 3104vh;
+            margin-top: 3105vh;
           }
           
           .container-two.chrome {
