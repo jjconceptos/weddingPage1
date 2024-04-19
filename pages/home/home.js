@@ -27,69 +27,44 @@ const LandingPage = () => {
     }
   }, []);
 
-  useEffect(() => {
-    // Calculate and set the height of the presentation card container
-    const presentationCardContainer = document.querySelector('.presentation-card-container');
-    if (presentationCardContainer) {
-      const height = presentationCardContainer.getBoundingClientRect().height;
-      setPresentationCardHeight(height);
-    }
-  }, []);
+ 
 
   
-
- // Define sections and their scroll positions
-const sectionsDataMobile = [
-  { name: 'Inicio', elementId: 'presentation-card-container' },
-  { name: 'Fotos', elementId: 'container' },
-  { name: 'Itinerario', elementId: 'itinerario-section' },
-  { name: 'Hospedaje', elementId: 'hospedaje-section' },
-  { name: 'Maquillaje y peinado', elementId: 'maquillaje-peinado-section' },
-  { name: 'Mesa de regalos', elementId: 'mesa-regalos-section' },
-  { name: 'Dresscode', elementId: 'dresscode-section' },
-  // Add more sections as needed
-];
 
 // Define sections and their scroll positions
-const sectionsDataDesktop = [
+const sectionsData = [
   { name: 'Inicio', elementId: 'presentation-card-container' },
   { name: 'Fotos', elementId: 'container' },
-  { name: 'Itinerario', elementId: 'itinerario-section' },
-  { name: 'Hospedaje', elementId: 'hospedaje-section' },
+  { name: 'Itinerario', elementId: 'container-one' },
+  { name: 'Hospedaje', elementId: 'container-three' },
   { name: 'Maquillaje y peinado', elementId: 'maquillaje-peinado-section' },
   { name: 'Mesa de regalos', elementId: 'mesa-regalos-section' },
   { name: 'Dresscode', elementId: 'dresscode-section' },
   // Add more sections as needed
 ];
 
-  const handleToggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    // Set sections based on viewport width
-    if (!isMenuOpen) {
-      const sections = window.innerWidth <= 768 ? sectionsDataMobile : sectionsDataDesktop;
-      setSections(sections);
-    } else {
-      setSections([]); // Clear sections when the menu is closed
-    }
-  };
+const handleToggleMenu = () => {
+  setIsMenuOpen(!isMenuOpen);
+  // Set sections based on viewport width
+  if (!isMenuOpen) {
+    setSections(sectionsData);
+  } else {
+    setSections([]); // Clear sections when the menu is closed
+  }
+};
 
-  
+const handleMenuItemClick = (elementId) => {
+  console.log("Clicked elementId:", elementId); // Log the clicked elementId
+  const element = document.getElementById(elementId);
+  if (element) {
+    console.log("Element found:", element); // Log the element found
+    element.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.log("Element not found for elementId:", elementId); // Log if the element is not found
+  }
+};
 
-  const handleMenuItemClick = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleConocenosClick = () => {
-    // Specify the position you want to scroll to (adjust the value as needed)
-    const scrollPosition = 680; // Replace with your desired position
-    window.scrollTo({
-      top: scrollPosition,
-      behavior: 'smooth', // Use smooth scrolling
-    });
-  };
+ 
 
   const yourCarouselItemsMobile = [
     
@@ -1489,26 +1464,31 @@ const sectionsDataDesktop = [
 
       
      {/* Menu items */}
-     {isMenuOpen && (
+{isMenuOpen && (
   <>
     {/* Menu Overlay and Menu Items */}
     <div className="menu-overlay" onClick={handleToggleMenu}></div>
     <div className="menu-items">
       {sections.map((section, index) => (
-        <div className="menu-item" key={index} onClick={() => handleMenuItemClick(section.scrollPosition)}>
+        <div className="menu-item" key={index} onClick={() => handleMenuItemClick(section.elementId)}>
           {section.name}
         </div>
       ))}
     </div>
-
-    {/* Sections */}
-    {sections.length > 0 && sections.map((section, index) => (
-      <div className="section" key={index} onClick={() => handleMenuItemClick(section.scrollPosition)}>
-        {section.name}
-      </div>
-    ))}
   </>
 )}
+
+{/* Sections */}
+{isMenuOpen && sections.length > 0 && sections.map((section, index) => (
+  <div className="section" key={index} onClick={() => {
+    console.log("Clicked section:", section.name);
+    handleMenuItemClick(section.elementId);
+  }}>
+    {section.name}
+  </div>
+))}
+  
+
 
 <div className="presentation-card-container">
       <div className="main-title-section-container">
@@ -1525,7 +1505,7 @@ const sectionsDataDesktop = [
       Daniela y César
     </div>
 
-      <div onClick={handleConocenosClick}>
+      <div >
        2024
       </div>
      {/*  <div className="horizontal-line" style={{ width: '100%', height: '2px', backgroundColor: '#000', marginTop: '50vh' }}></div>*/}
