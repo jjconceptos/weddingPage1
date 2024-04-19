@@ -1797,8 +1797,8 @@ const handleMenuItemClick = (elementId) => {
       </div>
 
 
-      <div  className={`container-two ${browserClass}`}>
-      <div id="container-two" className="section-title"><strong>Dresscode</strong></div>
+      <div id="container-two" className={`container-two ${browserClass}`}>
+      <div className="section-title"><strong>Dresscode</strong></div>
 
        {/* <div style={{ fontSize: '7vw', marginTop: '10vh' }}>Paleta de colores</div>
 
