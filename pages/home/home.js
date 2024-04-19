@@ -450,12 +450,12 @@ const LandingPage = () => {
 
           .container-three.safari {
             /* Safari-specific styles */
-            margin-top: 900vh;        
+            margin-top: 915vh;        
             }
           
           .container-three.chrome {
             /* Chrome-specific styles */
-            margin-top: 915vh;       
+            margin-top: 900vh;       
              }
 
           .hosting {
