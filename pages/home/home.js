@@ -455,7 +455,7 @@ const LandingPage = () => {
           
           .container-three.chrome {
             /* Chrome-specific styles */
-            margin-top: 900vh;       
+            margin-top: 800vh;       
              }
 
           .hosting {
