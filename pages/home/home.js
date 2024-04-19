@@ -441,12 +441,22 @@ const LandingPage = () => {
 
           .container-three {
             position: absolute;
-          margin-top: 915vh;
+          
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
+
+          .container-three.safari {
+            /* Safari-specific styles */
+            margin-top: 900vh;        
+            }
+          
+          .container-three.chrome {
+            /* Chrome-specific styles */
+            margin-top: 915vh;       
+             }
 
           .hosting {
           margin-bottom: -40vh; /* Adjusted margin for better separation from the next section */
