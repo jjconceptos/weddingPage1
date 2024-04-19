@@ -22,6 +22,8 @@ const LandingPage = () => {
       setBrowserClass('chrome');
     } else if (userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1) {
       setBrowserClass('safari');
+    } else if (userAgent.indexOf('edge') > -1) {
+      setBrowserClass('edge');
     } else {
       // Handle other browsers or set a default class
     }
@@ -1656,6 +1658,11 @@ const sectionsDataDesktop = [
               /* Chrome-specific styles */
               margin-top: 500vh;       
                }
+
+            .container-one.edge {
+            /* Chrome-specific styles */
+            margin-top: 500vh;       
+              }
   
            
   
@@ -1711,7 +1718,20 @@ const sectionsDataDesktop = [
               margin-top: 10000vh; 
             }
   
+            .container-three.safari {
+              /* Safari-specific styles */
+              margin-top: 1790vh;           
+            }
             
+            .container-three.chrome {
+              /* Chrome-specific styles */
+              margin-top: 10000vh;           
+            }
+
+            .container-three.edge {
+              /* Chrome-specific styles */
+              margin-top: 10000vh;       
+                }
   
             .hosting {
               position: relative;
