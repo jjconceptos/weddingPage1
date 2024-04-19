@@ -686,7 +686,7 @@ const LandingPage = () => {
 
           .container-one.safari {
             /* Safari-specific styles */
-            margin-top: 222%;        
+            margin-top: 416vh;        
             }
           
           .container-one.chrome {
@@ -713,7 +713,7 @@ const LandingPage = () => {
 
           .container-two.safari {
             /* Safari-specific styles */
-            margin-top: 3266vh;
+            margin-top: 3107vh;
           }
           
           .container-two.chrome {
@@ -746,7 +746,7 @@ const LandingPage = () => {
 
           .container-three.safari {
             /* Safari-specific styles */
-            margin-top: 958%;           }
+            margin-top: 1692vh;           }
           
           .container-three.chrome {
             /* Chrome-specific styles */
@@ -785,7 +785,7 @@ const LandingPage = () => {
 
           .container-four.safari {
             /* Safari-specific styles */
-            margin-top: 2835vh;
+            margin-top: 2850vh;
           }
           
           .container-four.chrome {
@@ -811,7 +811,7 @@ const LandingPage = () => {
 
           .container-six.safari {
             /* Safari-specific styles */
-            margin-top: 1830%;
+            margin-top: 2973vh;
           }
           
           .container-six.chrome {
