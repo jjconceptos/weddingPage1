@@ -396,23 +396,13 @@ const LandingPage = () => {
           }
 
           .container-one {
-            position: absolute;
-          
+          position: absolute;
+          margin-top: 400vh; 
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
           margin-bottom: 10vh; /* Adjusted margin for better separation from the next section */
           }
-
-          .container-one.safari {
-            /* Safari-specific styles */
-            margin-top: 300vh;        
-            }
-          
-          .container-one.chrome {
-            /* Chrome-specific styles */
-            margin-top: 1000vh;       
-             }
 
           .itinerary-info {
             margin-top: 10vh; /* Adjust margin-top as needed */
