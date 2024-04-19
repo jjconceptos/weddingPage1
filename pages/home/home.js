@@ -1708,15 +1708,10 @@ const sectionsDataDesktop = [
               left: 50%;
               transform: translate(-50%, -50%);
               text-align: center;
+              margin-top: 10000vh; 
             }
   
-            .container-three.safari {
-              /* Safari-specific styles */
-              margin-top: 1790vh;           }
             
-            .container-three.chrome {
-              /* Chrome-specific styles */
-              margin-top: 10000vh;           }
   
             .hosting {
               position: relative;
