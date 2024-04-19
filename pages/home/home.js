@@ -406,12 +406,12 @@ const LandingPage = () => {
 
           .container-one.safari {
             /* Safari-specific styles */
-            margin-top: 122vh;        
+            margin-top: 200vh;        
             }
           
           .container-one.chrome {
             /* Chrome-specific styles */
-            margin-top: 230%;       
+            margin-top: 500vh;       
              }
 
           .itinerary-info {
