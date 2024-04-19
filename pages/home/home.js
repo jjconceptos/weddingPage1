@@ -38,29 +38,29 @@ const LandingPage = () => {
 
   
 
-   // Define sections and their scroll positions
-   const sectionsDataMobile = [
-    { name: 'Inicio', scrollPosition: 0 },
-    { name: 'Fotos', scrollPosition: 710 },
-    { name: 'Itinerario', scrollPosition: 1475 },
-    { name: 'Hospedaje', scrollPosition: 3470 },
-    { name: 'Maquillaje y peinado', scrollPosition: 9600 },
-    { name: 'Mesa de regalos', scrollPosition: 10280 },
-    { name: 'Dresscode', scrollPosition: 11050 },
-    // Add more sections as needed
-  ];
+ // Define sections and their scroll positions
+const sectionsDataMobile = [
+  { name: 'Inicio', elementId: 'presentation-card-container' },
+  { name: 'Fotos', elementId: 'container' },
+  { name: 'Itinerario', elementId: 'itinerario-section' },
+  { name: 'Hospedaje', elementId: 'hospedaje-section' },
+  { name: 'Maquillaje y peinado', elementId: 'maquillaje-peinado-section' },
+  { name: 'Mesa de regalos', elementId: 'mesa-regalos-section' },
+  { name: 'Dresscode', elementId: 'dresscode-section' },
+  // Add more sections as needed
+];
 
-  // Define sections and their scroll positions
-  const sectionsDataDesktop = [
-    { name: 'Inicio', scrollPosition: 0 },
-    { name: 'Fotos', scrollPosition: 855 },
-    { name: 'Itinerario', scrollPosition: 1600 },
-    { name: 'Hospedaje', scrollPosition: 3700 },
-    { name: 'Maquillaje y peinado', scrollPosition: 3470 },
-    { name: 'Mesa de regalos', scrollPosition: 26600 },
-    { name: 'Dresscode', scrollPosition: 27100 },
-    // Add more sections as needed
-  ];
+// Define sections and their scroll positions
+const sectionsDataDesktop = [
+  { name: 'Inicio', elementId: 'presentation-card-container' },
+  { name: 'Fotos', elementId: 'container' },
+  { name: 'Itinerario', elementId: 'itinerario-section' },
+  { name: 'Hospedaje', elementId: 'hospedaje-section' },
+  { name: 'Maquillaje y peinado', elementId: 'maquillaje-peinado-section' },
+  { name: 'Mesa de regalos', elementId: 'mesa-regalos-section' },
+  { name: 'Dresscode', elementId: 'dresscode-section' },
+  // Add more sections as needed
+];
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -75,9 +75,11 @@ const LandingPage = () => {
 
   
 
-  const handleMenuItemClick = (scrollPosition) => {
-    setIsMenuOpen(false); // Close menu when a menu item is clicked
-    window.scrollTo({ top: scrollPosition, behavior: 'smooth' }); // Scroll to the selected section
+  const handleMenuItemClick = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const handleConocenosClick = () => {
