@@ -801,6 +801,7 @@ const handleMenuItemClick = (elementId) => {
 
 
 
+        
         @media (min-width: 1366px) {
 
                 
@@ -984,13 +985,17 @@ const handleMenuItemClick = (elementId) => {
   
             .container-one.safari {
               /* Safari-specific styles */
-              margin-top: 230%;        
+              margin-top: 420vh;        
               }
             
             .container-one.chrome {
               /* Chrome-specific styles */
-              top: -40%;       
+              margin-top: 250%;       
                }
+  
+           
+  
+          
   
             .itinerary-info {
               margin-top: 10vh; /* Adjust margin-top as needed */
@@ -1010,12 +1015,12 @@ const handleMenuItemClick = (elementId) => {
   
             .container-two.safari {
               /* Safari-specific styles */
-              margin-top: 3017vh;
+              margin-top: 3284vh;
             }
             
             .container-two.chrome {
               /* Chrome-specific styles */
-              margin-top: 3060%;
+              margin-top: 1860%;
             }
   
             .color-palette {
@@ -1043,11 +1048,11 @@ const handleMenuItemClick = (elementId) => {
   
             .container-three.safari {
               /* Safari-specific styles */
-              margin-top: 1202%;           }
+              margin-top: 1790vh;           }
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              top: 204%;           }
+              margin-top: 1014%;           }
   
             .hosting {
               position: relative;
@@ -1082,7 +1087,7 @@ const handleMenuItemClick = (elementId) => {
   
             .container-four.safari {
               /* Safari-specific styles */
-              margin-top: 2835vh;
+              margin-top: 3037vh;
             }
             
             .container-four.chrome {
@@ -1108,7 +1113,7 @@ const handleMenuItemClick = (elementId) => {
   
             .container-six.safari {
               /* Safari-specific styles */
-              margin-top: 1830%;
+              margin-top: 3156vh;
             }
             
             .container-six.chrome {
