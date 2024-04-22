@@ -1052,7 +1052,7 @@ const handleMenuItemClick = (elementId) => {
             
             .container-three.chrome {
               /* Chrome-specific styles */
-              margin-top: 2040vh;           }
+              margin-top: 2240vh;           }
   
             .hosting {
               position: relative;
