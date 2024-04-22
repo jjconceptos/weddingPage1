@@ -1020,7 +1020,7 @@ const handleMenuItemClick = (elementId) => {
             
             .container-two.chrome {
               /* Chrome-specific styles */
-              margin-top: 3314;
+              margin-top: 3350;
             }
   
             .color-palette {
