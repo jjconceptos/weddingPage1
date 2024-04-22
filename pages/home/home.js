@@ -1092,7 +1092,7 @@ const handleMenuItemClick = (elementId) => {
             
             .container-four.chrome {
               /* Chrome-specific styles */
-              margin-top: 3400vh;
+              margin-top: 3900vh;
             }
   
             .container-five {
