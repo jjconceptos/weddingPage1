@@ -1020,7 +1020,7 @@ const handleMenuItemClick = (elementId) => {
             
             .container-two.chrome {
               /* Chrome-specific styles */
-              margin-top: 3350vh;
+              margin-top: 4800vh;
             }
   
             .color-palette {
@@ -1118,7 +1118,7 @@ const handleMenuItemClick = (elementId) => {
             
             .container-six.chrome {
               /* Chrome-specific styles */
-              margin-top: 1792%;
+              margin-top: 4400vh;
             }
   
           }
