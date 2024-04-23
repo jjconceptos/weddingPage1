@@ -37,7 +37,7 @@ const sectionsData = [
   { name: 'Fotos', elementId: 'container' },
   { name: 'Itinerario', elementId: 'container-one' },
   { name: 'Hospedaje', elementId: 'container-three' },
-  { name: 'Maquillaje y peinado', elementId: 'container-four' },
+  { name: 'Maquillaje y Peinado', elementId: 'container-four' },
   { name: 'Mesa de regalos', elementId: 'container-six' },
   { name: 'Dresscode', elementId: 'container-two' },
   // Add more sections as needed
@@ -1747,7 +1747,7 @@ const handleMenuItemClick = (elementId) => {
       </div>
       
       <div id="container-four" className={`container-four ${browserClass}`}>
-          <div className="section-title"><strong>Maquillaje y peinado</strong></div>
+          <div className="section-title"><strong>Maquillaje y Peinado</strong></div>
           <div className="itinerary-info">
           
           <p><strong className="minor-subtitle"><span>Foriu</span><br></br><span>Hair and Makeup</span><br></br></strong></p>
