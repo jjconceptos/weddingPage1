@@ -147,7 +147,7 @@ const handleMenuItemClick = (elementId) => {
     }
     
   ];
-
+ 
   useEffect(() => {
     const checkIsMobileViewport = () => {
         setIsMobileViewport(window.innerWidth <= 768); // Example threshold for mobile viewport width
@@ -486,7 +486,7 @@ const handleMenuItemClick = (elementId) => {
                 
         .burger-menu {
           position: fixed;
-          top: 20px;
+          top: 21px;
           left: 20px;
           z-index: 999;
           cursor: pointer;
