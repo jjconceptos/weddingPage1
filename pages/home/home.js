@@ -486,7 +486,7 @@ const handleMenuItemClick = (elementId) => {
                 
         .burger-menu {
           position: fixed;
-          top: 21px;
+          top: 20px;
           left: 20px;
           z-index: 999;
           cursor: pointer;
