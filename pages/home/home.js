@@ -1896,7 +1896,7 @@ const handleMenuItemClick = (elementId) => {
             .title {
               font-size: 7vw;
               font-family: 'Cherolina', serif;
-              margin-top: 70vh;
+              margin-top: 50vh;
             }
 
             
